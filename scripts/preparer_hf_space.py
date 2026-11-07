@@ -88,9 +88,13 @@ def main():
     render = "render" in sys.argv[1:]
     if render:
         SORTIE = RACINE / "dist" / "render"
-    if SORTIE.exists():
-        shutil.rmtree(SORTIE)
-    SORTIE.mkdir(parents=True)
+    # On vide le dossier, mais on garde son historique Git (.git) : un simple « git push » suffit
+    # ensuite pour mettre le site à jour.
+    SORTIE.mkdir(parents=True, exist_ok=True)
+    for element in SORTIE.iterdir():
+        if element.name == ".git":
+            continue
+        shutil.rmtree(element) if element.is_dir() else element.unlink()
     for nom in A_COPIER:
         source = RACINE / nom
         if source.is_dir():
@@ -102,6 +106,7 @@ def main():
     if render:
         (SORTIE / "render.yaml").write_text(RENDER_YAML, encoding="utf-8")
         (SORTIE / ".gitignore").write_text(GITIGNORE, encoding="utf-8")
+        (SORTIE / ".gitattributes").write_text("* text=auto eol=lf\n*.pdf binary\n*.webp binary\n*.png binary\n*.jpg binary\n*.xlsx binary\n", encoding="utf-8")
     # Photos iStock : licence payante non acquise, donc pas de publication en ligne. Elles sont
     # remplacées par les photos libres de Tunisie (Wikimedia Commons), créditées dans le pied de page.
     photos = SORTIE / "web" / "img" / "photos"
