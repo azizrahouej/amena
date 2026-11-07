@@ -91,7 +91,7 @@ export function pagePartenaires(racine) {
         h("div", { class: "carte" }, h("h2", { style: "font-size:1rem;margin-bottom:12px" }, t("part.config")),
           h("ul", { class: "liste-simple" },
             h("li", {}, icone("droits"), `${s.fiches} fiches · ${s.systeme.chunks} chunks indexés`),
-            h("li", {}, icone("chat"), `Génération : ${{ claude: `Claude (${s.systeme.modele})`, ollama: `IA locale Ollama (${s.systeme.modele})` }[s.systeme.moteur] || "extractive (sans modèle)"}`),
+            h("li", {}, icone("chat"), `Génération : ${{ claude: `Claude (${s.systeme.modele})`, cloud: `IA en ligne (${s.systeme.modele})`, ollama: `IA locale Ollama (${s.systeme.modele})` }[s.systeme.moteur] || "extractive (sans modèle)"}`),
             h("li", {}, icone("recherche"), `Recherche sémantique : ${s.systeme.embeddings ? "activée" : "lexicale (TF-IDF)"}`),
             h("li", {}, icone("cadenas"), `Statistiques : ${u.activees ? "activées (compteurs anonymes)" : "désactivées"}`)))));
   }).catch((erreur) => {

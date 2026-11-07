@@ -22,7 +22,7 @@ from .apprentissage import cle_apprentissage, identifiant, reclasser
 from .conversation import contextualiser, petite_discussion, suggestions
 from .securite import regles_danger
 from .config import MODELE_LLM
-from .generation import OLLAMA_MODELE, fournisseur, generer, generer_flux
+from .generation import CLOUD_MODELE, OLLAMA_MODELE, fournisseur, generer, generer_flux
 from .recherche import MoteurRecherche
 from .securite import anonymiser, detecter_langue
 from .triage import Trieur
@@ -225,7 +225,7 @@ class Assistant:
         if petite:
             return {"reponse": petite, "mode": "conversation", **self._meta(ctx)}
         reponse, mode = generer(ctx["texte"], ctx["sources"], ctx["triage"], ctx["langue"], ctx["historique"],
-                                expertise=ctx["expertise"])
+                                expertise=ctx["expertise"], pistes=ctx["pistes"])
         reponse += recherche_externe.bloc_reponse(ctx["pistes"], ctx["langue"])
         return {"reponse": reponse, "mode": mode, **self._meta(ctx)}
 
@@ -246,7 +246,7 @@ class Assistant:
         yield {"type": "etape", "cle": "redaction"}
         morceaux, mode = [], "extractif"
         for genre, valeur in generer_flux(ctx["texte"], ctx["sources"], ctx["triage"], ctx["langue"], ctx["historique"],
-                                          expertise=ctx["expertise"]):
+                                          expertise=ctx["expertise"], pistes=ctx["pistes"]):
             if genre == "texte":
                 morceaux.append(valeur)
                 yield {"type": "texte", "delta": valeur}
@@ -261,5 +261,5 @@ class Assistant:
     def etat(self):
         choix = fournisseur()
         return {"llm": choix is not None, "moteur": choix or "extractif",
-                "modele": {"claude": MODELE_LLM, "ollama": OLLAMA_MODELE}.get(choix),
+                "modele": {"claude": MODELE_LLM, "cloud": CLOUD_MODELE, "ollama": OLLAMA_MODELE}.get(choix),
                 "chunks": len(self.moteur.chunks), "embeddings": self.moteur.encodeur is not None}

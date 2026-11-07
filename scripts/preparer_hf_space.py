@@ -45,8 +45,8 @@ derja : travail, contrats, famille, terres, pénal, numérique, violences. Proje
 AMENA informe et oriente ; elle ne remplace pas un avocat. En danger : 197 (police), 190 (SAMU),
 1899 (violences faites aux femmes).
 
-Configuration (Settings → Variables and secrets) : `ANTHROPIC_API_KEY` (optionnel, réponses
-rédigées par Claude), `AMENA_RECHERCHE_EXTERNE=1` et `BRAVE_API_KEY` (optionnel, recherche externe).
+Configuration (variables d'environnement) : `GROQ_API_KEY` (IA gratuite) ou `ANTHROPIC_API_KEY`
+(Claude) pour des réponses rédigées ; `TAVILY_API_KEY` (gratuite) ou `BRAVE_API_KEY` pour la recherche web.
 """
 
 
@@ -67,8 +67,13 @@ services:
       - key: AMENA_LLM
         value: claude
       - key: AMENA_RECHERCHE_EXTERNE
-        value: "0"
-      # Secrets facultatifs, à saisir dans le tableau de bord Render (jamais dans ce fichier)
+        value: "1"
+      # Secrets facultatifs, à saisir dans le tableau de bord Render (jamais dans ce fichier).
+      # GROQ_API_KEY : IA gratuite (console.groq.com) ; TAVILY_API_KEY : recherche web gratuite (tavily.com).
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: BRAVE_API_KEY

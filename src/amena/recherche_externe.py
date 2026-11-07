@@ -1,8 +1,8 @@
 """Recherche externe encadrée : quand la base ne connaît pas une loi ou un problème.
 
 Principes (protection de la vie privée et fiabilité) :
-    - désactivée par défaut ; activée par AMENA_RECHERCHE_EXTERNE=1 et une clé d'API de moteur de
-      recherche dans l'environnement (BRAVE_API_KEY) : jamais de clé écrite dans le code ;
+    - active dès qu'une clé d'API de moteur de recherche est dans l'environnement (TAVILY_API_KEY,
+      gratuite, ou BRAVE_API_KEY) ; AMENA_RECHERCHE_EXTERNE=0 la coupe. Jamais de clé écrite dans le code ;
     - la requête envoyée ne contient JAMAIS le message de la personne : seulement des mots-clés
       juridiques tirés du message déjà anonymisé, plus « Tunisie » ;
     - la recherche est limitée à des sites juridiques officiels ou reconnus (SITES_FIABLES) ;
@@ -20,8 +20,9 @@ from .base import connexion
 from .securite import normaliser
 
 SITES_FIABLES = ["legislation.tn", "iort.gov.tn", "idaraty.tn", "juridoc.tn", "faolex.fao.org", "wipo.int",
-                 "cawtar.org", "justice.gov.tn", "arp.tn", "inpdp.tn"]
+                 "cawtar.org", "justice.gov.tn", "arp.tn", "inpdp.tn", "jurisitetunisie.com", "droit-afrique.com"]
 URL_BRAVE = "https://api.search.brave.com/res/v1/web/search"
+URL_TAVILY = "https://api.tavily.com/search"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS sources_externes (
@@ -50,7 +51,7 @@ ena enti inti howa hiya 3andi andi famma chnowa kifech 3lech wa9tech w walla ken
 
 
 def active():
-    return os.getenv("AMENA_RECHERCHE_EXTERNE", "0") == "1" and bool(os.getenv("BRAVE_API_KEY"))
+    return os.getenv("AMENA_RECHERCHE_EXTERNE", "1") != "0" and bool(os.getenv("TAVILY_API_KEY") or os.getenv("BRAVE_API_KEY"))
 
 
 _VOCABULAIRE = []
@@ -114,6 +115,19 @@ def _interroger_brave(requete, nombre=5):
             for x in r.json().get("web", {}).get("results", [])]
 
 
+def _interroger_tavily(requete, nombre=5):
+    """Tavily : moteur de recherche pour assistants IA, offre gratuite (1000 recherches/mois, sans carte).
+    Les domaines sont filtrés par l'API elle-même (include_domains)."""
+    import httpx
+    mots = requete.split(" (site:")[0]
+    r = httpx.post(URL_TAVILY, headers={"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"},
+                   json={"query": mots, "max_results": nombre, "search_depth": "basic",
+                         "include_domains": SITES_FIABLES}, timeout=12)
+    r.raise_for_status()
+    return [{"url": x.get("url"), "titre": x.get("title"), "extrait": (x.get("content") or "")[:900]}
+            for x in r.json().get("results", [])]
+
+
 def enregistrer(requete, resultats, cnx=None):
     cnx = cnx or connexion()
     cnx.executescript(SCHEMA)
@@ -156,7 +170,7 @@ def rechercher(texte, cnx=None, interroger=None):
             if time.time() - _DERNIER_APPEL[0] < 1.0:   # pas plus d'un appel par seconde
                 return []
             _DERNIER_APPEL[0] = time.time()
-            interroger = _interroger_brave
+            interroger = _interroger_tavily if os.getenv("TAVILY_API_KEY") else _interroger_brave
         resultats = [r for r in interroger(requete) if r.get("url") and _fiable(r["url"])][:3]
         if resultats:
             enregistrer(" ".join(mots), resultats, cnx)

@@ -11,8 +11,13 @@ services:
       - key: AMENA_LLM
         value: claude
       - key: AMENA_RECHERCHE_EXTERNE
-        value: "0"
-      # Secrets facultatifs, à saisir dans le tableau de bord Render (jamais dans ce fichier)
+        value: "1"
+      # Secrets facultatifs, à saisir dans le tableau de bord Render (jamais dans ce fichier).
+      # GROQ_API_KEY : IA gratuite (console.groq.com) ; TAVILY_API_KEY : recherche web gratuite (tavily.com).
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: BRAVE_API_KEY

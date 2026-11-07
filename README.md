@@ -14,5 +14,5 @@ derja : travail, contrats, famille, terres, pénal, numérique, violences. Proje
 AMENA informe et oriente ; elle ne remplace pas un avocat. En danger : 197 (police), 190 (SAMU),
 1899 (violences faites aux femmes).
 
-Configuration (Settings → Variables and secrets) : `ANTHROPIC_API_KEY` (optionnel, réponses
-rédigées par Claude), `AMENA_RECHERCHE_EXTERNE=1` et `BRAVE_API_KEY` (optionnel, recherche externe).
+Configuration (variables d'environnement) : `GROQ_API_KEY` (IA gratuite) ou `ANTHROPIC_API_KEY`
+(Claude) pour des réponses rédigées ; `TAVILY_API_KEY` (gratuite) ou `BRAVE_API_KEY` pour la recherche web.

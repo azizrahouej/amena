@@ -76,15 +76,50 @@ def ollama_disponible():
     return ok
 
 
+def _cle_cloud():
+    return os.getenv("AMENA_LLM_API_KEY") or os.getenv("GROQ_API_KEY")
+
+
 def fournisseur():
-    """« claude », « ollama » ou None (mode extractif)."""
+    """« claude », « cloud » (API compatible OpenAI : Groq, Gemini, OpenRouter… gratuite),
+    « ollama » ou None (mode extractif)."""
     if CHOIX_LLM == "aucun":
         return None
     if CHOIX_LLM in ("auto", "claude") and os.getenv("ANTHROPIC_API_KEY"):
         return "claude"
+    if CHOIX_LLM in ("auto", "claude", "cloud") and _cle_cloud():
+        return "cloud"
     if CHOIX_LLM in ("auto", "ollama") and ollama_disponible():
         return "ollama"
     return None
+
+
+# --- Modèle en ligne gratuit (API compatible OpenAI) -------------------------------------------------
+# Par défaut Groq (llama-3.3-70b, offre gratuite sans carte bancaire). Pour Gemini :
+#   AMENA_LLM_URL=https://generativelanguage.googleapis.com/v1beta/openai  AMENA_LLM_MODELE=gemini-2.5-flash
+CLOUD_URL = os.getenv("AMENA_LLM_URL", "https://api.groq.com/openai/v1").rstrip("/")
+CLOUD_MODELE = os.getenv("AMENA_LLM_MODELE", "llama-3.3-70b-versatile")
+
+
+def _flux_cloud(systeme, messages, max_tokens=1600, temperature=0.3):
+    """Diffuse la réponse d'une API compatible OpenAI (événements SSE « data: … »)."""
+    import json as _json
+    corps = {"model": CLOUD_MODELE, "stream": True, "temperature": temperature, "max_tokens": max_tokens,
+             "messages": [{"role": "system", "content": systeme}] + messages}
+    with httpx.stream("POST", f"{CLOUD_URL}/chat/completions", json=corps,
+                      headers={"Authorization": f"Bearer {_cle_cloud()}"},
+                      timeout=httpx.Timeout(90, connect=10)) as reponse:
+        reponse.raise_for_status()
+        for ligne in reponse.iter_lines():
+            if not ligne.startswith("data:"):
+                continue
+            donnees = ligne[5:].strip()
+            if donnees == "[DONE]":
+                break
+            choix = (_json.loads(donnees).get("choices") or [{}])[0]
+            morceau = (choix.get("delta") or {}).get("content")
+            if morceau:
+                yield morceau
 
 
 def llm_disponible():
@@ -114,6 +149,33 @@ def _formater_sources(sources):
     return "<sources>\n" + "\n".join(blocs) + "\n</sources>"
 
 
+def _formater_web(pistes):
+    """Résultats de la recherche en ligne (sites juridiques fiables), cités par leur lien."""
+    if not pistes:
+        return ""
+    blocs = [f'<resultat lien="{p["url"]}" site="{p.get("site", "")}">\n{p.get("titre") or ""}\n'
+             f'{(p.get("extrait") or "")[:900]}\n</resultat>' for p in pistes]
+    return "<recherche_web>\n" + "\n".join(blocs) + "\n</recherche_web>\n\n"
+
+
+CONSIGNES_OUVERTES = """
+
+Cas particulier : la question sort des sources fournies (ou il n'y en a pas). Tu réponds QUAND MÊME à la \
+question posée, concrètement, comme une avocate tunisienne expérimentée :
+- utilise d'abord les <sources> et les <recherche_web> (cite les résultats web par leur lien en Markdown) ;
+- complète avec tes connaissances générales du droit tunisien (Code des obligations et des contrats, Code \
+pénal, Code du statut personnel, Code du travail, Code des droits réels, procédure), en le signalant par \
+« en principe » ; n'invente JAMAIS un numéro d'article : cite un numéro seulement s'il figure dans les \
+sources, sinon nomme le texte (« le Code des obligations et des contrats prévoit… ») ;
+- dis qui a fait quoi et ce que la personne peut obtenir (remboursement, annulation, dommages-intérêts, \
+plainte) ; donne les étapes concrètes (mise en demeure écrite, huissier notaire, plainte au procureur ou au \
+poste de police, tribunal cantonal ou de première instance selon le montant), les preuves et les délais ;
+- si la personne a elle-même commis une faute ou une infraction, réponds sans juger : ses droits, les \
+risques, l'intérêt d'un avocat ; ne l'aide jamais à cacher des preuves ni à nuire à quelqu'un ;
+- structure : ### Ce que je comprends ; ### Ce que dit la loi ; ### Ce que vous pouvez faire (liste \
+numérotée) ; ### Les preuves à réunir ; ### Mon conseil ; puis une question pour préciser. 450 mots maximum."""
+
+
 def _bloc_expertise(expertise):
     if not expertise:
         return ""
@@ -121,7 +183,7 @@ def _bloc_expertise(expertise):
     return f"<analyse_experte>\n{resume_expertise(expertise)}\n</analyse_experte>\n\n"
 
 
-def _requete_llm(question, sources, triage, historique, expertise=None):
+def _requete_llm(question, sources, triage, historique, expertise=None, ouverte=False):
     messages = []
     for tour in (historique or [])[-8:]:  # contexte : les 4 derniers échanges
         if tour.get("role") in ("user", "assistant") and tour.get("content"):
@@ -137,7 +199,7 @@ def _requete_llm(question, sources, triage, historique, expertise=None):
     return dict(
         model=MODELE_LLM,
         max_tokens=4000,
-        system=CONSIGNES_SYSTEME,
+        system=CONSIGNES_SYSTEME + (CONSIGNES_OUVERTES if ouverte else ""),
         messages=messages,
         output_config={"effort": "low"},
         # Si le modèle principal décline, l'API relance la requête sur un modèle de repli.
@@ -182,6 +244,22 @@ def generer_ollama_flux(question, sources, triage, historique=None, langue="fr",
                 break
 
 
+def generer_cloud_flux(question, sources, triage, historique=None, langue="fr", expertise=None, pistes=None,
+                       ouverte=False):
+    """Réponse complète par le modèle en ligne gratuit, à partir des sources et de la recherche web."""
+    messages = []
+    for tour in (historique or [])[-8:]:
+        if tour.get("role") in ("user", "assistant") and tour.get("content"):
+            messages.append({"role": tour["role"], "content": tour["content"][:2500]})
+    sources_utiles = [{**s, "texte": s["texte"][:1500]} for s in sources[:6]]
+    messages.append({"role": "user", "content": (
+        f"{_formater_sources(sources_utiles)}\n\n{_formater_web(pistes)}{_bloc_expertise(expertise)}"
+        f"Catégorie détectée : {triage['label']}. Le droit applicable est le droit TUNISIEN. "
+        f"Réponds en {LANGUES.get(langue, 'français')}.\n\nMessage de la personne :\n{question}")})
+    systeme = CONSIGNES_SYSTEME + (CONSIGNES_OUVERTES if ouverte else "")
+    yield from _flux_cloud(systeme, messages, max_tokens=1800 if ouverte else 1400)
+
+
 def generer_llm(question, sources, triage, historique=None, expertise=None):
     """Appelle Claude. Lève une exception en cas d'échec : l'appelant bascule en extractif."""
     import anthropic
@@ -195,11 +273,11 @@ def generer_llm(question, sources, triage, historique=None, expertise=None):
     return texte
 
 
-def generer_llm_flux(question, sources, triage, historique=None, expertise=None):
+def generer_llm_flux(question, sources, triage, historique=None, expertise=None, ouverte=False):
     """Diffuse la réponse de Claude morceau par morceau."""
     import anthropic
 
-    with anthropic.Anthropic().beta.messages.stream(**_requete_llm(question, sources, triage, historique, expertise)) as flux:
+    with anthropic.Anthropic().beta.messages.stream(**_requete_llm(question, sources, triage, historique, expertise, ouverte)) as flux:
         for morceau in flux.text_stream:
             yield morceau
         if flux.get_final_message().stop_reason == "refusal":
@@ -234,6 +312,8 @@ def synthese_juridique(situation, analyse):
                 "options": {"temperature": 0.3, "num_predict": 400, "num_ctx": 4096},
                 "messages": [{"role": "system", "content": CONSIGNES_ANALYSE}, {"role": "user", "content": contenu}]})
             return r.json().get("message", {}).get("content", "").strip() or None
+        if choix == "cloud":
+            return "".join(_flux_cloud(CONSIGNES_ANALYSE, [{"role": "user", "content": contenu}], 700)).strip() or None
 
         import anthropic
         reponse = anthropic.Anthropic().beta.messages.create(
@@ -279,10 +359,10 @@ def _question_extractive(question, triage):
     return question
 
 
-def generer(question, sources, triage, langue, historique=None, expertise=None):
+def generer(question, sources, triage, langue, historique=None, expertise=None, pistes=None):
     """Renvoie (texte, mode). Tente le LLM, retombe sur l'extractif en cas de problème."""
     morceaux, mode = [], "extractif"
-    for genre, valeur in generer_flux(question, sources, triage, langue, historique, expertise):
+    for genre, valeur in generer_flux(question, sources, triage, langue, historique, expertise, pistes):
         if genre == "texte":
             morceaux.append(valeur)
         else:
@@ -319,6 +399,9 @@ def _intro_flux(choix, question, expertise, langue, historique):
                         yield donnees["message"]["content"]
                     if donnees.get("done"):
                         break
+        return
+    if choix == "cloud":
+        yield from _flux_cloud(CONSIGNES_INTRO, [{"role": "user", "content": contenu}], 400, 0.4)
         return
     import anthropic
     with anthropic.Anthropic().beta.messages.stream(
@@ -367,24 +450,37 @@ def _deja_traitee(expertise, historique):
                for t in historique)
 
 
-def generer_flux(question, sources, triage, langue, historique=None, expertise=None):
+MODES = {"claude": "llm", "cloud": "llm", "ollama": "llm-local"}
+
+
+def _flux_modele(choix, question, sources, triage, historique, langue, expertise, pistes=None, ouverte=False):
+    if choix == "claude":
+        if pistes or ouverte:
+            # Même consignes « question ouverte » et mêmes résultats web que pour le modèle en ligne.
+            question = f"{_formater_web(pistes)}{question}"
+        return generer_llm_flux(question, sources, triage, historique, expertise, ouverte)
+    if choix == "cloud":
+        return generer_cloud_flux(question, sources, triage, historique, langue, expertise, pistes, ouverte)
+    return generer_ollama_flux(question, sources, triage, historique, langue, expertise)
+
+
+def generer_flux(question, sources, triage, langue, historique=None, expertise=None, pistes=None):
     """Générateur : ("texte", morceau)... puis ("mode", "llm" | "llm-local" | "extractif")."""
     choix = fournisseur()
     deja = _deja_traitee(expertise, historique)
-    if deja and expertise.get("qualifications"):
+    generale = bool(expertise and expertise.get("generale"))
+    if deja and expertise.get("qualifications") and not generale:
         # Suite de la consultation : la fiche complète a déjà été donnée. On répond aux précisions
         # avec l'historique (modèle) ou, sans modèle adapté à la langue, par le conseil et les questions.
         lg = langue if langue in ("fr", "ar", "dz") else "fr"
         if choix and not (choix == "ollama" and lg in ("ar", "dz")):
             try:
-                flux = (generer_llm_flux(question, sources, triage, historique, expertise) if choix == "claude"
-                        else generer_ollama_flux(question, sources, triage, historique, langue, expertise))
                 envoye = False
-                for morceau in flux:
+                for morceau in _flux_modele(choix, question, sources, triage, historique, langue, expertise, pistes):
                     envoye = True
                     yield "texte", morceau
                 if envoye:
-                    yield "mode", "llm" if choix == "claude" else "llm-local"
+                    yield "mode", MODES[choix]
                     return
             except Exception as erreur:
                 print(f"[AMENA] modèle indisponible pour la suite ({type(erreur).__name__}).")
@@ -393,21 +489,23 @@ def generer_flux(question, sources, triage, langue, historique=None, expertise=N
             yield "texte", morceau
         yield "mode", "extractif"
         return
-    if choix and expertise and expertise.get("qualifications"):
+    if choix and expertise and expertise.get("qualifications") and not (generale and choix in ("claude", "cloud")):
         for morceau in _flux_hybride(choix, question, sources, triage, langue, historique, expertise):
             yield "texte", morceau
-        yield "mode", "llm" if choix == "claude" else "llm-local"
+        yield "mode", MODES[choix]
         return
-    if choix and sources:
+    # Question hors des situations connues : un grand modèle (Claude ou en ligne) répond à la question
+    # elle-même, avec les lois trouvées, la recherche web et ses connaissances du droit tunisien.
+    ouverte = choix in ("claude", "cloud") and (generale or not sources or bool(pistes))
+    if choix and (sources or ouverte):
         envoye = False
         try:
-            flux = (generer_llm_flux(question, sources, triage, historique, expertise) if choix == "claude"
-                    else generer_ollama_flux(question, sources, triage, historique, langue, expertise))
+            flux = _flux_modele(choix, question, sources, triage, historique, langue, expertise, pistes, ouverte)
             for morceau in flux:
                 envoye = True
                 yield "texte", morceau
             if envoye:
-                yield "mode", "llm" if choix == "claude" else "llm-local"
+                yield "mode", MODES[choix]
                 return
         except Exception as erreur:  # réseau, quota, refus : on ne laisse jamais sans réponse
             print(f"[AMENA] modèle indisponible ({type(erreur).__name__}: {erreur}), mode extractif.")
