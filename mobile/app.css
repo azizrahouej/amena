@@ -120,3 +120,8 @@ textarea.champ { min-height: 150px; resize: vertical; }
   main { padding: 0; }
   body { background: #fff; color: #000; }
 }
+
+/* Boutons d'appel d'urgence dans une réponse */
+.appels-urgence { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+.appels-urgence .appel { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; border-radius: 999px;
+  background: #c8102e; color: #fff; font-weight: 700; text-decoration: none; font-size: .95rem; }

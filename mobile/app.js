@@ -188,6 +188,11 @@ function vueMessage(m, dernier) {
   else if (!m.texte) bloc.append(h("p", { class: "reflexion" }, t("chat.reflexion")));
   else bloc.append(markdown(m.texte));
   const meta = m.meta;
+  if (meta?.urgence && meta.contacts?.length) {
+    // Danger : boutons d'appel direct, en tête de la réponse.
+    bloc.insertBefore(h("div", { class: "appels-urgence" }, ...meta.contacts.map((c) =>
+      h("a", { href: `tel:${c.numero}`, class: "appel" }, `📞 ${c.numero} · ${c.nom}`))), bloc.children[1] || null);
+  }
   if (meta && !m.enCours) {
     if (meta.sources?.length) {
       bloc.append(h("details", { class: "sources" }, h("summary", {}, `${t("chat.sources")} (${meta.sources.length})`),

@@ -198,6 +198,12 @@ sources, sinon nomme le texte (« le Code des obligations et des contrats prévo
 - dis qui a fait quoi et ce que la personne peut obtenir (remboursement, annulation, dommages-intérêts, \
 plainte) ; donne les étapes concrètes (mise en demeure écrite, huissier notaire, plainte au procureur ou au \
 poste de police, tribunal cantonal ou de première instance selon le montant), les preuves et les délais ;
+- juridictions tunisiennes : juge cantonal (tribunal cantonal) pour les petits litiges, tribunal de première \
+instance, cour d'appel ; il n'existe PAS de « tribunal de proximité ». Ne donne aucun seuil en dinars, aucun \
+délai chiffré et aucun montant d'amende s'ils ne figurent pas dans les sources : dis « dans un délai fixé par la \
+loi, renseignez-vous vite » ;
+- pour une vente trompeuse (vice caché, fausse déclaration du vendeur), pense au dol, à la garantie des vices \
+et à la tromperie, et appuie-toi sur les articles du Code des obligations et des contrats fournis ;
 - si la personne a elle-même commis une faute ou une infraction, réponds sans juger : ses droits, les \
 risques, l'intérêt d'un avocat ; ne l'aide jamais à cacher des preuves ni à nuire à quelqu'un ;
 - structure : ### Ce que je comprends ; ### Ce que dit la loi ; ### Ce que vous pouvez faire (liste \
@@ -480,8 +486,60 @@ def _deja_traitee(expertise, historique):
 
 MODES = {"claude": "llm", "cloud": "llm", "ollama": "llm-local"}
 
+# Garde-fou : un modèle peut « inventer » un numéro d'article plausible. Tout numéro qui ne figure pas
+# dans les sources fournies est retiré avant d'arriver à la personne.
+_REF_ARTICLE = re.compile(
+    r"(?P<det>\b[Ll]es\s+|\b[Ll][’']\s*|\b[Aa]ux\s+|\b[Dd]es\s+)?"
+    r"(?P<mot>\b[Aa]rticles?|\b[Aa]rt\.|الفصول|الفصلين|الفصل|\b[Ff]asl)\s*"
+    r"(?P<nums>\d+(?:\s*(?:,|et|à|-|‑|–|و)\s*\d+)*)")
+_REF_CROCHET = re.compile(r"\(?\[(\d[^\]]*)\]\)?")
+
+
+def numeros_autorises(sources):
+    autorises = set()
+    for s in sources or []:
+        chemin = s["metadata"].get("chemin") or [""]
+        autorises.update(re.findall(r"\d+", chemin[-1]) if str(chemin[-1]).startswith("Art") else [])
+    return autorises
+
+
+def corriger_articles(ligne, autorises, nb_sources):
+    def article(m):
+        nums = re.findall(r"\d+", m["nums"])
+        if nums and all(n in autorises for n in nums):
+            return m[0]
+        if re.match(r"[؀-ۿ]", m["mot"]):
+            return "أحكام القانون"
+        majuscule = (m["det"] or m["mot"])[0].isupper()
+        return ("Une disposition du code" if majuscule else "une disposition du code")
+
+    def crochet(m):
+        nums = [int(n) for n in re.findall(r"\d+", m[1])]
+        return m[0] if nums and all(1 <= n <= nb_sources for n in nums) else ""
+    return _REF_CROCHET.sub(crochet, _REF_ARTICLE.sub(article, ligne))
+
+
+def _filtrer_articles(flux, sources, expertise=None):
+    """Applique corriger_articles ligne par ligne, sans casser la diffusion progressive."""
+    autorises, nb = numeros_autorises(sources), len(sources or [])
+    # Les articles de l'analyse experte (base vérifiée) sont aussi autorisés.
+    autorises |= {str(f["article"]) for q in (expertise or {}).get("qualifications", []) for f in q.get("fondements", [])}
+    tampon = ""
+    for morceau in flux:
+        tampon += morceau
+        if "\n" in tampon:
+            complet, tampon = tampon.rsplit("\n", 1)
+            yield corriger_articles(complet, autorises, nb) + "\n"
+    if tampon:
+        yield corriger_articles(tampon, autorises, nb)
+
 
 def _flux_modele(choix, question, sources, triage, historique, langue, expertise, pistes=None, ouverte=False):
+    return _filtrer_articles(_flux_modele_brut(choix, question, sources, triage, historique, langue, expertise,
+                                               pistes, ouverte), sources, expertise)
+
+
+def _flux_modele_brut(choix, question, sources, triage, historique, langue, expertise, pistes=None, ouverte=False):
     if choix == "claude":
         if pistes or ouverte:
             # Même consignes « question ouverte » et mêmes résultats web que pour le modèle en ligne.

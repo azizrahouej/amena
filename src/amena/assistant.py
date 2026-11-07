@@ -120,7 +120,12 @@ class Assistant:
                 if civile and not regles_danger(texte):
                     urgence = False
                     triage = {**triage, "label": "juridique"}
-                    if not any(q["fondements"] for q in analyse_situation["qualifications"]):
+                    if analyse_situation.get("generale"):
+                        # Situation inconnue : les articles des codes officiels les plus proches de la
+                        # question servent d'appui au modèle (il ne peut citer que ceux-là).
+                        sources = [s for s in self.moteur.rechercher(requete, k=15)
+                                   if str(s["metadata"].get("element", "")).startswith("loi:tn-off-")][:5]
+                    elif not any(q["fondements"] for q in analyse_situation["qualifications"]):
                         sources = []  # pas de texte dans la base : on n'affiche pas de sources hors sujet
                 analyse_situation["urgence"] = urgence or analyse_situation["urgence"]
                 expertise = analyse_situation
@@ -130,7 +135,8 @@ class Assistant:
                 if civile:
                     # Hors violences, les fiches et lois étrangères de la base seraient hors sujet :
                     # on ne garde que les codes officiels tunisiens.
-                    autres = [s for s in autres if str(s["metadata"].get("element", "")).startswith("loi:tn-off-")][:2]
+                    autres = [s for s in autres if str(s["metadata"].get("element", "")).startswith("loi:tn-off-")]
+                    autres = autres[:5] if analyse_situation.get("generale") else autres[:2]
                 sources = (fondements + autres)[:6]
         if urgence:
             # En urgence, la fiche de mise en sécurité passe en premier, devant les
