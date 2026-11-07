@@ -12,7 +12,7 @@ from collections import defaultdict, deque
 
 # groupe → [(fenêtre en secondes, nombre maximal de requêtes)]
 REGLES = {
-    "question": [(60, int(os.getenv("AMENA_LIMITE_MINUTE", "20"))), (3600, int(os.getenv("AMENA_LIMITE_HEURE", "200")))],
+    "question": [(60, int(os.getenv("AMENA_LIMITE_MINUTE", "10"))), (3600, int(os.getenv("AMENA_LIMITE_HEURE", "100")))],
     "compte": [(60, 10), (3600, 60)],
 }
 ROUTES = {
