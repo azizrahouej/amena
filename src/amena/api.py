@@ -82,7 +82,8 @@ async def sans_trace(request, suivant):
     autorise, attente = limites.autoriser(limites.adresse_client(request), request.url.path)
     if not autorise:
         from fastapi.responses import JSONResponse
-        reponse = JSONResponse({"detail": limites.MESSAGE["fr"], "detail_ar": limites.MESSAGE["ar"],
+        texte = limites.message(request.url.path)
+        reponse = JSONResponse({"detail": texte["fr"], "detail_ar": texte["ar"],
                                 "reessayer_dans": attente}, status_code=429,
                                headers={"Retry-After": str(attente)})
     else:

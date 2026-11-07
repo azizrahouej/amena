@@ -23,6 +23,12 @@ export async function api(chemin, options = {}) {
     ...options,
     body: options.body ? JSON.stringify(options.body) : undefined,
   });
+  if (reponse.status === 429) {  // essai du jour épuisé : message explicite
+    const j = await reponse.json().catch(() => ({}));
+    const e = new Error("limite");
+    e.limite = (document.documentElement.lang === "ar" ? j.detail_ar : j.detail) || j.detail;
+    throw e;
+  }
   if (!reponse.ok) throw new Error(`HTTP ${reponse.status}`);
   return reponse.json();
 }

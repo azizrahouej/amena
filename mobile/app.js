@@ -99,6 +99,10 @@ function markdown(texte) {
 
 async function api(chemin, options) {
   const r = await fetch(API + chemin, options);
+  if (r.status === 429) {  // essai du jour épuisé : message explicite
+    const j = await r.json().catch(() => ({}));
+    const e = new Error("limite"); e.limite = (etat.langue === "ar" ? j.detail_ar : j.detail) || j.detail; throw e;
+  }
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
@@ -284,7 +288,7 @@ function analyse(racine) {
       const a = await envoyerJson("/analyse", { situation, pays: "TN" });
       etat.derniereExpertise = { situations: a.qualifications.map((q) => q.libelle), analyse: a, faits: situation };
       resultat.replaceChildren(vueAnalyse(a, situation));
-    } catch { resultat.replaceChildren(h("p", { class: "sous" }, t("chat.erreur"))); }
+    } catch (e) { resultat.replaceChildren(h("p", { class: "sous" }, e.limite || t("chat.erreur"))); }
     bouton.disabled = false;
   });
   racine.append(h("h1", {}, t("an.titre")), h("p", { class: "sous" }, t("an.texte")), zone, bouton, resultat);

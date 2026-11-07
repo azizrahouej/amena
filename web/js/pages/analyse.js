@@ -124,8 +124,8 @@ export function pageAnalyse(racine, { aller }) {
       etat.resultat = await api("/api/analyse", { method: "POST", body: { situation: etat.situation, pays: etat.pays } });
       resultat.replaceChildren(note(etat.resultat, aller));
       resultat.scrollIntoView({ behavior: "smooth", block: "start" });
-    } catch {
-      resultat.replaceChildren(h("p", { class: "erreur-formulaire" }, t("chat.erreur")));
+    } catch (e) {
+      resultat.replaceChildren(h("p", { class: "erreur-formulaire" }, e.limite || t("chat.erreur")));
     } finally {
       bouton.disabled = false;
     }

@@ -12,18 +12,30 @@ from collections import defaultdict, deque
 
 # groupe → [(fenêtre en secondes, nombre maximal de requêtes)]
 REGLES = {
-    "question": [(60, int(os.getenv("AMENA_LIMITE_MINUTE", "10"))), (3600, int(os.getenv("AMENA_LIMITE_HEURE", "100")))],
+    # 10 questions gratuites par personne et par jour (essai quotidien)
+    "question": [(86400, int(os.getenv("AMENA_LIMITE_JOUR", "10")))],
     "compte": [(60, 10), (3600, 60)],
 }
 ROUTES = {
     "/api/chat": "question", "/api/chat/flux": "question", "/api/analyse": "question", "/api/triage": "question",
     "/api/auth/connexion": "compte", "/api/auth/inscription": "compte",
 }
-MESSAGE = {
-    "fr": "Trop de demandes en peu de temps. Patientez une minute avant de reposer une question. "
-          "En danger : 197 (police), 190 (SAMU), 1899.",
-    "ar": "طلبات كثيرة في وقت قصير. انتظر دقيقة قبل طرح سؤال جديد. في حالة الخطر: 197، 190، 1899.",
+MESSAGES = {
+    "question": {
+        "fr": "Vous avez dépassé votre essai pour aujourd'hui (10 questions par jour). Revenez demain pour "
+              "poser de nouvelles questions. En danger : appelez le 197 (police), le 190 (SAMU) ou le 1899.",
+        "ar": "لقد تجاوزت عدد الأسئلة المسموح بها اليوم (10 أسئلة في اليوم). عُد غدًا لطرح أسئلة جديدة. "
+              "في حالة الخطر: 197 (الشرطة)، 190 (الإسعاف)، 1899.",
+    },
+    "compte": {
+        "fr": "Trop de tentatives en peu de temps. Patientez quelques minutes.",
+        "ar": "محاولات كثيرة في وقت قصير. انتظر بضع دقائق.",
+    },
 }
+
+
+def message(chemin):
+    return MESSAGES[ROUTES.get(chemin, "question")]
 
 _historique = defaultdict(deque)
 _verrou = threading.Lock()
@@ -35,7 +47,11 @@ def _cle(adresse, groupe):
 
 
 def adresse_client(request):
-    """Adresse réelle derrière l'hébergeur (en-tête X-Forwarded-For posé par le proxy de Render)."""
+    """Adresse réelle derrière l'hébergeur. Render passe par Cloudflare, qui écrase lui-même
+    CF-Connecting-IP / True-Client-IP : un visiteur ne peut donc pas les falsifier pour contourner la limite."""
+    for entete in ("cf-connecting-ip", "true-client-ip"):
+        if request.headers.get(entete):
+            return request.headers[entete].strip()
     transmis = request.headers.get("x-forwarded-for", "")
     if transmis:
         return transmis.split(",")[0].strip()
@@ -45,7 +61,8 @@ def adresse_client(request):
 def autoriser(adresse, chemin, maintenant=None):
     """Renvoie (autorisé, secondes à attendre)."""
     groupe = ROUTES.get(chemin)
-    if not groupe or os.getenv("AMENA_LIMITES", "1") == "0":
+    # « testclient » : client interne des tests automatiques, jamais un visiteur réel.
+    if not groupe or adresse == "testclient" or os.getenv("AMENA_LIMITES", "1") == "0":
         return True, 0
     maintenant = maintenant or time.time()
     cle = _cle(adresse, groupe)
