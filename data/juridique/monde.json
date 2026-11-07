@@ -1,0 +1,137 @@
+{
+  "pays_multiples": [
+    {
+      "pays": {"code": "FR", "nom_fr": "France", "nom_ar": "فرنسا", "region": "Europe"},
+      "textes": [
+        {
+          "id": "fr-loi-2010-769",
+          "type": "loi",
+          "titre": "Loi relative aux violences faites spécifiquement aux femmes, aux violences au sein des couples et à leurs incidences sur les enfants",
+          "reference": "Loi n° 2010-769 du 9 juillet 2010",
+          "date": "2010-07-09",
+          "domaines": ["violence conjugale", "protection", "harcèlement"],
+          "source": "Légifrance",
+          "url": "https://www.legifrance.gouv.fr",
+          "resume": "Crée l'ordonnance de protection délivrée par le juge aux affaires familiales et le délit de harcèlement moral au sein du couple.",
+          "articles": [
+            {"numero": "C. civ. 515-9", "titre": "Ordonnance de protection", "contenu": "Lorsque des violences au sein du couple mettent en danger la victime ou les enfants, le juge aux affaires familiales peut délivrer en urgence une ordonnance de protection, même sans plainte pénale préalable."},
+            {"numero": "C. pén. 222-33-2-1", "titre": "Harcèlement moral dans le couple", "contenu": "Punit le fait de harceler son conjoint, partenaire ou ex-partenaire par des propos ou comportements répétés ayant pour effet une dégradation de ses conditions de vie et de sa santé."}
+          ],
+          "analyses": [
+            {"type": "force", "contenu": "L'ordonnance de protection est indépendante de la plainte pénale et doit être délivrée dans un délai court (six jours depuis la loi du 28 décembre 2019)."},
+            {"type": "lacune", "contenu": "Les associations relèvent un nombre d'ordonnances délivrées encore faible au regard des violences déclarées."}
+          ]
+        },
+        {
+          "id": "fr-code-penal",
+          "type": "code",
+          "titre": "Code pénal français (violences sexuelles et harcèlement)",
+          "reference": "Code pénal, articles 222-22 et suivants",
+          "date": "1994-03-01",
+          "domaines": ["violence sexuelle", "harcèlement", "pénal"],
+          "source": "Légifrance",
+          "url": "https://www.legifrance.gouv.fr",
+          "resume": "Réprime le viol, les agressions sexuelles et le harcèlement sexuel, avec des circonstances aggravantes lorsque l'auteur est le conjoint ou l'ex-conjoint.",
+          "articles": [
+            {"numero": "222-23", "titre": "Viol", "contenu": "Le viol est un crime. La qualité de conjoint de l'auteur est une circonstance aggravante et non une excuse."},
+            {"numero": "222-33", "titre": "Harcèlement sexuel", "contenu": "Punit le fait d'imposer de façon répétée des propos ou comportements à connotation sexuelle ou sexiste portant atteinte à la dignité, ou d'user de pressions graves dans le but d'obtenir un acte sexuel."}
+          ],
+          "analyses": [
+            {"type": "vigilance", "contenu": "La preuve du défaut de consentement reste souvent difficile : témoignages, messages et constatations médicales rapides sont essentiels."}
+          ]
+        }
+      ]
+    },
+    {
+      "pays": {"code": "MA", "nom_fr": "Maroc", "nom_ar": "المغرب", "region": "Afrique du Nord"},
+      "textes": [
+        {
+          "id": "ma-loi-103-13",
+          "type": "loi",
+          "titre": "Loi relative à la lutte contre les violences faites aux femmes",
+          "reference": "Loi n° 103-13, entrée en vigueur en septembre 2018",
+          "date": "2018-02-22",
+          "domaines": ["violence conjugale", "harcèlement", "protection"],
+          "source": "Bulletin officiel du Royaume du Maroc, 2018",
+          "resume": "Définit plusieurs formes de violence, criminalise le harcèlement sexuel dans l'espace public et certaines formes de cyber-harcèlement, et prévoit des mesures de protection et des cellules de prise en charge.",
+          "articles": [
+            {"numero": "Définitions", "titre": "Formes de violence", "contenu": "La loi vise la violence physique, sexuelle, psychologique et économique à l'égard des femmes."},
+            {"numero": "Harcèlement", "titre": "Harcèlement sexuel", "contenu": "Punit le harcèlement sexuel dans les espaces publics, par des écrits, des messages électroniques ou des enregistrements, avec aggravation si l'auteur a autorité sur la victime."},
+            {"numero": "Protection", "titre": "Mesures de protection", "contenu": "Prévoit des mesures telles que l'interdiction pour l'auteur de contacter ou d'approcher la victime."}
+          ],
+          "analyses": [
+            {"type": "lacune", "contenu": "Critiques d'ONG : absence d'incrimination explicite du viol conjugal et mesures de protection liées à l'existence d'une procédure pénale."},
+            {"type": "force", "contenu": "Première loi marocaine spécifique, qui reconnaît le harcèlement sexuel dans l'espace public."}
+          ]
+        }
+      ]
+    },
+    {
+      "pays": {"code": "DZ", "nom_fr": "Algérie", "nom_ar": "الجزائر", "region": "Afrique du Nord"},
+      "textes": [
+        {
+          "id": "dz-loi-15-19",
+          "type": "loi",
+          "titre": "Loi modifiant le Code pénal (violences à l'égard des femmes)",
+          "reference": "Loi n° 15-19 du 30 décembre 2015",
+          "date": "2015-12-30",
+          "domaines": ["violence conjugale", "harcèlement", "violence économique"],
+          "source": "Journal officiel de la République algérienne, 2015",
+          "resume": "Incrimine les violences conjugales physiques et psychologiques, le harcèlement dans l'espace public et certaines formes de violence économique.",
+          "articles": [
+            {"numero": "Violences conjugales", "titre": "Coups et blessures entre conjoints", "contenu": "Punit les violences volontaires commises par le conjoint ou l'ex-conjoint, avec des peines proportionnelles à la gravité des blessures."},
+            {"numero": "Harcèlement", "titre": "Harcèlement dans l'espace public", "contenu": "Punit toute agression portant atteinte à la pudeur d'une femme dans un lieu public, par des actes, paroles ou gestes."}
+          ],
+          "analyses": [
+            {"type": "lacune", "contenu": "« Clause du pardon » très critiquée : le pardon de la victime peut mettre fin aux poursuites ou réduire la peine, ce qui expose la victime aux pressions familiales."}
+          ]
+        }
+      ]
+    },
+    {
+      "pays": {"code": "ES", "nom_fr": "Espagne", "nom_ar": "إسبانيا", "region": "Europe"},
+      "textes": [
+        {
+          "id": "es-lo-1-2004",
+          "type": "loi organique",
+          "titre": "Loi organique de mesures de protection intégrale contre la violence de genre",
+          "reference": "Ley Orgánica 1/2004, de 28 de diciembre",
+          "date": "2004-12-28",
+          "domaines": ["violence conjugale", "protection", "tribunaux spécialisés"],
+          "source": "Boletín Oficial del Estado (BOE)",
+          "url": "https://www.boe.es",
+          "resume": "Loi de référence en Europe : tribunaux spécialisés dans la violence faite aux femmes, droits sociaux et économiques des victimes, mesures de sensibilisation et d'éducation.",
+          "articles": [
+            {"numero": "Tribunaux", "titre": "Juzgados de Violencia sobre la Mujer", "contenu": "Crée des juridictions spécialisées compétentes à la fois pour le volet pénal et pour le volet civil (garde, logement, pension)."},
+            {"numero": "Droits", "titre": "Droits des victimes", "contenu": "Garantit l'information, l'assistance sociale intégrale, l'aide juridique gratuite et des droits liés au travail (aménagement du temps de travail, mobilité)."}
+          ],
+          "analyses": [
+            {"type": "force", "contenu": "Juge unique pour le pénal et le civil : évite à la victime de multiplier les procédures."},
+            {"type": "lacune", "contenu": "Le champ initial était limité aux violences commises par le partenaire ou l'ex-partenaire ; d'autres lois l'ont depuis complété."}
+          ]
+        }
+      ]
+    },
+    {
+      "pays": {"code": "LB", "nom_fr": "Liban", "nom_ar": "لبنان", "region": "Moyen-Orient"},
+      "textes": [
+        {
+          "id": "lb-loi-293-2014",
+          "type": "loi",
+          "titre": "Loi sur la protection des femmes et des membres de la famille contre la violence domestique",
+          "reference": "Loi n° 293 de 2014",
+          "date": "2014-04-01",
+          "domaines": ["violence conjugale", "protection"],
+          "source": "Journal officiel libanais, 2014",
+          "resume": "Prévoit des ordonnances de protection et des sanctions contre la violence domestique, et crée des unités spécialisées au sein des forces de sécurité.",
+          "articles": [
+            {"numero": "Protection", "titre": "Ordonnance de protection", "contenu": "La victime peut obtenir une ordonnance de protection imposant notamment l'éloignement de l'auteur."}
+          ],
+          "analyses": [
+            {"type": "lacune", "contenu": "Critique majeure : le viol conjugal n'est pas incriminé en tant que tel ; seules les violences ou menaces commises pour obtenir des rapports sont visées."}
+          ]
+        }
+      ]
+    }
+  ]
+}

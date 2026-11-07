@@ -1,0 +1,16 @@
+# Dépendances de production (image Docker). Versions testées en local, bornées pour éviter
+# une mise à jour majeure surprise au prochain déploiement.
+numpy>=2.4,<3
+pandas>=3.0,<4
+scikit-learn>=1.8,<2
+joblib>=1.5,<2
+fastapi>=0.136,<1
+uvicorn>=0.46,<1
+pydantic>=2.13,<3
+httpx>=0.28,<1
+# Lecture des textes officiels (PDF) lors de la construction de la base
+pymupdf>=1.24,<2
+# Données Banque mondiale (Excel brut), si elles doivent être reconstruites
+openpyxl>=3.1,<4
+# Génération par Claude, active seulement si ANTHROPIC_API_KEY est définie
+anthropic>=0.70,<1

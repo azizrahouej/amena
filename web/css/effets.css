@@ -1,0 +1,89 @@
+/* Effets 3D / 4D / 5D. Les transformations restent au service de la lecture : amplitude
+   modérée, et tout est coupé avec prefers-reduced-motion. */
+
+/* --- 3D : cartes inclinables ----------------------------------------------------- */
+/* Sélecteurs renforcés : ils doivent l'emporter sur .revele.visible et sur les :hover existants. */
+.incline, .revele.visible.incline {
+  position: relative; transform-style: preserve-3d; will-change: transform;
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateZ(0);
+  transition: transform .5s cubic-bezier(.2, .7, .2, 1), box-shadow .3s, background .25s, border-color .25s, opacity .7s;
+}
+.incline.survol-3d, .revele.visible.incline.survol-3d, .incline.survol-3d:hover {
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) translateZ(14px);
+  transition: transform .08s linear, box-shadow .3s, background .25s, border-color .25s;
+  box-shadow: 0 28px 60px rgba(28, 20, 8, .22), 0 0 0 1px rgba(214, 178, 94, .25);
+  z-index: 2;
+}
+.incline > :not(.reflet) { transform: translateZ(0); }
+.incline.survol-3d .icone-domaine, .incline.survol-3d .icone-ronde, .incline.survol-3d h3,
+.incline.survol-3d .valeur, .incline.survol-3d b { transform: translateZ(34px); transition: transform .3s; }
+.reflet {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 236, 190, .35), transparent 45%);
+  mix-blend-mode: soft-light;
+}
+.incline.survol-3d .reflet { opacity: 1; }
+:root[data-theme="sombre"] .reflet { mix-blend-mode: screen; background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(214, 178, 94, .18), transparent 45%); }
+
+/* --- 5D : projecteur qui suit le curseur ------------------------------------------------ */
+.projecteur { position: relative; }
+.projecteur::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: 0; transition: opacity .4s;
+  background: radial-gradient(420px circle at var(--sx, 50%) var(--sy, 50%), rgba(244, 214, 140, .14), transparent 60%);
+}
+.projecteur:hover::after { opacity: 1; }
+.projecteur > * { position: relative; z-index: 1; }
+.heros-cabinet.projecteur > .bokeh, .heros-cabinet.projecteur > .colonnes-deco,
+.heros-cabinet.projecteur > .poussiere-or, .heros-cabinet.projecteur > .palais-fond { position: absolute; z-index: 0; }
+
+/* --- 5D : boutons aimantés --------------------------------------------------------------- */
+.bouton-primaire, .bouton-rond.principal { transition: transform .25s cubic-bezier(.2, .7, .2, 1), filter .15s, box-shadow .25s; }
+.bouton-primaire:hover { box-shadow: 0 10px 34px rgba(193, 154, 69, .45); }
+
+/* --- 4D : poussière d'or, palais en parallaxe ---------------------------------------------- */
+.poussiere-or { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; mix-blend-mode: screen; }
+.palais-fond { position: absolute; inset-inline-end: -4%; bottom: -2%; width: min(760px, 62vw); opacity: .13; pointer-events: none;
+  filter: drop-shadow(0 0 30px rgba(214, 178, 94, .25)); }
+[dir="rtl"] .palais-fond { transform: scaleX(-1); }
+.zellige-fond { background-image: url("/static/img/zellige.svg"); background-size: 80px; }
+.bandeau-nuit { position: relative; overflow: hidden; }
+.bandeau-nuit::before { content: ""; position: absolute; inset: 0; background-image: url("/static/img/zellige.svg");
+  background-size: 90px; opacity: .06; pointer-events: none; }
+
+/* --- 4D : révélations en 3D au défilement --------------------------------------------------- */
+.revele { transform: perspective(1000px) rotateX(16deg) translateY(46px) scale(.97); transform-origin: 50% 100%; }
+.revele.visible { transform: none; }
+/* Transition de page en profondeur */
+.contenu > * { animation: entree-3d .6s cubic-bezier(.2, .7, .2, 1) both; transform-origin: 50% 0; }
+@keyframes entree-3d {
+  from { opacity: 0; transform: perspective(1200px) rotateX(-6deg) translateY(24px) translateZ(-60px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* --- 4D : barre de progression ------------------------------------------------------------- */
+.progression-page { position: fixed; inset-inline: 0; top: 0; height: 3px; z-index: 60; transform-origin: 0 50%; transform: scaleX(0);
+  background: linear-gradient(90deg, var(--or-profond, #8a6a22), var(--or-vif, #d6b25e), #fff3c4); pointer-events: none; }
+[dir="rtl"] .progression-page { transform-origin: 100% 50%; }
+
+/* --- Illustrations ----------------------------------------------------------------------------- */
+.illustration-3d { position: relative; display: grid; place-items: center; padding: 18px; border-radius: var(--rayon);
+  background: radial-gradient(circle at 50% 40%, rgba(214, 178, 94, .16), transparent 65%); }
+.illustration-3d img { width: 100%; height: auto; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .28)); animation: flotte 7s ease-in-out infinite; }
+@keyframes flotte { 50% { transform: translateY(-10px) rotate(-1deg); } }
+.illustration-section { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center; }
+@media (max-width: 1020px) { .illustration-section { grid-template-columns: 1fr; } .palais-fond { width: 90vw; opacity: .08; } }
+
+.etapes-romaines.verticales { grid-template-columns: 1fr; gap: 22px; }
+.etapes-romaines.verticales .etape-romaine { display: flex; gap: 22px; align-items: flex-start; padding: 22px 24px; border: 1px solid var(--bordure);
+  border-radius: var(--rayon); background: var(--surface); }
+.etapes-romaines.verticales .etape-romaine b { margin: 0; min-width: 48px; }
+.bouclier-engagements { width: 96px; height: auto; filter: drop-shadow(0 12px 24px rgba(0, 0, 0, .4)); animation: flotte 7s ease-in-out infinite; }
+.porte-appel { width: 74px; height: auto; filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .45)); }
+.illustration-entete { width: 120px; height: auto; float: inline-end; margin-inline-start: 18px; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, .25)); }
+@media (max-width: 720px) { .illustration-entete { width: 80px; } .porte-appel { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .incline, .incline.survol-3d { transform: none !important; }
+  .revele { transform: none; }
+  .illustration-3d img { animation: none; }
+}

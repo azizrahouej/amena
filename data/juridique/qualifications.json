@@ -1,0 +1,170 @@
+{
+  "_description": "Base d'expertise du mode « analyse juridique ». Chaque situation type associe des indices textuels (normalisés : minuscules, sans accents), une qualification, les textes applicables, les preuves utiles, les démarches, les délais et les points de vigilance. Rédigée pour le droit tunisien ; à faire valider par un juriste.",
+  "situations": [
+    {
+      "id": "violence_physique",
+      "libelle": "Violences physiques",
+      "indices": ["frapp", "coup", "gifl", "bless", "pouss", "tape", "cogne", "bat ", "yadhrab", "ya3tini", "dharb", "يضرب", "ضرب", "صفع"],
+      "qualification": "Violences volontaires, aggravées lorsque l'auteur est le conjoint, l'ex-conjoint ou le fiancé.",
+      "textes": [["tn-code-penal", "218"], ["tn-loi-2017-58", "Pénal"]],
+      "preuves": ["Certificat médical initial précisant la durée d'incapacité", "Photos des blessures, datées", "Témoignages de voisins ou de proches", "Plaintes ou mains courantes antérieures"],
+      "demarches": ["Se mettre en sécurité ; en danger immédiat, appeler le 197 ou le 193", "Faire constater les blessures aux urgences ou chez un médecin", "Déposer plainte auprès de l'unité spécialisée ou du procureur de la République", "Demander une ordonnance de protection au juge de la famille"],
+      "delais": ["Certificat médical : le plus tôt possible, les traces disparaissent", "Prescription d'un délit : de l'ordre de 3 ans (à vérifier selon la qualification)"],
+      "vigilance": ["La gravité retenue dépend de la durée d'incapacité fixée par le certificat", "Le retrait de plainte peut arrêter les poursuites dans certains cas : ne jamais décider sous la pression", "Conserver une copie de chaque document hors du domicile"]
+    },
+    {
+      "id": "violence_psychologique",
+      "libelle": "Violences psychologiques et menaces",
+      "indices": ["insult", "humili", "rabaiss", "menac", "chantage", "crie", "hurle", "controle", "jaloux", "isole", "y7a9arni", "ysabb", "يهدد", "يشتم", "يحتقر"],
+      "qualification": "Violence morale ou psychologique au sens de la loi organique 2017-58 ; les menaces peuvent constituer une infraction distincte.",
+      "textes": [["tn-loi-2017-58", "Définitions"], ["tn-loi-2017-58", "Pénal"]],
+      "preuves": ["Messages, courriels et enregistrements de menaces", "Journal daté des faits", "Attestation d'un psychologue ou d'un médecin", "Témoignages"],
+      "demarches": ["Noter chaque épisode (date, propos, témoins)", "Consulter une association ou le 1899 pour être accompagnée", "Déposer plainte ; demander une ordonnance de protection si le danger augmente"],
+      "delais": ["Agir avant l'escalade : la violence psychologique précède souvent la violence physique"],
+      "vigilance": ["La preuve est plus difficile que pour des coups : la régularité des preuves écrites est décisive", "Ne pas effacer les messages, même blessants"]
+    },
+    {
+      "id": "violence_sexuelle",
+      "libelle": "Violences sexuelles",
+      "indices": ["viol", "agress sexuel", "relation sexuelle", "rapport force", "force a avoir", "attouch", "اغتصاب", "اعتداء جنسي", "يجبرني"],
+      "qualification": "Viol ou agression sexuelle ; depuis 2017, le viol couvre tout acte de pénétration sexuelle sans consentement.",
+      "textes": [["tn-code-penal", "227"], ["tn-loi-2017-58", "Définitions"], ["int-istanbul", "36"]],
+      "preuves": ["Examen médico-légal le plus vite possible, avant de se laver si c'est possible", "Vêtements conservés dans un sac en papier", "Messages avant et après les faits", "Témoignages de personnes à qui la victime a parlé"],
+      "demarches": ["Se rendre aux urgences ; appeler le 190 si besoin", "Déposer plainte auprès de l'unité spécialisée ou du procureur", "Demander un accompagnement psychologique et juridique (association, 1899)"],
+      "delais": ["Les preuves biologiques se dégradent en quelques heures à quelques jours", "Le viol est un crime : délai de prescription plus long qu'un délit (à vérifier)"],
+      "vigilance": ["Le viol conjugal n'est pas nommé explicitement par la loi tunisienne : l'appui d'un avocat est fortement recommandé", "Le consentement passé ne vaut pas consentement présent"]
+    },
+    {
+      "id": "violence_economique",
+      "libelle": "Violence économique et pension alimentaire",
+      "indices": ["salaire", "argent", "pension", "nafa9a", "flous", "travailler", "confisque", "depenses", "نفقه", "راتب", "فلوس", "مال"],
+      "qualification": "Violence économique (loi 2017-58) ; le non-paiement d'une pension fixée par jugement est une infraction.",
+      "textes": [["tn-loi-2017-58", "Définitions"], ["tn-csp", "Pension"]],
+      "preuves": ["Relevés bancaires, fiches de paie", "Jugement fixant la pension", "Preuves des dépenses du foyer assumées seule", "Messages où il refuse ou conditionne l'argent"],
+      "demarches": ["Demander la fixation de la pension au juge de la famille", "En cas de non-paiement, déposer plainte et solliciter le fonds de garantie de la pension alimentaire", "Ouvrir un compte personnel si possible"],
+      "delais": ["Agir dès les premiers impayés pour éviter l'accumulation"],
+      "vigilance": ["Sans jugement préalable fixant la pension, le délit de non-paiement est difficile à caractériser"]
+    },
+    {
+      "id": "harcelement_sexuel",
+      "libelle": "Harcèlement sexuel (travail, rue)",
+      "indices": ["harcel", "propos deplac", "messages deplac", "gestes deplac", "avances", "dans la rue", "me touche", "تحرش"],
+      "qualification": "Harcèlement sexuel, aggravé si l'auteur a autorité sur la victime ; le harcèlement dans l'espace public est aussi puni.",
+      "textes": [["tn-code-penal", "226 ter"], ["tn-loi-2017-58", "Pénal"]],
+      "preuves": ["Messages, courriels, captures d'écran", "Témoignages de collègues", "Journal daté des faits", "Signalements internes (ressources humaines, syndicat)"],
+      "demarches": ["Documenter chaque fait", "Informer l'inspection du travail ou le syndicat", "Déposer plainte"],
+      "delais": ["Le harcèlement suppose des faits répétés : commencer à documenter dès le premier épisode"],
+      "vigilance": ["Les représailles professionnelles sont fréquentes : garder des copies de ses évaluations et documents de travail"]
+    },
+    {
+      "id": "cyber_violence",
+      "libelle": "Cyber-violence et diffusion d'images",
+      "indices": ["facebook", "instagram", "tiktok", "whatsapp", "photo", "video", "en ligne", "internet", "reseaux", "publie", "diffuse", "tsawri", "صور", "فيديو", "فايسبوك"],
+      "qualification": "Atteinte à la vie privée, harcèlement ou chantage en ligne ; plusieurs textes peuvent s'appliquer.",
+      "textes": [["tn-loi-2004-63", "Principe"], ["tn-dl-2022-54", "Objet"], ["tn-code-penal", "226 ter"]],
+      "preuves": ["Captures d'écran avec date, nom du profil et adresse de la page", "Liens des publications", "Messages de chantage"],
+      "demarches": ["Ne pas supprimer les échanges et ne pas répondre au chantage", "Signaler le contenu à la plateforme après avoir conservé les preuves", "Déposer plainte ; saisir l'INPDP pour l'atteinte aux données"],
+      "delais": ["Faire les captures immédiatement : un contenu peut être supprimé à tout moment"],
+      "vigilance": ["Signaler avant d'avoir capturé les preuves fait perdre l'élément central du dossier"]
+    },
+    {
+      "id": "sequestration",
+      "libelle": "Séquestration et privation de liberté",
+      "indices": ["enferm", "sakker", "pris mon telephone", "passeport", "interdit de sortir", "حبس", "منعني من الخروج"],
+      "qualification": "Atteinte à la liberté ; la confiscation des papiers peut relever de la traite dans certains contextes.",
+      "textes": [["tn-loi-2017-58", "Définitions"], ["tn-loi-2016-61", "Définition"]],
+      "preuves": ["Témoignages", "Messages envoyés à des proches", "Preuve de la confiscation des documents"],
+      "demarches": ["En danger : appeler le 197 ou le 193", "Signaler la confiscation de papiers", "Contacter une association pour un hébergement"],
+      "delais": ["Situation d'urgence : agir immédiatement"],
+      "vigilance": ["Préparer une copie des papiers d'identité et la confier à une personne de confiance"]
+    },
+    {
+      "id": "enfants",
+      "libelle": "Enfants exposés ou victimes",
+      "indices": ["enfant", "fils", "fille", "wled", "bnat", "اطفال", "ابني", "ابنتي"],
+      "qualification": "L'exposition des enfants à la violence est une violence à leur égard ; l'intérêt supérieur de l'enfant guide les décisions de garde.",
+      "textes": [["int-cde", "19"], ["int-cde", "3"], ["tn-csp", "Garde"]],
+      "preuves": ["Attestations scolaires ou médicales", "Témoignages sur l'exposition des enfants"],
+      "demarches": ["Saisir le délégué à la protection de l'enfance", "Demander dans l'ordonnance de protection des mesures pour les enfants", "Demander la garde provisoire au juge de la famille"],
+      "delais": ["Agir sans attendre si l'enfant est en danger"],
+      "vigilance": ["Quitter le domicile avec les enfants doit être accompagné d'une démarche auprès du juge pour éviter un reproche ultérieur"]
+    },
+    {
+      "id": "divorce",
+      "libelle": "Divorce et séparation",
+      "indices": ["divorc", "separer", "quitter", "talak", "طلاق", "انفصال"],
+      "qualification": "Divorce judiciaire : par consentement mutuel, pour préjudice, ou par volonté unilatérale.",
+      "textes": [["tn-csp", "30-31"], ["tn-csp", "Pension"], ["tn-csp", "Garde"]],
+      "preuves": ["Preuves des violences pour un divorce pour préjudice", "Documents sur les revenus des deux époux"],
+      "demarches": ["Consulter un avocat (aide juridictionnelle possible)", "Saisir le tribunal de première instance", "Demander des mesures provisoires : garde, pension, logement"],
+      "delais": ["Les mesures provisoires peuvent être demandées dès le début de la procédure"],
+      "vigilance": ["La période de séparation est souvent la plus dangereuse : préparer un plan de sécurité"]
+    },
+    {
+      "id": "travail_licenciement",
+      "libelle": "Travail : licenciement, salaire, discrimination",
+      "indices": ["licenci", "renvoy", "vire", "employeur", "salaire impaye", "pas paye", "enceinte", "maternite", "contrat de travail", "prud", "khedma", "patron ma", "طرد", "العمل", "مشغل"],
+      "qualification": "Litige du travail : licenciement sans cause réelle et sérieuse, salaire impayé ou discrimination liée au sexe ou à la maternité.",
+      "textes": [["tn-code-travail", "Licenciement"], ["tn-code-travail", "Non-discrimination"], ["tn-code-travail", "Maternité"], ["int-cedaw", "11"]],
+      "preuves": ["Contrat de travail ou preuve de l'emploi (badge, attestations, messages)", "Fiches de paie et relevés bancaires", "Lettre ou message de licenciement", "Témoignages de collègues"],
+      "demarches": ["Demander par écrit le motif du licenciement ou le paiement du salaire", "Saisir l'inspection du travail pour une tentative de conciliation", "À défaut d'accord, saisir le conseil de prud'hommes", "Demander l'aide judiciaire si les revenus sont insuffisants"],
+      "delais": ["Agir vite : les délais pour contester un licenciement sont courts (à vérifier auprès de l'inspection du travail)"],
+      "vigilance": ["Ne pas signer de reçu « pour solde de tout compte » ou de démission sous la pression", "Garder des copies de tous les documents hors du lieu de travail"]
+    },
+    {
+      "id": "travail_domestique",
+      "libelle": "Travail domestique et exploitation",
+      "indices": ["femme de menage", "aide menagere", "domestique", "bonne", "passeport confisque", "papiers confisques", "pas le droit de sortir", "migrante", "خادمة", "معينة منزلية"],
+      "qualification": "Travail domestique non conforme à la loi de 2021 ; la confiscation des papiers ou la privation de liberté peuvent relever de la traite des personnes.",
+      "textes": [["tn-loi-2021-37", "Contrat"], ["tn-loi-2021-37", "Mineurs"], ["tn-loi-2016-61", "Définition"], ["tn-loi-2016-61", "Victimes"]],
+      "preuves": ["Tout écrit sur l'emploi (messages, transferts d'argent)", "Témoignages", "Photos du passeport ou des papiers avant leur confiscation"],
+      "demarches": ["En danger ou enfermée : appeler le 197 ou le 193", "Contacter l'Instance nationale de lutte contre la traite ou une association", "Déposer plainte ; demander l'aide judiciaire et l'hébergement"],
+      "delais": ["Situation urgente si les papiers sont confisqués ou si la sortie est interdite"],
+      "vigilance": ["Une victime de traite n'est pas poursuivie pour les infractions qu'elle a été contrainte de commettre (loi 2016-61)"]
+    },
+    {
+      "id": "logement",
+      "libelle": "Logement : expulsion, bail, domicile conjugal",
+      "indices": ["logement", "loyer", "bail", "proprietaire", "expuls", "chasse", "dehors", "domicile conjugal", "kharejni", "كراء", "طردني", "المسكن"],
+      "qualification": "Question de logement : obligations du bail, ou éviction de la femme du domicile conjugal, que l'ordonnance de protection peut empêcher.",
+      "textes": [["tn-coc", "Bail"], ["tn-loi-2017-58", "Protection"], ["tn-loi-98-91", "Choix"]],
+      "preuves": ["Contrat de bail, quittances de loyer", "Acte de propriété et régime matrimonial (acte de mariage)", "Messages ou témoins de l'expulsion"],
+      "demarches": ["Si le conjoint violent vous met dehors : demander une ordonnance de protection qui l'oblige à quitter le domicile", "Pour un litige de bail : mise en demeure écrite puis saisine du tribunal", "Le 1899 peut orienter vers un hébergement d'urgence"],
+      "delais": ["Une expulsion par un propriétaire suppose une décision de justice : ne pas quitter les lieux sans écrit"],
+      "vigilance": ["En séparation des biens, le logement acheté au seul nom du mari lui appartient : prouver sa propre contribution"]
+    },
+    {
+      "id": "dettes_contrainte",
+      "libelle": "Dettes et contrats signés sous la contrainte",
+      "indices": ["dette", "credit", "pret", "signer de force", "force a signer", "cheque", "banque", "kredi", "دين", "قرض", "امضاء"],
+      "qualification": "Un contrat ou un engagement obtenu par la contrainte ou la tromperie peut être annulé ; l'obligation de contracter des dettes est aussi une forme de violence économique.",
+      "textes": [["tn-coc", "Consentement"], ["tn-loi-2017-58", "Définitions"]],
+      "preuves": ["Copie du contrat ou de la reconnaissance de dette", "Messages montrant la pression", "Relevés bancaires"],
+      "demarches": ["Ne rien payer ni signer de nouveau avant d'avoir consulté un avocat", "Demander l'aide judiciaire", "Saisir le tribunal pour l'annulation de l'engagement"],
+      "delais": ["Les actions en annulation sont enfermées dans des délais : consulter rapidement"],
+      "vigilance": ["Un chèque sans provision a des conséquences pénales : ne jamais signer de chèque sous la pression"]
+    },
+    {
+      "id": "discrimination",
+      "libelle": "Discrimination raciale ou liée à l'origine",
+      "indices": ["racis", "couleur de peau", "noire", "insulte raciste", "discrimin", "migrante", "عنصري", "تمييز"],
+      "qualification": "Discrimination ou propos racistes, sanctionnés par la loi organique 2018-50.",
+      "textes": [["tn-loi-2018-50", "Définition"], ["tn-loi-2018-50", "Sanctions"]],
+      "preuves": ["Enregistrements, messages, captures d'écran", "Témoignages", "Refus écrits (logement, emploi, service)"],
+      "demarches": ["Documenter les faits avec date et lieu", "Déposer plainte", "Contacter une association de défense des droits"],
+      "delais": ["Conserver les preuves immédiatement"],
+      "vigilance": ["Les propos racistes en ligne restent punissables : capturer la page avant qu'elle soit supprimée"]
+    },
+    {
+      "id": "acces_avocat",
+      "libelle": "Accès à un avocat et frais de justice",
+      "indices": ["avocat gratuit", "pas les moyens", "payer un avocat", "frais de justice", "aide judiciaire", "aide juridictionnelle", "محامي", "مجانا"],
+      "qualification": "Droit à l'aide judiciaire : l'État peut prendre en charge l'avocat et les frais de justice.",
+      "textes": [["tn-aide-juridictionnelle", "Bénéficiaires"], ["tn-aide-juridictionnelle", "Demande"], ["tn-loi-2017-58", "Droits"]],
+      "preuves": ["Pièce d'identité", "Justificatifs de revenus ou attestation de non-imposition", "Documents de l'affaire"],
+      "demarches": ["Se rendre au bureau d'aide judiciaire du tribunal de première instance", "Déposer la demande avec les justificatifs", "Un avocat est désigné ; lui remettre le dossier préparé avec AMENA"],
+      "delais": ["Faire la demande avant d'engager des frais"],
+      "vigilance": ["Les associations (ATFD, centres d'écoute) peuvent aussi accompagner gratuitement"]
+    }
+  ]
+}

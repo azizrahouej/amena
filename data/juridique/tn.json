@@ -1,0 +1,157 @@
+{
+  "pays": {"code": "TN", "nom_fr": "Tunisie", "nom_ar": "تونس", "region": "Afrique du Nord"},
+  "textes": [
+    {
+      "id": "tn-loi-2017-58",
+      "type": "loi organique",
+      "titre": "Loi organique relative à l'élimination de la violence à l'égard des femmes",
+      "reference": "Loi organique n° 2017-58 du 11 août 2017",
+      "date": "2017-08-11",
+      "domaines": ["violence conjugale", "violence sexuelle", "violence économique", "harcèlement", "procédure", "protection"],
+      "source": "Journal officiel de la République tunisienne (JORT), août 2017",
+      "resume": "Loi-cadre qui définit cinq formes de violence (physique, morale, sexuelle, économique, politique), organise la prévention, la protection et la prise en charge des victimes, crée des unités spécialisées et institue l'ordonnance de protection.",
+      "articles": [
+        {"numero": "Définitions", "titre": "Les formes de violence", "contenu": "La loi reconnaît la violence physique, morale ou psychologique, sexuelle, économique et politique. La violence économique couvre notamment la privation de ressources, le contrôle du salaire et l'interdiction de travailler."},
+        {"numero": "Champ", "titre": "Personnes protégées", "contenu": "La loi protège toute femme, quel que soit son lien avec l'auteur (conjoint, ex-conjoint, fiancé, membre de la famille, employeur, inconnu), ainsi que les enfants qui l'accompagnent."},
+        {"numero": "Droits", "titre": "Droits de la victime", "contenu": "La victime a droit à l'information juridique, à l'aide juridictionnelle, à une prise en charge sanitaire et psychologique, à un hébergement d'urgence et à la protection de sa vie privée."},
+        {"numero": "Unités", "titre": "Unités spécialisées", "contenu": "Des unités spécialisées dans les enquêtes sur la violence à l'égard des femmes sont créées au sein de la police et de la garde nationale dans chaque gouvernorat. Les agents qui font pression sur la victime pour qu'elle retire sa plainte s'exposent à des sanctions."},
+        {"numero": "Protection", "titre": "Ordonnance de protection", "contenu": "Le juge de la famille peut prononcer une ordonnance de protection : interdiction d'approcher la victime et les enfants, éviction du domicile, interdiction de contact, garde provisoire et pension. Sa violation est une infraction pénale."},
+        {"numero": "Pénal", "titre": "Aggravation des peines", "contenu": "Les peines sont aggravées lorsque la violence est commise par le conjoint, l'ex-conjoint, un ascendant ou une personne ayant autorité sur la victime. La loi punit aussi le harcèlement sexuel dans l'espace public et la discrimination salariale."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Approche globale : prévention, protection, poursuites et prise en charge sont traitées dans un même texte, avec une définition large de la violence."},
+        {"type": "force", "contenu": "Suppression de la possibilité pour l'auteur d'un acte sexuel sur une mineure d'échapper aux poursuites en l'épousant."},
+        {"type": "lacune", "contenu": "Critique fréquente des associations : le viol conjugal n'est pas nommé explicitement, ce qui laisse place à des interprétations divergentes."},
+        {"type": "lacune", "contenu": "Mise en œuvre inégale selon les régions : nombre de centres d'hébergement, moyens des unités spécialisées et formation des intervenants jugés insuffisants."},
+        {"type": "vigilance", "contenu": "Dans certaines infractions de violence conjugale, le retrait de la plainte peut arrêter les poursuites : une décision à ne jamais prendre sous la pression."}
+      ]
+    },
+    {
+      "id": "tn-code-penal",
+      "type": "code",
+      "titre": "Code pénal tunisien (dispositions relatives aux violences)",
+      "reference": "Code pénal, promulgué par décret du 9 juillet 1913, modifié notamment par la loi organique 2017-58",
+      "date": "1913-07-09",
+      "domaines": ["violence conjugale", "violence sexuelle", "harcèlement", "pénal"],
+      "source": "Code pénal tunisien, version consolidée (JORT)",
+      "resume": "Le Code pénal réprime les violences volontaires, le harcèlement sexuel et les violences sexuelles. Plusieurs articles ont été réécrits en 2017 pour renforcer la protection des femmes et des enfants.",
+      "articles": [
+        {"numero": "218", "titre": "Violences volontaires", "contenu": "Punit les coups, blessures et violences volontaires. La peine est aggravée lorsque l'auteur est le conjoint, l'ex-conjoint, le fiancé ou une personne ayant autorité sur la victime."},
+        {"numero": "226 ter", "titre": "Harcèlement sexuel", "contenu": "Punit le harcèlement sexuel, c'est-à-dire des actes, paroles ou gestes répétés à connotation sexuelle portant atteinte à la dignité ou visant à obtenir des faveurs sexuelles. La peine est aggravée lorsque l'auteur a autorité sur la victime."},
+        {"numero": "227", "titre": "Viol", "contenu": "Depuis 2017, le viol est défini largement comme tout acte de pénétration sexuelle, de quelque nature qu'il soit, commis sur une personne sans son consentement."},
+        {"numero": "227 bis", "titre": "Atteinte sexuelle sur mineur", "contenu": "Réprime les actes sexuels sur un enfant. La loi de 2017 a abrogé la règle qui permettait d'arrêter les poursuites si l'auteur épousait la victime."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Définition du viol désormais neutre et large, qui ne se limite plus à un seul type d'acte."},
+        {"type": "vigilance", "contenu": "La qualification dépend souvent de la durée d'incapacité fixée par le certificat médical : le faire établir rapidement est déterminant."},
+        {"type": "vigilance", "contenu": "Le harcèlement exige des faits répétés : il faut documenter chaque épisode (date, lieu, témoins, messages)."}
+      ]
+    },
+    {
+      "id": "tn-csp",
+      "type": "code",
+      "titre": "Code du statut personnel",
+      "reference": "Décret du 13 août 1956 portant promulgation du Code du statut personnel",
+      "date": "1956-08-13",
+      "domaines": ["mariage", "divorce", "garde des enfants", "pension alimentaire", "famille"],
+      "source": "Code du statut personnel, version consolidée (JORT)",
+      "resume": "Texte fondateur du droit de la famille tunisien : consentement au mariage, interdiction de la polygamie, divorce exclusivement judiciaire, pension alimentaire et garde des enfants.",
+      "articles": [
+        {"numero": "3", "titre": "Consentement", "contenu": "Le mariage n'est formé que par le consentement des deux époux."},
+        {"numero": "5", "titre": "Âge du mariage", "contenu": "Fixe l'âge minimum du mariage à 18 ans pour les deux sexes, sauf autorisation judiciaire exceptionnelle."},
+        {"numero": "18", "titre": "Interdiction de la polygamie", "contenu": "La polygamie est interdite et pénalement punie."},
+        {"numero": "30-31", "titre": "Divorce judiciaire", "contenu": "Le divorce ne peut être prononcé que par le tribunal. Il peut être demandé par consentement mutuel, pour préjudice subi, ou par la volonté de l'un des époux."},
+        {"numero": "Pension", "titre": "Pension alimentaire", "contenu": "Le père doit l'entretien des enfants et, dans les cas prévus, de l'épouse. Le défaut de paiement de la pension fixée par jugement est sanctionné pénalement. Un fonds de garantie de la pension alimentaire peut intervenir en cas de non-paiement."},
+        {"numero": "Garde", "titre": "Garde des enfants (hadhana)", "contenu": "Le juge attribue la garde en considérant l'intérêt supérieur de l'enfant."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Divorce judiciaire et interdiction de la polygamie : des acquis pionniers dans la région depuis 1956."},
+        {"type": "lacune", "contenu": "Les associations relèvent des inégalités persistantes, notamment en matière d'héritage et de tutelle."},
+        {"type": "vigilance", "contenu": "En cas de violences, invoquer le préjudice (divorce pour préjudice) suppose d'en apporter la preuve : certificats, plaintes, témoignages."}
+      ]
+    },
+    {
+      "id": "tn-cpp-prescription",
+      "type": "code",
+      "titre": "Code de procédure pénale : délais de prescription",
+      "reference": "Code de procédure pénale",
+      "date": "1968-07-24",
+      "domaines": ["procédure", "délais"],
+      "source": "Code de procédure pénale tunisien (JORT) — délais à vérifier pour chaque infraction",
+      "resume": "L'action publique s'éteint après un certain délai qui dépend de la gravité de l'infraction : environ 10 ans pour un crime, 3 ans pour un délit, 1 an pour une contravention.",
+      "articles": [
+        {"numero": "5", "titre": "Prescription de l'action publique", "contenu": "Les délais de prescription sont fixés selon la nature de l'infraction : crime, délit ou contravention. Certains actes de procédure interrompent la prescription."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Ne pas attendre : plus la plainte est tardive, plus les preuves sont difficiles à réunir et plus le risque de prescription augmente."}
+      ]
+    },
+    {
+      "id": "tn-loi-2016-61",
+      "type": "loi organique",
+      "titre": "Loi organique relative à la prévention et à la lutte contre la traite des personnes",
+      "reference": "Loi organique n° 2016-61 du 3 août 2016",
+      "date": "2016-08-03",
+      "domaines": ["traite", "travail domestique", "exploitation"],
+      "source": "JORT, août 2016",
+      "resume": "Réprime la traite des personnes (exploitation sexuelle, travail forcé, servitude, mendicité forcée) et crée une instance nationale de lutte contre la traite.",
+      "articles": [
+        {"numero": "Définition", "titre": "Traite des personnes", "contenu": "Constitue la traite le recrutement, le transport ou l'hébergement d'une personne par la force, la menace, la ruse ou l'abus d'une situation de vulnérabilité, en vue de son exploitation."},
+        {"numero": "Victimes", "titre": "Protection des victimes", "contenu": "Les victimes ont droit à l'assistance, à l'hébergement et à l'aide juridictionnelle, et ne sont pas poursuivies pour les infractions qu'elles ont été contraintes de commettre."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Les travailleuses domestiques, notamment migrantes ou mineures, sont particulièrement exposées : la confiscation du passeport est un signal d'alerte."}
+      ]
+    },
+    {
+      "id": "tn-loi-2004-63",
+      "type": "loi organique",
+      "titre": "Loi organique relative à la protection des données à caractère personnel",
+      "reference": "Loi organique n° 2004-63 du 27 juillet 2004",
+      "date": "2004-07-27",
+      "domaines": ["vie privée", "données personnelles", "harcèlement en ligne"],
+      "source": "JORT, juillet 2004",
+      "resume": "Protège les données à caractère personnel et crée l'Instance nationale de protection des données personnelles (INPDP). Les données relatives à la santé ou à la vie sexuelle sont particulièrement protégées.",
+      "articles": [
+        {"numero": "Principe", "titre": "Protection de la vie privée", "contenu": "Le traitement des données personnelles doit respecter la dignité, la vie privée et les libertés de la personne."},
+        {"numero": "INPDP", "titre": "Instance nationale", "contenu": "L'INPDP reçoit les plaintes relatives aux atteintes aux données personnelles."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "La diffusion d'images ou d'informations intimes sans consentement peut relever à la fois du pénal et de la protection des données : conserver les preuves avant tout signalement."}
+      ]
+    },
+    {
+      "id": "tn-dl-2022-54",
+      "type": "décret-loi",
+      "titre": "Décret-loi relatif à la lutte contre les infractions se rapportant aux systèmes d'information et de communication",
+      "reference": "Décret-loi n° 2022-54 du 13 septembre 2022",
+      "date": "2022-09-13",
+      "domaines": ["harcèlement en ligne", "cybercriminalité"],
+      "source": "JORT, septembre 2022",
+      "resume": "Encadre la cybercriminalité : accès frauduleux, atteintes aux systèmes et aux données, diffusion de contenus. Il peut être mobilisé contre certaines formes de cyber-violence.",
+      "articles": [
+        {"numero": "Objet", "titre": "Infractions numériques", "contenu": "Prévoit des infractions liées à l'usage des systèmes d'information, dont certaines diffusions de contenus portant atteinte à autrui."}
+      ],
+      "analyses": [
+        {"type": "lacune", "contenu": "Plusieurs organisations de défense des libertés critiquent certaines dispositions de ce texte pour leurs effets sur la liberté d'expression."},
+        {"type": "vigilance", "contenu": "Pour une cyber-violence, faire des captures d'écran datées (profil, message, URL) avant de signaler le compte."}
+      ]
+    },
+    {
+      "id": "tn-constitution",
+      "type": "constitution",
+      "titre": "Constitution : égalité et protection des femmes",
+      "reference": "Constitution de 2014 (art. 46), dispositions reprises dans la Constitution de 2022 — numérotation à vérifier",
+      "date": "2014-01-27",
+      "domaines": ["égalité", "droits fondamentaux"],
+      "source": "Constitution de la République tunisienne",
+      "resume": "La Constitution engage l'État à protéger les droits acquis des femmes, à garantir l'égalité des chances et à prendre les mesures nécessaires pour éliminer la violence à l'égard des femmes.",
+      "articles": [
+        {"numero": "46 (2014)", "titre": "Droits des femmes", "contenu": "L'État s'engage à protéger les droits acquis de la femme, à garantir l'égalité des chances entre la femme et l'homme et à prendre les mesures nécessaires pour éliminer la violence contre la femme."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Fondement constitutionnel qui a servi de base à l'adoption de la loi organique 2017-58."}
+      ]
+    }
+  ]
+}

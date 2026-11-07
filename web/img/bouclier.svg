@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 340" fill="none">
+  <!-- Bouclier de protection, balance et rameaux de laurier. Illustration originale AMENA. -->
+  <defs>
+    <linearGradient id="or" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4dc9c"/><stop offset=".55" stop-color="#c69c45"/><stop offset="1" stop-color="#7a5a1c"/>
+    </linearGradient>
+    <radialGradient id="fond" cx=".5" cy=".35" r=".7">
+      <stop offset="0" stop-color="#3a2f22"/><stop offset="1" stop-color="#15110d"/>
+    </radialGradient>
+  </defs>
+  <path d="M160 18 46 62v86c0 82 52 140 114 172 62-32 114-90 114-172V62Z" fill="url(#fond)" stroke="url(#or)" stroke-width="4"/>
+  <path d="M160 40 66 76v72c0 70 43 120 94 148 51-28 94-78 94-148V76Z" stroke="url(#or)" stroke-width="1.5" opacity=".6"/>
+  <g stroke="url(#or)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 96v128"/><path d="M128 230h64"/><path d="M104 122h112"/>
+    <path d="m104 122-20 46a20 20 0 0 0 40 0Z" fill="rgba(198,156,69,.18)"/>
+    <path d="m216 122-20 46a20 20 0 0 0 40 0Z" fill="rgba(198,156,69,.18)"/>
+  </g>
+  <circle cx="160" cy="92" r="8" fill="url(#or)"/>
+  <!-- Lauriers -->
+  <g fill="url(#or)" opacity=".9">
+    <path d="M30 250c10-6 22-4 28 4-10 6-22 4-28-4Z"/><path d="M42 274c10-6 22-4 28 4-10 6-22 4-28-4Z"/>
+    <path d="M58 296c10-6 22-4 28 4-10 6-22 4-28-4Z"/><path d="M24 226c10-6 22-4 28 4-10 6-22 4-28-4Z"/>
+    <path d="M290 250c-10-6-22-4-28 4 10 6 22 4 28-4Z"/><path d="M278 274c-10-6-22-4-28 4 10 6 22 4 28-4Z"/>
+    <path d="M262 296c-10-6-22-4-28 4 10 6 22 4 28-4Z"/><path d="M296 226c-10-6-22-4-28 4 10 6 22 4 28-4Z"/>
+  </g>
+  <path d="M36 214c4 50 40 90 110 110M284 214c-4 50-40 90-110 110" stroke="url(#or)" stroke-width="2"/>
+</svg>

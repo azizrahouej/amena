@@ -1,0 +1,53 @@
+/* Dossier pour l'avocat(e) : formulaire + aperçu à l'écran ; document seul à l'impression (PDF). */
+
+.disposition-dossier { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 24px; align-items: start; }
+.formulaire-dossier { display: grid; gap: 18px; }
+.libelle-dossier { font-weight: 700; font-size: .9rem; }
+.chronologie { display: grid; gap: 8px; }
+.ligne-chrono { display: grid; grid-template-columns: 150px 1fr auto; gap: 8px; align-items: center; }
+.colonne-apercu { position: sticky; top: 90px; max-height: calc(100vh - 110px); overflow-y: auto; }
+
+/* --- Le document ------------------------------------------------------------------ */
+.document-dossier { background: #fff; color: #1c1814; padding: 44px 46px; border-radius: 4px; box-shadow: var(--ombre);
+  border-top: 5px solid #c19a45; font-size: .92rem; line-height: 1.6; }
+.doc-entete { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 16px;
+  border-bottom: 1px solid #e3d9c7; }
+.doc-surtitre { margin: 0; text-transform: uppercase; letter-spacing: .16em; font-size: .68rem; font-weight: 700; color: #8a6a22; }
+.document-dossier h1 { font-family: var(--serif); font-size: 1.6rem; margin: 6px 0 4px; color: #1c1814; }
+.doc-date { margin: 0; color: #6a6055; font-size: .85rem; }
+.doc-logo { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; border: 1.5px solid #c19a45; color: #8a6a22; }
+.doc-logo svg { width: 28px; height: 28px; }
+.doc-confidentiel { margin: 14px 0 6px; padding: 8px 12px; background: #fdf3e2; border-inline-start: 3px solid #c19a45; font-size: .8rem; color: #6c5219; }
+.doc-section { padding: 16px 0 6px; border-bottom: 1px solid #efe7d8; break-inside: avoid; }
+.doc-section h2 { font-family: var(--serif); font-size: 1.08rem; margin: 0 0 8px; color: #1c1814; }
+.doc-section h3 { font-size: .95rem; margin: 8px 0 2px; color: #1c1814; }
+.doc-section p, .doc-section li { color: #2a241d; }
+.doc-section ul, .doc-section ol { margin: 6px 0; padding-inline-start: 20px; display: grid; gap: 4px; }
+.doc-faits { white-space: pre-wrap; }
+.doc-coches { list-style: none; padding-inline-start: 0 !important; }
+.doc-note { font-size: .85rem; color: #6a6055 !important; }
+.doc-qualif { margin-bottom: 8px; }
+.doc-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.doc-table th, .doc-table td { border: 1px solid #e3d9c7; padding: 6px 8px; text-align: start; vertical-align: top; }
+.doc-table th { background: #f6f1e7; width: 130px; }
+.doc-pied { margin-top: 18px; font-size: .76rem; color: #6a6055; display: grid; gap: 4px; }
+.doc-pied p { margin: 0; }
+
+@media (max-width: 1020px) {
+  .disposition-dossier { grid-template-columns: 1fr; }
+  .colonne-apercu { position: static; max-height: none; }
+  .document-dossier { padding: 26px 20px; }
+  .ligne-chrono { grid-template-columns: 1fr; }
+}
+
+/* --- Impression / enregistrement en PDF : le document seul, sur fond blanc ------------------- */
+@media print {
+  @page { size: A4; margin: 16mm 14mm; }
+  body[data-page="dossier"] * { visibility: hidden; }
+  body[data-page="dossier"] .document-dossier, body[data-page="dossier"] .document-dossier * { visibility: visible; }
+  body[data-page="dossier"] .document-dossier { position: absolute; inset: 0 auto auto 0; width: 100%; box-shadow: none;
+    padding: 0; border-top: 0; font-size: 10.5pt; }
+  body[data-page="dossier"] .colonne-apercu { position: static; max-height: none; overflow: visible; }
+  body[data-page="dossier"] .contenu > * { animation: none !important; transform: none !important; }
+  .progression-page, .poussiere-or { display: none !important; }
+}

@@ -1,0 +1,19 @@
+# Render Blueprint : https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: amena
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/sante
+    autoDeploy: true
+    envVars:
+      - key: AMENA_LLM
+        value: claude
+      - key: AMENA_RECHERCHE_EXTERNE
+        value: "0"
+      # Secrets facultatifs, à saisir dans le tableau de bord Render (jamais dans ce fichier)
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: BRAVE_API_KEY
+        sync: false

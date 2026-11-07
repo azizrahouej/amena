@@ -1,0 +1,1795 @@
+{
+  "_description": "Situations de la vie courante (biens, argent, terres, contrats), ajoutées à la base d'expertise. Chaque champ existe en français ; les variantes _ar (arabe) et _dz (derja en lettres latines) sont utilisées quand la question est posée dans ces langues. « aussi » : au moins un de ces indices doit AUSSI être présent ; « remplace » : situations plus générales que celle-ci rend inutiles ; « principes » : règles expliquées sans numéro d'article quand le texte n'est pas encore dans la base.",
+  "situations": [
+    {
+      "id": "vol_famille",
+      "libelle": "Argent ou bien pris par un parent",
+      "libelle_ar": "مال أو ملك أخذه أحد الوالدين",
+      "libelle_dz": "Flous walla 7aja khdhetha el baba walla el omm",
+      "indices": [
+        " vol",
+        "vole",
+        "voll",
+        "derob",
+        "pris mon argent",
+        "pris mes",
+        "prend mon argent",
+        "pique",
+        "garde mon argent",
+        "sar9",
+        "sra9",
+        "sraq",
+        "khtef",
+        "سرق",
+        "اخذ فلوسي",
+        "خذا فلوسي",
+        "5dha flousi",
+        "khdha flousi"
+      ],
+      "aussi": [
+        " pere",
+        " papa",
+        " mere",
+        " maman",
+        "mon pere",
+        "ma mere",
+        "baba",
+        "bouya",
+        " omi",
+        "ommi",
+        "yemma",
+        "بابا",
+        "ابي",
+        "امي",
+        "والدي",
+        "والدتي",
+        "بويا",
+        "اميمتي",
+        "grand-pere",
+        "grand-mere",
+        "jedd",
+        "جدي"
+      ],
+      "remplace": [
+        "vol",
+        "violence_economique",
+        "abus_confiance",
+        "dettes_contrainte"
+      ],
+      "qualification": "Le Code pénal prévoit une immunité familiale : ce qu'un père, une mère ou un grand-parent prend à son enfant n'est pas juridiquement un vol. La voie pénale est donc en principe fermée, mais vous pouvez réclamer votre argent par la voie civile.",
+      "qualification_ar": "تنص المجلة الجزائية على حصانة عائلية: ما يأخذه الأب أو الأم أو الجد من ابنه لا يعد سرقة قانونا. فالطريق الجزائي مغلق مبدئيا، لكن يمكنك المطالبة باسترجاع مالك عن طريق القضاء المدني.",
+      "qualification_dz": "El 9anoun el jaza2i fih 7assana 3a2iliya : elli yekhdhou el baba walla el omm walla el jedd men weldhom mouch m3atbar sir9a. Ya3ni chekaya jaza2iya ma tet3addech, ama tnajjem tetlob flousek 9odem el 9adhi el madani.",
+      "textes": [
+        [
+          "tn-off-code-penal",
+          "266"
+        ],
+        [
+          "tn-off-code-penal",
+          "258"
+        ],
+        [
+          "tn-off-coc",
+          "82"
+        ]
+      ],
+      "explications": {
+        "tn-off-code-penal#266": {
+          "fr": "Ne constitue pas un vol ce qu'un ascendant (père, mère, grand-parent) prend à son enfant, sauf si le bien appartient en partie à une autre personne ou s'il avait été saisi. Cette protection ne vaut que pour les ascendants : une autre personne qui aurait aidé peut être poursuivie.",
+          "ar": "لا يعد سرقة ما يأخذه الأصل (الأب، الأم، الجد) من ابنه، إلا إذا كان الشيء مملوكا جزئيا لشخص آخر أو كان محجوزا. ولا تنطبق هذه الحماية إلا على الأصول: من ساعدهم من غيرهم يمكن تتبعه.",
+          "dz": "Elli yekhdhou el baba walla el omm walla el jedd men weldhom mouch sir9a, ken ma kenetch el 7aja fiha nasib l chakhs e5er walla m7ajza. W el 7imaya hédhi ken lel waldin : 7ad e5er 3awenhom ynajmou yetab3ouh."
+        },
+        "tn-off-code-penal#258": {
+          "fr": "En règle générale, le vol consiste à prendre frauduleusement une chose qui appartient à quelqu'un d'autre.",
+          "ar": "السرقة مبدئيا هي أخذ شيء مملوك للغير خلسة وبنية الاستيلاء عليه.",
+          "dz": "El sir9a fel 3ada hiya enek te5ou 7aja mte3 7ad e5er bel ghach."
+        },
+        "tn-off-coc#82": {
+          "fr": "Celui qui cause volontairement et sans droit un dommage matériel à autrui doit le réparer : c'est sur ce fondement que vous pouvez demander au juge civil la restitution de votre argent.",
+          "ar": "كل من يتسبب عمدا ودون وجه حق في ضرر مادي للغير يلزم بجبره: وعلى هذا الأساس يمكنك أن تطلب من القاضي المدني إرجاع مالك.",
+          "dz": "Elli ydharrek b9asd w bla 7a9 lazem ykhalles : 3la hédha tnajjem tetlob men el 9adhi el madani bech yraja3lek flousek."
+        }
+      },
+      "demarches": [
+        "Noter précisément ce qui a été pris : montant, date, compte ou endroit, et comment vous l'avez découvert",
+        "Demander d'abord la restitution par écrit (message, lettre) : cela fixe la date et sert de preuve",
+        "Tenter une médiation familiale ou devant un tiers de confiance",
+        "Si l'argent appartenait aussi à une autre personne ou était saisi, l'immunité ne s'applique pas : une plainte reste possible",
+        "Sinon, saisir le tribunal civil (tribunal cantonal pour les petits montants, tribunal de première instance au-delà) pour obtenir la restitution",
+        "Demander l'aide judiciaire si vos revenus sont insuffisants"
+      ],
+      "demarches_ar": [
+        "دوّن بدقة ما أُخذ: المبلغ، التاريخ، الحساب أو المكان، وكيف اكتشفت ذلك",
+        "اطلب أولا إرجاع المال كتابيا (رسالة أو إرسالية): ذلك يحدد التاريخ ويصلح دليلا",
+        "حاول الصلح العائلي أو بواسطة شخص محل ثقة",
+        "إذا كان المال مملوكا أيضا لشخص آخر أو محجوزا فلا تنطبق الحصانة: تبقى الشكاية ممكنة",
+        "وإلا فارفع دعوى مدنية (محكمة الناحية للمبالغ الصغيرة، المحكمة الابتدائية لما فوقها) لاسترجاع المال",
+        "اطلب الإعانة العدلية إذا كانت مداخيلك ضعيفة"
+      ],
+      "demarches_dz": [
+        "Ekteb bel dhabt chnowa t5a : 9addech, waqtech, men ena compte walla blasa, w kifech 3reft",
+        "Otlob el flous b ktiba (message walla jawab) : hédha y7added el tarikh w ywalli preuve",
+        "Jarreb soul7 fel 3a2la walla b wesset 7ad tetha9 fih",
+        "Ken el flous fihom nasib l 7ad e5er walla kenou m7ajzin, el 7assana ma temchich : tnajjem t9ayed chekaya",
+        "Ken lé, emchi lel me7kma el madaniya (me7kmet el na7ya lel mbale8 el s8ar, el ibtida2iya ken akther) bech traja3 flousek",
+        "Otlob el i3ana el 3adliya ken mad5oulek d3ifa"
+      ],
+      "preuves": [
+        "Relevés bancaires montrant le retrait ou le virement",
+        "Messages, enregistrements ou aveux écrits où la personne reconnaît avoir pris l'argent",
+        "Témoins (frères et sœurs, proches) qui savent d'où venait l'argent",
+        "Tout document prouvant que l'argent était à vous (salaire, vente, don)"
+      ],
+      "preuves_ar": [
+        "كشوفات بنكية تبين السحب أو التحويل",
+        "رسائل أو تسجيلات أو اعتراف مكتوب يقر فيه الشخص بأخذ المال",
+        "شهود (إخوة، أقارب) يعرفون مصدر المال",
+        "كل وثيقة تثبت أن المال ملكك (أجر، بيع، هبة)"
+      ],
+      "preuves_dz": [
+        "Relevés mta3 el banka elli ywarriw el sa7b walla el virement",
+        "Messageat walla tasjilat elli ya3tref fihom elli khdha el flous",
+        "Chouhoud (khwetek, el 3a2la) elli ya3rfou mnin jew el flous",
+        "Ay wra9a t2akked elli el flous mte3ek (khlas, bi3, hdiya)"
+      ],
+      "delais": [
+        "Agir sans attendre : plus le temps passe, plus il est difficile de prouver l'origine de l'argent"
+      ],
+      "delais_ar": [
+        "تحرك دون تأخير: كلما مر الوقت صعب إثبات مصدر المال"
+      ],
+      "delais_dz": [
+        "Ma tosberch barcha : kol ma yet3adda el wa9t, ywalli s3ib t2akked mnin jet el flous"
+      ],
+      "vigilance": [
+        "Si l'argent a été pris par un frère, une sœur, un oncle ou le conjoint, l'immunité de l'article 266 ne joue pas : c'est une autre situation",
+        "Un don ou un « prêt » au parent, même oral, peut être invoqué contre vous : rassemblez les preuves que ce n'était ni l'un ni l'autre",
+        "Gardez vos échanges calmes et écrits : ils serviront devant le juge"
+      ],
+      "vigilance_ar": [
+        "إذا أخذ المال أخ أو أخت أو عم أو الزوج فلا تنطبق حصانة الفصل 266: هي وضعية أخرى",
+        "قد يُحتج عليك بأنه هبة أو «سلفة» للوالد ولو شفويا: اجمع ما يثبت عكس ذلك",
+        "حافظ على مراسلات هادئة ومكتوبة: ستفيدك أمام القاضي"
+      ],
+      "vigilance_dz": [
+        "Ken elli khdha el flous khouk walla okhtek walla 3ammek walla rajlek/mratek, el fasl 266 ma yetna9ach : wadh3iya okhra",
+        "Ynajmou y9oulou elli kenet hdiya walla « selfa » lel baba : jamma3 elli y2akked el 3aks",
+        "Khalli el kalem hedi w maktoub : ynaf3ek 9odem el 9adhi"
+      ],
+      "conseil": {
+        "fr": "Dans votre cas, la plainte pour vol risque d'être classée à cause de l'article 266 du Code pénal. Misez sur la voie civile : une demande écrite de restitution d'abord, puis, si rien ne bouge, une action devant le tribunal avec vos relevés bancaires et vos messages.",
+        "ar": "في حالتك، قد تُحفظ شكاية السرقة بسبب الفصل 266 من المجلة الجزائية. ركّز على الطريق المدني: طلب كتابي لإرجاع المال أولا، ثم دعوى أمام المحكمة إذا لم يتغير شيء، مع كشوفاتك البنكية ورسائلك.",
+        "dz": "Fi 7altek, chekayet sir9a tnajjem tetsakker 3la khater el fasl 266. Rakkez 3al tri9 el madani : otlob el flous b ktiba lowel, w ken ma tbaddel chay, ar9od 9adhiya 9odem el me7kma bel relevés w el messageat."
+      },
+      "questions": {
+        "fr": [
+          "Quel montant a été pris, et sur quel compte ou à quel endroit ?",
+          "L'argent était-il seulement à vous, ou en partie à quelqu'un d'autre ?",
+          "Avez-vous des messages où votre parent reconnaît l'avoir pris ?"
+        ],
+        "ar": [
+          "ما هو المبلغ الذي أُخذ، ومن أي حساب أو مكان؟",
+          "هل كان المال ملكك وحدك أم لشخص آخر جزء منه؟",
+          "هل لديك رسائل يقر فيها والدك بأخذه؟"
+        ],
+        "dz": [
+          "9addech el flous elli t5aw, w men ena compte walla blasa ?",
+          "El flous mte3ek inti ken, walla fihom nasib l 7ad e5er ?",
+          "3andek messageat ya3tref fihom elli khdhahom ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "Il a pris l'argent sur mon compte bancaire",
+          "L'argent appartenait aussi à quelqu'un d'autre",
+          "J'ai des messages où il le reconnaît",
+          "C'était mon salaire, l'argent était à moi seul"
+        ],
+        "ar": [
+          "أخذ المال من حسابي البنكي",
+          "المال كان لشخص آخر أيضا",
+          "عندي رسائل يعترف فيها",
+          "كان أجري، والمال لي وحدي"
+        ],
+        "dz": [
+          "5dhahom men el compte mte3i",
+          "El flous kenou zeda mte3 7ad e5er",
+          "3andi messageat ya3tref fihom",
+          "Kenou khlasi, el flous mte3i ken ana"
+        ]
+      }
+    },
+    {
+      "id": "vol",
+      "libelle": "Vol",
+      "libelle_ar": "سرقة",
+      "libelle_dz": "Sir9a",
+      "indices": [
+        " vol ",
+        " vol,",
+        " vole",
+        " voler",
+        "voll",
+        "cambriol",
+        "derob",
+        "on m'a pris",
+        "pickpocket",
+        "sar9",
+        "sra9",
+        "sraq",
+        "سرق",
+        "سرقه",
+        "سرقني"
+      ],
+      "qualification": "Le vol est le fait de prendre frauduleusement le bien d'autrui ; il est puni par le Code pénal, plus sévèrement en cas de circonstances aggravantes.",
+      "qualification_ar": "السرقة هي أخذ مال الغير خلسة؛ يعاقب عليها القانون الجزائي، وبأكثر شدة عند توفر ظروف التشديد.",
+      "qualification_dz": "El sir9a hiya enek te5ou 7aja mte3 7ad bel ghach ; el 9anoun y3a9eb 3liha, w akther ken famma dhorouf tachdid.",
+      "textes": [
+        [
+          "tn-off-code-penal",
+          "258"
+        ],
+        [
+          "tn-off-code-penal",
+          "264"
+        ],
+        [
+          "tn-off-code-procedure-penale",
+          "2"
+        ]
+      ],
+      "explications": {
+        "tn-off-code-penal#258": {
+          "fr": "Le vol consiste à prendre frauduleusement une chose qui appartient à quelqu'un d'autre.",
+          "ar": "السرقة هي أخذ شيء مملوك للغير خلسة.",
+          "dz": "El sir9a hiya enek te5ou 7aja mte3 7ad e5er bel ghach."
+        },
+        "tn-off-code-penal#264": {
+          "fr": "Le vol simple est puni de cinq ans d'emprisonnement et d'une amende ; la tentative est aussi punie.",
+          "ar": "تعاقب السرقة المجردة بالسجن خمسة أعوام وبخطية، والمحاولة موجبة للعقاب.",
+          "dz": "Sir9a el 3adiya : 5 snin 7abs w khatiya, w 7atta el mo7awla t3a9eb."
+        },
+        "tn-off-code-procedure-penale#2": {
+          "fr": "La victime (la « partie lésée ») peut elle-même déclencher les poursuites.",
+          "ar": "يمكن للمتضرر أن يثير الدعوى العمومية بنفسه.",
+          "dz": "El mitdharrer ynajjem yebda el tatabbo3 wa7dou."
+        }
+      },
+      "demarches": [
+        "Déposer plainte au poste de police ou de garde nationale le plus proche, ou par écrit auprès du procureur de la République",
+        "Faire la liste des biens volés avec leur valeur",
+        "Faire opposition sur les cartes bancaires et signaler le vol des papiers d'identité",
+        "Se constituer partie civile pour obtenir réparation"
+      ],
+      "demarches_ar": [
+        "قدّم شكاية بأقرب مركز أمن أو حرس، أو كتابيا لدى وكيل الجمهورية",
+        "أعدّ قائمة بالأشياء المسروقة وقيمتها",
+        "اعترض على البطاقات البنكية وأبلغ عن سرقة الوثائق",
+        "قم بالقيام بالحق الشخصي للحصول على التعويض"
+      ],
+      "demarches_dz": [
+        "9ayed chekaya fi a9rab markez police walla 7aras, walla b ktiba 3and wakil el jomhouriya",
+        "A3mel lista bel 7wayej elli tsar9ou w 9addech ysew",
+        "Sakker el cartes bancaires w 9ayed sir9et el wra9",
+        "Dkhol taraf madani bech te5ou ta3widh"
+      ],
+      "preuves": [
+        "Factures ou photos des biens",
+        "Images de caméras de surveillance",
+        "Témoins",
+        "Récépissé de la plainte"
+      ],
+      "preuves_ar": [
+        "فواتير أو صور الأشياء",
+        "تسجيلات كاميرات المراقبة",
+        "الشهود",
+        "وصل الشكاية"
+      ],
+      "preuves_dz": [
+        "Factourat walla tsawer el 7wayej",
+        "Tasjilat el caméras",
+        "Chouhoud",
+        "Wsol el chekaya"
+      ],
+      "delais": [
+        "Porter plainte le plus vite possible : les images de caméras sont souvent effacées après quelques jours"
+      ],
+      "delais_ar": [
+        "قدّم الشكاية في أقرب وقت: كثيرا ما تُمحى تسجيلات الكاميرات بعد أيام"
+      ],
+      "delais_dz": [
+        "9ayed el chekaya fisa3 : tasjilat el caméras ytfasskhou ba3d ayamet"
+      ],
+      "vigilance": [
+        "Si l'auteur est votre père, votre mère ou un grand-parent, l'article 266 du Code pénal change tout : précisez-le"
+      ],
+      "vigilance_ar": [
+        "إذا كان الفاعل أباك أو أمك أو جدك فالفصل 266 من المجلة الجزائية يغير كل شيء: وضّح ذلك"
+      ],
+      "vigilance_dz": [
+        "Ken elli sra9 babak walla ommek walla jeddek, el fasl 266 ybaddel kol chay : 9olli"
+      ],
+      "conseil": {
+        "fr": "Déposez plainte rapidement et gardez le récépissé : c'est la pièce qui ouvre tout le reste (assurance, banque, réparation).",
+        "ar": "قدّم الشكاية بسرعة واحتفظ بالوصل: هو الوثيقة التي تفتح كل الباقي (التأمين، البنك، التعويض).",
+        "dz": "9ayed el chekaya fisa3 w 5abbi el wsol : hiya elli t7ellek kol chay (assurance, banka, ta3widh)."
+      },
+      "questions": {
+        "fr": [
+          "Qu'est-ce qui a été volé, et quand ?",
+          "Savez-vous qui est l'auteur ? Est-ce un proche ?",
+          "Y a-t-il des témoins ou des caméras ?"
+        ],
+        "ar": [
+          "ما الذي سُرق ومتى؟",
+          "هل تعرف الفاعل؟ هل هو من الأقارب؟",
+          "هل يوجد شهود أو كاميرات؟"
+        ],
+        "dz": [
+          "Chnowa tsra9 w waqtech ?",
+          "Ta3ref chkoun ? men el 3a2la ?",
+          "Famma chouhoud walla caméras ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "On m'a volé mon téléphone",
+          "Le vol a eu lieu chez moi",
+          "Je connais l'auteur",
+          "Il y a des caméras sur place"
+        ],
+        "ar": [
+          "سُرق هاتفي",
+          "حدثت السرقة في منزلي",
+          "أعرف الفاعل",
+          "توجد كاميرات في المكان"
+        ],
+        "dz": [
+          "Tsra9li el tilifoun",
+          "El sir9a sarat fi dari",
+          "Na3ref chkoun",
+          "Famma caméras"
+        ]
+      }
+    },
+    {
+      "id": "abus_confiance",
+      "libelle": "Bien confié non rendu (abus de confiance)",
+      "libelle_ar": "مال مؤتمن لم يُرجع (خيانة مؤتمن)",
+      "libelle_dz": "7aja amnet 3liha w ma raj3etech",
+      "indices": [
+        "abus de confiance",
+        "refuse de rendre",
+        "veut pas rendre",
+        "veut pas me rendre",
+        "ne me rend pas",
+        "pas rendu",
+        "confie",
+        "en depot",
+        "ma rajja3ch",
+        "ma yrajja3ch",
+        "ما رجعش",
+        "ما يحبش يرجع",
+        "خيانه مؤتمن",
+        "امانه"
+      ],
+      "qualification": "Détourner un bien ou de l'argent qui vous avait été remis à charge de le rendre (dépôt, prêt d'objet, mandat, location) est un abus de confiance, puni par le Code pénal.",
+      "qualification_ar": "تحويل مال أو شيء سُلّم لشخص على أن يرجعه (وديعة، عارية، وكالة، كراء) هو خيانة مؤتمن يعاقب عليها القانون الجزائي.",
+      "qualification_dz": "Ken 7ad 3tittou 7aja walla flous 3la asas yraja3hom (amana, selfa, wakala, kra) w 7ab yakelhom, hédhi khiyanet mo2taman w el 9anoun y3a9eb 3liha.",
+      "textes": [
+        [
+          "tn-off-code-penal",
+          "297"
+        ],
+        [
+          "tn-off-coc",
+          "82"
+        ]
+      ],
+      "explications": {
+        "tn-off-code-penal#297": {
+          "fr": "Celui qui détourne ou dissipe de l'argent ou un bien qui lui avait été remis pour être rendu (dépôt, mandat, prêt, location, travail) encourt trois ans d'emprisonnement et une amende.",
+          "ar": "من يحوّل أو يبدد مالا أو شيئا سُلّم له ليرجعه (وديعة، وكالة، عارية، كراء، عمل) يعاقب بالسجن ثلاثة أعوام وبخطية.",
+          "dz": "Elli ya5ou flous walla 7aja tsalmetlou bech yraja3ha w ma yraja3hech, 3a9obtou 3 snin 7abs w khatiya."
+        },
+        "tn-off-coc#82": {
+          "fr": "Indépendamment de la plainte, vous pouvez demander au juge civil la restitution et des dommages-intérêts.",
+          "ar": "بقطع النظر عن الشكاية، يمكنك أن تطلب من القاضي المدني الإرجاع والتعويض.",
+          "dz": "Bla ma tchouf el chekaya, tnajjem tetlob men el 9adhi el madani el rjou3 w ta3widh."
+        }
+      },
+      "demarches": [
+        "Mettre la personne en demeure par écrit de restituer le bien ou l'argent, avec un délai",
+        "Rassembler la preuve de la remise (reçu, virement, témoins, contrat)",
+        "Déposer plainte auprès du procureur de la République si rien n'est rendu",
+        "Demander en parallèle la restitution et des dommages-intérêts devant le juge civil"
+      ],
+      "demarches_ar": [
+        "وجّه إنذارا كتابيا للشخص لإرجاع المال أو الشيء في أجل محدد",
+        "اجمع ما يثبت التسليم (وصل، تحويل، شهود، عقد)",
+        "قدّم شكاية لدى وكيل الجمهورية إذا لم يرجع شيء",
+        "اطلب بالتوازي الإرجاع والتعويض أمام القاضي المدني"
+      ],
+      "demarches_dz": [
+        "Ab3athlou b ktiba bech yraja3 fi ajal m7added",
+        "Jamma3 elli y2akked elli sallamtlou (wsol, virement, chouhoud, 3a9d)",
+        "9ayed chekaya 3and wakil el jomhouriya ken ma raja3 chay",
+        "W fi nafs el wa9t otlob el rjou3 w ta3widh 9odem el 9adhi el madani"
+      ],
+      "preuves": [
+        "Reçu, contrat ou reconnaissance de dépôt",
+        "Virement ou retrait correspondant",
+        "Messages où la personne reconnaît avoir reçu le bien",
+        "Témoins de la remise"
+      ],
+      "preuves_ar": [
+        "وصل أو عقد أو اعتراف بالإيداع",
+        "التحويل أو السحب المقابل",
+        "رسائل يقر فيها الشخص بالتسلم",
+        "شهود التسليم"
+      ],
+      "preuves_dz": [
+        "Wsol walla 3a9d walla wra9a ta3tref bel amana",
+        "El virement walla el sa7b",
+        "Messageat ya3tref fihom elli 5dha",
+        "Chouhoud kif sallamtlou"
+      ],
+      "delais": [
+        "Envoyer la mise en demeure rapidement : elle fixe le point de départ du refus"
+      ],
+      "delais_ar": [
+        "أرسل الإنذار بسرعة: فهو يحدد بداية الرفض"
+      ],
+      "delais_dz": [
+        "Ab3ath el inthar fisa3 : y7added waqtech bda yrafedh"
+      ],
+      "vigilance": [
+        "Sans preuve écrite de la remise, tout repose sur les témoins : réunissez-les tôt",
+        "Si la remise était un prêt d'argent simple, c'est plutôt une dette civile qu'un abus de confiance"
+      ],
+      "vigilance_ar": [
+        "بدون دليل كتابي على التسليم يرتكز كل شيء على الشهود: اجمعهم مبكرا",
+        "إذا كان التسليم سلفة مالية بسيطة فهي أقرب إلى دين مدني منها إلى خيانة مؤتمن"
+      ],
+      "vigilance_dz": [
+        "Ken ma 3andekch wra9a, kol chay 3al chouhoud : jamma3hom badri",
+        "Ken kenet selfa flous 3adiya, hiya dyn madani akther men khiyanet mo2taman"
+      ],
+      "conseil": {
+        "fr": "Commencez par une mise en demeure écrite : elle pousse souvent à rendre, et sinon elle prouve le refus devant le procureur et le juge.",
+        "ar": "ابدأ بإنذار كتابي: كثيرا ما يدفع إلى الإرجاع، وإلا فهو يثبت الرفض أمام وكيل الجمهورية والقاضي.",
+        "dz": "Ebda b inthar maktoub : barcha marrat y5allih yraja3, w ken lé y2akked elli rfadh 9odem wakil el jomhouriya w el 9adhi."
+      },
+      "questions": {
+        "fr": [
+          "Qu'aviez-vous confié, et à quel titre (dépôt, prêt, mandat) ?",
+          "Avez-vous une preuve écrite de la remise ?",
+          "Avez-vous déjà demandé la restitution par écrit ?"
+        ],
+        "ar": [
+          "ماذا سلّمت وبأي صفة (وديعة، سلفة، وكالة)؟",
+          "هل لديك دليل كتابي على التسليم؟",
+          "هل طلبت الإرجاع كتابيا؟"
+        ],
+        "dz": [
+          "Chnowa sallamt w 3la ena asas (amana, selfa, wakala) ?",
+          "3andek wra9a t2akked ?",
+          "Tlabt el rjou3 b ktiba 9bal ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "Je lui avais confié de l'argent",
+          "J'ai un reçu ou un contrat",
+          "Je n'ai aucun écrit",
+          "Je lui ai déjà demandé de rendre"
+        ],
+        "ar": [
+          "سلمته مالا كأمانة",
+          "عندي وصل أو عقد",
+          "ليس لدي أي كتب",
+          "طلبت منه الإرجاع من قبل"
+        ],
+        "dz": [
+          "Amantou b flous",
+          "3andi wsol walla 3a9d",
+          "Ma 3andi 7atta wra9a",
+          "Tlabt menou yraja3 9bal"
+        ]
+      }
+    },
+    {
+      "id": "escroquerie",
+      "libelle": "Escroquerie, arnaque",
+      "libelle_ar": "تحيل",
+      "libelle_dz": "T7ayyol",
+      "indices": [
+        "escroq",
+        "arnaq",
+        "arnak",
+        "fraude",
+        "faux vendeur",
+        "tromp",
+        "7ayel",
+        "t7ayel",
+        "t7ayyel",
+        "nasab",
+        "تحيل",
+        "نصب",
+        "احتيال",
+        "تحيلو"
+      ],
+      "qualification": "Obtenir de l'argent ou un bien par des mensonges organisés, un faux nom ou une fausse qualité est une escroquerie, punie par le Code pénal.",
+      "qualification_ar": "الحصول على مال أو شيء عن طريق حيل أو اسم مزيف أو صفة مزيفة هو تحيل يعاقب عليه القانون الجزائي.",
+      "qualification_dz": "Ken 7ad 5dha flousek b ki9a w kdheb, walla b esm walla sifa mzawra, hédha t7ayyol w el 9anoun y3a9eb 3lih.",
+      "textes": [
+        [
+          "tn-off-code-penal",
+          "291"
+        ],
+        [
+          "tn-off-code-procedure-penale",
+          "2"
+        ]
+      ],
+      "explications": {
+        "tn-off-code-penal#291": {
+          "fr": "Celui qui, par un faux nom, une fausse qualité ou des manœuvres trompeuses, se fait remettre de l'argent ou des biens encourt cinq ans d'emprisonnement et une amende.",
+          "ar": "من يتحصل على أموال أو أشياء باستعمال اسم مزيف أو صفة مزيفة أو حيل خادعة يعاقب بالسجن خمسة أعوام وبخطية.",
+          "dz": "Elli ya5ou flous walla 7wayej b esm mzawwer walla sifa mzawra walla ki9a, 3a9obtou 5 snin 7abs w khatiya."
+        },
+        "tn-off-code-procedure-penale#2": {
+          "fr": "La victime peut elle-même déclencher les poursuites.",
+          "ar": "يمكن للمتضرر أن يثير الدعوى العمومية بنفسه.",
+          "dz": "El mitdharrer ynajjem yebda el tatabbo3 wa7dou."
+        }
+      },
+      "demarches": [
+        "Ne plus rien verser et couper le contact",
+        "Contacter tout de suite votre banque pour bloquer ou contester les paiements",
+        "Conserver toutes les preuves (annonce, messages, numéros, reçus)",
+        "Déposer plainte auprès de la police ou du procureur ; en ligne, la brigade spécialisée en criminalité informatique peut intervenir"
+      ],
+      "demarches_ar": [
+        "توقف عن الدفع واقطع الاتصال",
+        "اتصل حالا ببنكك لإيقاف أو الاعتراض على عمليات الدفع",
+        "احتفظ بكل الأدلة (الإعلان، الرسائل، الأرقام، الوصولات)",
+        "قدّم شكاية لدى الأمن أو وكيل الجمهورية؛ وعلى الإنترنت يمكن تدخل الفرقة المختصة في الجرائم الإلكترونية"
+      ],
+      "demarches_dz": [
+        "Ma t5alles 7atta chay ba3d w a9ta3 el ittisal",
+        "Kallem el banka tawa bech ysakrou walla ya3terdhou 3al paiements",
+        "5abbi kol el preuves (annonce, messageat, nouméroat, wsolet)",
+        "9ayed chekaya 3and el police walla wakil el jomhouriya ; ken 3al internet, famma fer9a mokhtassa"
+      ],
+      "preuves": [
+        "Captures d'écran de l'annonce et des conversations",
+        "Reçus de virement ou de mandat",
+        "Numéro de téléphone, profil ou site de l'auteur"
+      ],
+      "preuves_ar": [
+        "صور شاشة للإعلان والمحادثات",
+        "وصولات التحويل أو الحوالة",
+        "رقم الهاتف أو الحساب أو الموقع الخاص بالفاعل"
+      ],
+      "preuves_dz": [
+        "Captures mta3 el annonce w el klem",
+        "Wsolet el virement walla el mandat",
+        "Noumrou walla profil walla site mta3 elli t7ayel"
+      ],
+      "delais": [
+        "Contacter la banque dans les heures qui suivent : un paiement peut parfois être bloqué s'il est signalé tôt"
+      ],
+      "delais_ar": [
+        "اتصل بالبنك في الساعات الموالية: يمكن أحيانا إيقاف الدفع إذا أُبلغ عنه مبكرا"
+      ],
+      "delais_dz": [
+        "Kallem el banka fi sa3tha : marrat ynajmou ysakrou el paiement ken 9olt badri"
+      ],
+      "vigilance": [
+        "Ne versez jamais de « frais » pour récupérer votre argent : c'est souvent une seconde arnaque"
+      ],
+      "vigilance_ar": [
+        "لا تدفع أبدا «مصاريف» لاسترجاع مالك: كثيرا ما يكون ذلك تحيلا ثانيا"
+      ],
+      "vigilance_dz": [
+        "Ma t5alles 7atta « frais » bech traja3 flousek : barcha marrat t7ayyol theni"
+      ],
+      "conseil": {
+        "fr": "Appelez votre banque avant tout, puis déposez plainte avec toutes les captures d'écran : la rapidité compte plus que tout.",
+        "ar": "اتصل ببنكك قبل كل شيء، ثم قدّم الشكاية مع كل صور الشاشة: السرعة أهم شيء.",
+        "dz": "Kallem el banka 9bal kol chay, ba3d 9ayed chekaya b kol el captures : el sor3a hiya el mohem."
+      },
+      "questions": {
+        "fr": [
+          "Comment avez-vous payé (virement, carte, espèces) ?",
+          "Où avez-vous été contacté (site, réseau social, téléphone) ?",
+          "Quel montant avez-vous perdu ?"
+        ],
+        "ar": [
+          "كيف دفعت (تحويل، بطاقة، نقدا)؟",
+          "أين تم الاتصال بك (موقع، شبكة اجتماعية، هاتف)؟",
+          "ما هو المبلغ الذي خسرته؟"
+        ],
+        "dz": [
+          "Kifech khallast (virement, carte, cash) ?",
+          "Mnin kallmouk (site, facebook, tilifoun) ?",
+          "9addech khsart ?"
+        ]
+      },
+      "remplace": [
+        "cyber_violence"
+      ],
+      "reponses": {
+        "fr": [
+          "J'ai payé par virement",
+          "J'ai été contacté sur Facebook",
+          "J'ai payé en espèces",
+          "J'ai gardé les captures d'écran"
+        ],
+        "ar": [
+          "دفعت بتحويل بنكي",
+          "اتصلوا بي على فايسبوك",
+          "دفعت نقدا",
+          "احتفظت بصور الشاشة"
+        ],
+        "dz": [
+          "Khallast b virement",
+          "Kallmouni 3al facebook",
+          "Khallast cash",
+          "5abbit el captures"
+        ]
+      }
+    },
+    {
+      "id": "propriete_fonciere",
+      "libelle": "Terre ou terrain revendiqué par un autre propriétaire",
+      "libelle_ar": "أرض يدّعي ملكيتها شخص آخر",
+      "libelle_dz": "Ardh fama 7ad e5er y9oul elli hiya mte3ou",
+      "indices": [
+        " terre",
+        "terrain",
+        "parcelle",
+        "lopin",
+        "titre foncier",
+        "immatricul",
+        "cadastre",
+        "foncier",
+        "ardh",
+        "ardhi",
+        "ardhna",
+        " ard ",
+        "ارض",
+        "ارضي",
+        "عقار",
+        "رسم عقاري",
+        "قطعه ارض",
+        "hanchir",
+        "henchir",
+        "هنشير"
+      ],
+      "qualification": "Tout dépend d'abord du statut de la terre. Si elle est immatriculée (titre foncier), le droit inscrit ne se perd pas par l'occupation d'un autre, même très longue (art. 307 du Code des droits réels). Si elle n'est pas immatriculée, une possession de quinze ans comme propriétaire, paisible, publique et continue, rend propriétaire (art. 45) ; dix ans suffisent avec un acte et de bonne foi (art. 46), mais il faut trente ans entre héritiers ou copropriétaires (art. 47).",
+      "qualification_ar": "كل شيء يتوقف أولا على وضعية الأرض. إذا كانت مسجلة (رسم عقاري) فلا يسري مرور الزمن على الحق المرسم مهما طال حوز الغير (الفصل 307 من مجلة الحقوق العينية). وإذا لم تكن مسجلة، فإن الحوز بصفة مالك مدة خمسة عشر عاما بدون شغب ومشاهدا ومستمرا يكسب الملكية (الفصل 45)؛ وتكفي عشر سنوات بحسن نية وبمقتضى عمل قانوني (الفصل 46)، لكن المدة ثلاثون عاما بين الورثة والشركاء (الفصل 47).",
+      "qualification_dz": "Kol chay y7abes 3la wadh3iyet el ardh. Ken msajla (rasm 3a9ari), el 7a9 el mrassem ma ytna9ach b el wa9t, 7atta ken 7ad e5er 9a3ed fiha barcha (el fasl 307). Ken mouch msajla, el 7ouz ka malek 15 sna bla machakel, 9odem el nes w bla in9ita3 y5allik malek (el fasl 45) ; 10 snin yakfiw ken 3andek 3a9d w niytek behya (el fasl 46), ama bin el wartha w el chouraka lazem 30 sna (el fasl 47).",
+      "textes": [
+        [
+          "tn-off-code-droits-reels",
+          "307"
+        ],
+        [
+          "tn-off-code-droits-reels",
+          "45"
+        ],
+        [
+          "tn-off-code-droits-reels",
+          "46"
+        ],
+        [
+          "tn-off-code-droits-reels",
+          "47"
+        ]
+      ],
+      "principes": [
+        {
+          "fr": "Un acte de vente, un héritage ou une donation non enregistrés ne protègent pas toujours face à un titre inscrit : d'où l'importance de vérifier le registre.",
+          "ar": "عقد البيع أو الإرث أو الهبة غير المسجلة لا تحمي دائما أمام رسم مرسم: لذلك من المهم التثبت من السجل.",
+          "dz": "3a9d bi3 walla wirth walla hiba mouch msajlin ma y7miwekch dima 9odem rasm mrassem : ma3neha lazem tthabbet fel sijil."
+        }
+      ],
+      "demarches": [
+        "Vérifier le statut de la terre auprès de la Conservation de la propriété foncière (demander un extrait ou un certificat du titre foncier, ou une attestation de non-immatriculation)",
+        "Si la terre est immatriculée, lire qui est inscrit comme propriétaire, depuis quand et sur quel acte",
+        "Rassembler toutes les preuves de votre possession : acte d'achat, héritage, factures, impôts, témoins, photos",
+        "Consulter rapidement un avocat spécialisé en droit foncier (aide judiciaire possible) avant de signer quoi que ce soit",
+        "Selon le cas : action en revendication ou en reconnaissance de propriété devant le tribunal de première instance, ou opposition / procédure devant le tribunal immobilier",
+        "Ne pas quitter la terre ni la céder sous la pression tant que la situation n'est pas clarifiée"
+      ],
+      "demarches_ar": [
+        "تثبّت من وضعية الأرض لدى إدارة الملكية العقارية (اطلب مضمونا أو شهادة من الرسم العقاري، أو شهادة في عدم التسجيل)",
+        "إذا كانت الأرض مسجلة، اقرأ من هو المرسم كمالك، ومنذ متى، وعلى أي عقد",
+        "اجمع كل أدلة حوزك: عقد الشراء، الإرث، الفواتير، الأداءات، الشهود، الصور",
+        "استشر بسرعة محاميا مختصا في القانون العقاري (الإعانة العدلية ممكنة) قبل إمضاء أي شيء",
+        "حسب الحالة: دعوى استحقاق أو اعتراف بالملكية أمام المحكمة الابتدائية، أو اعتراض / إجراء أمام المحكمة العقارية",
+        "لا تغادر الأرض ولا تتنازل عنها تحت الضغط ما دامت الوضعية غير واضحة"
+      ],
+      "demarches_dz": [
+        "Thabbet fi wadh3iyet el ardh 3and idaret el melkiya el 3a9ariya (otlob madhmoun walla chhada mta3 el rasm el 3a9ari, walla chhada elli mouch msajla)",
+        "Ken msajla, a9ra chkoun mrassem ka malek, men waqtech, w 3la ena 3a9d",
+        "Jamma3 kol preuve 3al 7ouz mte3ek : 3a9d chra, wirth, factourat, el 2ada2at, chouhoud, tsawer",
+        "Chouf avocat mokhtass fel 3a9ar fisa3 (i3ana 3adliya mmkna) 9bal ma tsahhi 3la ay wra9a",
+        "7assb el 7ala : 9adhiyet isti7qa9 walla i3tiraf bel melkiya 9odem el me7kma el ibtida2iya, walla i3tiradh 9odem el me7kma el 3a9ariya",
+        "Ma to5rojch mel ardh w ma tetnazelch 3liha ta7t el dhghat 9bal ma tetwadh7 el 7ala"
+      ],
+      "preuves": [
+        "Acte d'achat, acte d'héritage (frédha) ou de donation",
+        "Reçus d'impôts locaux ou de taxes sur la terre",
+        "Factures de travaux, de plantations, de clôture ou de puits",
+        "Témoignages de voisins sur la durée et le caractère public de votre occupation",
+        "Photos datées et, si possible, un plan ou un relevé de géomètre"
+      ],
+      "preuves_ar": [
+        "عقد الشراء أو حجة الوفاة والفريضة أو الهبة",
+        "وصولات الأداءات المحلية أو المعاليم على الأرض",
+        "فواتير الأشغال أو الغراسات أو السياج أو البئر",
+        "شهادات الجيران حول مدة حوزك وعلنيته",
+        "صور مؤرخة، وإن أمكن مثال أو رفع مساحي من مهندس"
+      ],
+      "preuves_dz": [
+        "3a9d el chra, walla el frédha walla el hiba",
+        "Wsolet el 2ada2at walla el ma3alim 3al ardh",
+        "Factourat el chghol, el ghrasset, el syej walla el bir",
+        "Chhadat el jiran 3al modda w elli el kol ya3ref elli inti fiha",
+        "Tsawer bel tarikh, w ken mmken plan mta3 mohandes"
+      ],
+      "delais": [
+        "Consulter un avocat sans attendre : certaines procédures foncières ont des délais d'opposition courts"
+      ],
+      "delais_ar": [
+        "استشر محاميا دون تأخير: بعض الإجراءات العقارية لها آجال اعتراض قصيرة"
+      ],
+      "delais_dz": [
+        "Chouf avocat tawa : famma ijra2at 3a9ariya el ajal mte3ha 9sira"
+      ],
+      "vigilance": [
+        "Quinze ans d'occupation ne suffisent pas si la terre a un titre foncier au nom d'un autre (art. 307)",
+        "Si la terre vient d'un héritage et que vous l'occupez avec d'autres héritiers, le délai est de trente ans (art. 47)",
+        "Une action en justice du propriétaire ou une reconnaissance de votre part interrompt le délai (art. 52) : ne signez rien sans avocat"
+      ],
+      "vigilance_ar": [
+        "خمس عشرة سنة من الحوز لا تكفي إذا كان للأرض رسم عقاري باسم شخص آخر (الفصل 307)",
+        "إذا كانت الأرض موروثة وتحوزها مع ورثة آخرين فالمدة ثلاثون عاما (الفصل 47)",
+        "القيام لدى المحكمة من المالك أو إقرارك بحقه يقطع المدة (الفصل 52): لا تمض أي شيء دون محام"
+      ],
+      "vigilance_dz": [
+        "15 sna ma yakfiwch ken el ardh 3andha rasm 3a9ari b esm 7ad e5er (el fasl 307)",
+        "Ken el ardh wirth w 9a3ed fiha m3a wartha okhrin, el modda 30 sna (el fasl 47)",
+        "Ken el malek 9ayed 9adhiya walla inti 3tareft b 7a99ou, el modda tetna9ta3 (el fasl 52) : ma tsahhi 3la chay bla avocat"
+      ],
+      "conseil": {
+        "fr": "Tout se joue sur une question : votre terre a-t-elle un titre foncier ? Demandez l'extrait à la Conservation de la propriété foncière cette semaine. Si elle est titrée au nom d'un autre, vos quinze ans ne suffisent pas (art. 307) et il faut voir un avocat vite. Si elle n'est pas titrée, vos quinze ans de possession paisible et publique peuvent vous rendre propriétaire (art. 45) : rassemblez témoins et preuves.",
+        "ar": "كل شيء يتوقف على سؤال واحد: هل لأرضك رسم عقاري؟ اطلب المضمون من إدارة الملكية العقارية هذا الأسبوع. إذا كانت مسجلة باسم شخص آخر فالخمس عشرة سنة لا تكفي (الفصل 307) ويجب استشارة محام بسرعة. وإذا لم تكن مسجلة فحوزك الهادئ والعلني مدة خمس عشرة سنة قد يجعلك مالكا (الفصل 45): اجمع الشهود والأدلة.",
+        "dz": "Kol chay fi sou2el wa7ed : el ardh mte3ek 3andha rasm 3a9ari ? Otlob el madhmoun men idaret el melkiya el 3a9ariya el jem3a hédhi. Ken msajla b esm 7ad e5er, el 15 sna ma yakfiwch (el fasl 307) w lazem tchouf avocat fisa3. Ken mouch msajla, 15 sna 7ouz hedi w 9odem el nes ynajmou y5allouk malek (el fasl 45) : jamma3 el chouhoud w el preuves."
+      },
+      "questions": {
+        "fr": [
+          "Comment avez-vous obtenu cette terre : achat, héritage, donation, occupation ?",
+          "Avez-vous un acte écrit, même ancien ou non enregistré ?",
+          "Savez-vous si la terre a un titre foncier (immatriculée) ?",
+          "Comment avez-vous appris qu'un autre en est propriétaire : courrier, visite, procès ?"
+        ],
+        "ar": [
+          "كيف تحصلت على هذه الأرض: شراء، إرث، هبة، حوز؟",
+          "هل لديك عقد مكتوب ولو قديم أو غير مسجل؟",
+          "هل تعرف إن كانت الأرض مسجلة (لها رسم عقاري)؟",
+          "كيف علمت أن شخصا آخر يملكها: مراسلة، زيارة، قضية؟"
+        ],
+        "dz": [
+          "Kifech jetek el ardh : chrit, wirth, hdiya, walla sakent fiha ?",
+          "3andek 3a9d maktoub, 7atta 9dim walla mouch msajjel ?",
+          "Ta3ref ken el ardh msajla (3andha rasm 3a9ari) ?",
+          "Kifech 3reft elli 7ad e5er malekha : jawab, zyara, 9adhiya ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "J'ai un titre foncier à mon nom",
+          "Je n'ai pas de titre foncier",
+          "C'est un héritage familial",
+          "Je l'ai achetée avec un acte"
+        ],
+        "ar": [
+          "عندي رسم عقاري باسمي",
+          "ليس لدي رسم عقاري",
+          "هي أرض موروثة",
+          "اشتريتها بعقد"
+        ],
+        "dz": [
+          "3andi rasm 3a9ari b esmi",
+          "Ma 3andich rasm 3a9ari",
+          "Hiya wirth mel 3a2la",
+          "Chritha b 3a9d"
+        ]
+      },
+      "explications": {
+        "tn-off-code-droits-reels#307": {
+          "fr": "Contre un droit inscrit au registre foncier, le temps ne compte pas : personne ne peut invoquer sa possession, quelle qu'en soit la durée.",
+          "ar": "لا يسري مرور الزمن على الحق المرسم بالسجل العقاري، وليس لأي كان أن يتمسك بالحوز مهما طالت مدته.",
+          "dz": "Ken el 7a9 mrassem fel rasm el 3a9ari, el wa9t ma yet7sebch : 7atta 7ad ma ynajjem yet7ajj b el 7ouz mahma tawwel."
+        },
+        "tn-off-code-droits-reels#45": {
+          "fr": "Celui qui possède un immeuble pendant quinze ans comme propriétaire, sans trouble, au vu de tous, de façon continue et sans ambiguïté, en devient propriétaire par prescription.",
+          "ar": "من حاز عقارا مدة خمسة عشر عاما بصفة مالك حوزا بدون شغب مشاهدا مستمرا وبدون انقطاع ولا التباس كانت له ملكيته بوجه التقادم.",
+          "dz": "Elli 7az ardh 15 sna ka malek, bla machakel, 9odem el nes, w bla in9ita3, ywalli malekha b el ta9adom."
+        },
+        "tn-off-code-droits-reels#46": {
+          "fr": "La durée tombe à dix ans si la possession a commencé de bonne foi, sur la base d'un acte (vente, donation) qui aurait transmis la propriété s'il venait du vrai propriétaire.",
+          "ar": "تخفض المدة إلى عشر سنوات إذا انجر الحوز بحسن نية وبمقتضى عمل قانوني (بيع، هبة) من شأنه أن ينقل الملكية لو صدر ممن له الحق.",
+          "dz": "El modda tahbet l 10 snin ken bdit b niya behya w 3andek 3a9d (bi3 walla hiba) kan ynajjem yna9el el melkiya."
+        },
+        "tn-off-code-droits-reels#47": {
+          "fr": "Entre héritiers et entre copropriétaires, il faut trente ans de possession : une terre de famille non partagée se prescrit beaucoup plus difficilement.",
+          "ar": "ترفع مدة التقادم إلى ثلاثين عاما فيما بين الورثة والشركاء: الأرض العائلية غير المقسمة يصعب اكتسابها بالتقادم.",
+          "dz": "Bin el wartha w el chouraka lazem 30 sna : ardh el 3a2la elli mouch m9assma s3ib tetmalekha b el ta9adom."
+        }
+      }
+    },
+    {
+      "id": "dette_impayee",
+      "libelle": "Argent prêté non remboursé",
+      "libelle_ar": "مال مُقرض لم يُرجع",
+      "libelle_dz": "Flous selfthom w ma raj3ouhomch",
+      "indices": [
+        "prete",
+        "pret d'argent",
+        "me doit",
+        "doit de l'argent",
+        "dette",
+        "rembourse",
+        "pas paye",
+        "ne paie pas",
+        "selef",
+        "selfa",
+        "sellef",
+        " dyn ",
+        "dyoun",
+        "سلف",
+        "سلفه",
+        " دين ",
+        "يرجعلي فلوسي",
+        "ما خلصنيش",
+        "ma khallasnich"
+      ],
+      "qualification": "Une somme prêtée et non remboursée est une dette civile : on la réclame devant le juge civil, pas par une plainte pénale (sauf chèque sans provision ou tromperie).",
+      "qualification_ar": "المبلغ المقرض غير المسترجع دين مدني: يُطالب به أمام القاضي المدني لا بشكاية جزائية (باستثناء الشيك دون رصيد أو التحيل).",
+      "qualification_dz": "El flous elli selfthom w ma raj3ouhomch dyn madani : tetlobhom 9odem el 9adhi el madani, mouch b chekaya jaza2iya (ken ken chèque bla rasid walla t7ayyol).",
+      "textes": [
+        [
+          "tn-off-coc",
+          "402"
+        ],
+        [
+          "tn-off-coc",
+          "82"
+        ]
+      ],
+      "explications": {
+        "tn-off-coc#402": {
+          "fr": "En principe, vous avez quinze ans pour réclamer une dette née d'une obligation, sauf délais plus courts prévus par la loi pour certains cas (par exemple un an pour certaines fournitures).",
+          "ar": "مبدئيا لديك خمس عشرة سنة للمطالبة بدين ناشئ عن التزام، إلا في آجال أقصر يحددها القانون لبعض الحالات (مثلا سنة لبعض المزودات).",
+          "dz": "Fel 3ada 3andek 15 sna bech tetlob dyn, ken famma 7alet el 9anoun y7otlha ajal a9sar (kima 3am l chwaya mbi3at)."
+        },
+        "tn-off-coc#82": {
+          "fr": "Le refus délibéré de rendre ce qui est dû cause un dommage que le juge peut faire réparer.",
+          "ar": "الرفض المتعمد لإرجاع المستحق يسبب ضررا يمكن للقاضي جبره.",
+          "dz": "Ken rfadh b9asd yraja3 elli 3lih, hédha dhoror w el 9adhi ynajjem y5allsou."
+        }
+      },
+      "demarches": [
+        "Envoyer une mise en demeure écrite (lettre recommandée ou par huissier) fixant un délai",
+        "Rassembler la preuve du prêt (reconnaissance de dette, virement, messages, témoins)",
+        "Proposer un échéancier si la personne est de bonne foi",
+        "À défaut, saisir le tribunal cantonal (petites sommes) ou de première instance, ou demander une injonction de payer si vous avez un écrit"
+      ],
+      "demarches_ar": [
+        "أرسل إنذارا كتابيا (مكتوب مضمون الوصول أو بواسطة عدل منفذ) بأجل محدد",
+        "اجمع ما يثبت القرض (اعتراف بدين، تحويل، رسائل، شهود)",
+        "اقترح جدولة إذا كان الشخص حسن النية",
+        "وإلا فارفع الأمر إلى محكمة الناحية (للمبالغ الصغيرة) أو الابتدائية، أو اطلب أمرا بالدفع إذا كان لديك كتب"
+      ],
+      "demarches_dz": [
+        "Ab3ath inthar maktoub (jawab recommandé walla b 3adl monaffeth) b ajal",
+        "Jamma3 elli y2akked el selfa (wra9a, virement, messageat, chouhoud)",
+        "A9tara7 t9assit ken el 3abd niytou behya",
+        "Ken lé, emchi l me7kmet el na7ya (mbale8 s8ar) walla el ibtida2iya, walla otlob amr bel dfou3 ken 3andek wra9a"
+      ],
+      "preuves": [
+        "Reconnaissance de dette signée",
+        "Virement ou retrait correspondant au prêt",
+        "Messages où la personne reconnaît devoir l'argent",
+        "Témoins de la remise"
+      ],
+      "preuves_ar": [
+        "اعتراف بدين ممضى",
+        "التحويل أو السحب المقابل للقرض",
+        "رسائل يقر فيها الشخص بالدين",
+        "شهود التسليم"
+      ],
+      "preuves_dz": [
+        "Wra9a mte3 i3tiraf bel dyn msahhia",
+        "El virement walla el sa7b",
+        "Messageat ya3tref fihom elli 3lih el flous",
+        "Chouhoud"
+      ],
+      "delais": [
+        "Délai général de quinze ans pour réclamer une dette (art. 402 du COC), plus court pour certaines créances"
+      ],
+      "delais_ar": [
+        "أجل عام بخمس عشرة سنة للمطالبة بالدين (الفصل 402 من مجلة الالتزامات والعقود)، وأقصر لبعض الديون"
+      ],
+      "delais_dz": [
+        "Ajal 3am 15 sna bech tetlob el dyn (el fasl 402), w a9sar l chwaya dyoun"
+      ],
+      "vigilance": [
+        "Sans écrit, prouver un prêt important peut être difficile : gardez tous les messages",
+        "Un prêt ne devient pas un vol parce qu'il n'est pas remboursé : la plainte pénale sera souvent classée"
+      ],
+      "vigilance_ar": [
+        "بدون كتب قد يصعب إثبات قرض مهم: احتفظ بكل الرسائل",
+        "القرض لا يصبح سرقة لأنه لم يُرجع: كثيرا ما تُحفظ الشكاية الجزائية"
+      ],
+      "vigilance_dz": [
+        "Bla wra9a, s3ib t2akked selfa kbira : 5abbi kol el messageat",
+        "El selfa ma twallich sir9a 5ater ma raj3ouhech : el chekaya el jaza2iya barcha marrat tetsakker"
+      ],
+      "conseil": {
+        "fr": "Faites reconnaître la dette par écrit dès maintenant, même par un simple message (« oui je te dois X dinars ») : c'est la meilleure preuve pour la suite.",
+        "ar": "اجعل المدين يعترف كتابيا بالدين الآن، ولو برسالة بسيطة («نعم عندك عندي كذا دينار»): هو أفضل دليل لما بعد.",
+        "dz": "5allih ya3tref bel dyn b ktiba men tawa, 7atta b message (« ey 3andek 3andi X dinar ») : hédhi a7sen preuve."
+      },
+      "questions": {
+        "fr": [
+          "Quel montant avez-vous prêté, et quand ?",
+          "Avez-vous un écrit ou un virement ?",
+          "La personne reconnaît-elle la dette ?"
+        ],
+        "ar": [
+          "ما هو المبلغ الذي أقرضته ومتى؟",
+          "هل لديك كتب أو تحويل؟",
+          "هل يعترف الشخص بالدين؟"
+        ],
+        "dz": [
+          "9addech selft w waqtech ?",
+          "3andek wra9a walla virement ?",
+          "Ya3tref bel dyn walla lé ?"
+        ]
+      },
+      "remplace": [
+        "dettes_contrainte"
+      ],
+      "reponses": {
+        "fr": [
+          "J'ai une reconnaissance de dette",
+          "Je lui ai fait un virement",
+          "Je n'ai aucun écrit",
+          "Il reconnaît me devoir l'argent"
+        ],
+        "ar": [
+          "عندي اعتراف بدين",
+          "قمت له بتحويل بنكي",
+          "ليس لدي أي كتب",
+          "يعترف بأنه مدين لي"
+        ],
+        "dz": [
+          "3andi wra9a i3tiraf bel dyn",
+          "3maltlou virement",
+          "Ma 3andi 7atta wra9a",
+          "Ya3tref elli 3lih el flous"
+        ]
+      }
+    },
+    {
+      "id": "dommage_responsabilite",
+      "libelle": "Dommage subi et réparation",
+      "libelle_ar": "ضرر وتعويض",
+      "libelle_dz": "Dhoror w ta3widh",
+      "indices": [
+        "dommage",
+        "degat",
+        "abime",
+        "casse ma",
+        "casse mon",
+        "prejudice",
+        "indemnis",
+        "dedommag",
+        "reparer le",
+        "accident",
+        "ta3widh",
+        "tkasser",
+        "تعويض",
+        "ضرر",
+        "خسارة",
+        "حادث"
+      ],
+      "qualification": "Celui qui cause un dommage à autrui, volontairement ou par sa faute (imprudence, négligence), doit le réparer : c'est la responsabilité civile prévue par le Code des obligations et des contrats.",
+      "qualification_ar": "من يتسبب في ضرر للغير، عمدا أو بخطئه (عدم احتياط، إهمال)، يلزم بجبره: هي المسؤولية المدنية المنصوص عليها بمجلة الالتزامات والعقود.",
+      "qualification_dz": "Elli ydharrek, b9asd walla b ghalta (ihmel, 9ellet ihtiyat), lazem ykhalles : hédhi el mas2ouliya el madaniya fi majallet el iltizamat w el 3o9oud.",
+      "textes": [
+        [
+          "tn-off-coc",
+          "82"
+        ],
+        [
+          "tn-off-coc",
+          "83"
+        ],
+        [
+          "tn-off-coc",
+          "108"
+        ]
+      ],
+      "explications": {
+        "tn-off-coc#82": {
+          "fr": "Le dommage causé volontairement et sans droit doit être réparé par son auteur.",
+          "ar": "الضرر الحاصل عمدا ودون وجه حق يلزم فاعله بجبره.",
+          "dz": "El dhoror elli sar b9asd w bla 7a9, moula lazem ykhalsou."
+        },
+        "tn-off-coc#83": {
+          "fr": "On répond aussi du dommage causé par sa faute : oublier ce qu'on devait faire, ou faire ce qu'on devait éviter.",
+          "ar": "يُسأل الشخص أيضا عن الضرر الناتج عن خطئه: ترك ما يجب فعله أو فعل ما يجب تركه.",
+          "dz": "7atta el ghalta tetkhalles : ken nsit chay lazem ta3mlou walla 3malt chay lazem ta3mlouch."
+        },
+        "tn-off-coc#108": {
+          "fr": "Si plusieurs personnes ont causé ensemble le dommage, chacune peut être tenue de le réparer en totalité.",
+          "ar": "إذا تسبب عدة أشخاص معا في الضرر يُلزم كل واحد منهم بجبره كاملا.",
+          "dz": "Ken barcha 3baad dharrouk m3a ba3dhhom, kol wa7ed ynajjem ykhalles el kol."
+        }
+      },
+      "demarches": [
+        "Faire constater le dommage (photos datées, constat d'huissier, procès-verbal de police s'il y a lieu)",
+        "Faire chiffrer le préjudice (devis, factures, certificat médical)",
+        "Demander réparation par écrit à l'auteur ou à son assurance",
+        "À défaut d'accord, saisir le tribunal civil compétent"
+      ],
+      "demarches_ar": [
+        "أثبت الضرر (صور مؤرخة، معاينة بواسطة عدل منفذ، محضر أمن عند الاقتضاء)",
+        "قدّر قيمة الضرر (تقديرات، فواتير، شهادة طبية)",
+        "اطلب التعويض كتابيا من المتسبب أو من تأمينه",
+        "إذا لم يحصل اتفاق فارفع دعوى أمام المحكمة المدنية المختصة"
+      ],
+      "demarches_dz": [
+        "Sabbat el dhoror (tsawer bel tarikh, mo3ayna m3a 3adl monaffeth, ma7dhar police ken lazem)",
+        "A3mel 7seb el dhoror (devis, factourat, chhada tbiya)",
+        "Otlob el ta3widh b ktiba men elli dharrek walla men el assurance mte3ou",
+        "Ken ma tfehemtouch, emchi lel me7kma el madaniya"
+      ],
+      "preuves": [
+        "Photos datées du dommage",
+        "Constat d'huissier ou procès-verbal",
+        "Devis et factures de réparation",
+        "Témoins"
+      ],
+      "preuves_ar": [
+        "صور مؤرخة للضرر",
+        "معاينة عدل منفذ أو محضر",
+        "تقديرات وفواتير الإصلاح",
+        "شهود"
+      ],
+      "preuves_dz": [
+        "Tsawer bel tarikh",
+        "Mo3ayna walla ma7dhar",
+        "Devis w factourat el tasli7",
+        "Chouhoud"
+      ],
+      "delais": [
+        "Constater le dommage tout de suite, avant toute réparation"
+      ],
+      "delais_ar": [
+        "أثبت الضرر فورا وقبل أي إصلاح"
+      ],
+      "delais_dz": [
+        "Sabbat el dhoror tawa 9bal ma tsalla7"
+      ],
+      "vigilance": [
+        "Ne réparez pas avant d'avoir fait constater : la preuve disparaîtrait",
+        "Vérifiez votre propre assurance : elle couvre parfois le dommage et se retourne contre l'auteur"
+      ],
+      "vigilance_ar": [
+        "لا تصلح قبل الإثبات: سيختفي الدليل",
+        "تثبّت من تأمينك: قد يغطي الضرر ثم يرجع على المتسبب"
+      ],
+      "vigilance_dz": [
+        "Ma tsalla7ch 9bal ma tsabbet : el preuve temchi",
+        "Chouf el assurance mte3ek : marrat t5alles w ba3d terja3 3la elli dharrek"
+      ],
+      "conseil": {
+        "fr": "Faites constater le dommage avant de toucher à quoi que ce soit, puis demandez réparation par écrit : la plupart des dossiers se règlent à ce stade.",
+        "ar": "أثبت الضرر قبل لمس أي شيء، ثم اطلب التعويض كتابيا: أغلب الملفات تُحل في هذه المرحلة.",
+        "dz": "Sabbat el dhoror 9bal ma tmess chay, ba3d otlob el ta3widh b ktiba : barcha dossiers ytsakrou houni."
+      },
+      "questions": {
+        "fr": [
+          "Quel dommage avez-vous subi, et qui l'a causé ?",
+          "L'auteur a-t-il une assurance ?",
+          "Avez-vous déjà fait constater le dommage ?"
+        ],
+        "ar": [
+          "ما هو الضرر الذي لحقك ومن تسبب فيه؟",
+          "هل للمتسبب تأمين؟",
+          "هل أثبتّ الضرر؟"
+        ],
+        "dz": [
+          "Chnowa el dhoror w chkoun sabbou ?",
+          "3andou assurance ?",
+          "Sabbatt el dhoror walla mezelt ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "C'est un accident de la route",
+          "Mon voisin a abîmé ma maison",
+          "L'auteur a une assurance",
+          "J'ai des photos du dommage"
+        ],
+        "ar": [
+          "هو حادث مرور",
+          "جاري ألحق ضررا بمنزلي",
+          "للمتسبب تأمين",
+          "عندي صور للضرر"
+        ],
+        "dz": [
+          "Accident de la route",
+          "Jari dharrli dari",
+          "3andou assurance",
+          "3andi tsawer"
+        ]
+      }
+    },
+    {
+      "id": "auteur_infraction",
+      "libelle": "Vous reconnaissez avoir commis une faute",
+      "libelle_ar": "تعترف بارتكاب خطأ",
+      "libelle_dz": "Ta3tref elli 3malt ghalta",
+      "indices": [
+        "j'ai vole",
+        "j'ai voler",
+        "j'ai volé",
+        "j'ai tue",
+        "j'ai tué",
+        "j'ai frappe",
+        "j'ai frappé",
+        "j'ai agresse",
+        "j'ai agressé",
+        "j'ai blesse",
+        "j'ai commis",
+        "je suis coupable",
+        "j'ai fait une betise",
+        "j'ai fait une erreur grave",
+        "sra9t",
+        "sraqt",
+        "9telt",
+        "qtelt",
+        "dhrabt",
+        "سرقت",
+        "قتلت",
+        "ضربت",
+        "اعتديت",
+        "ارتكبت"
+      ],
+      "remplace": [
+        "abus_confiance",
+        "dette_impayee",
+        "dettes_contrainte",
+        "dommage_responsabilite",
+        "escroquerie",
+        "mis_en_cause",
+        "temoin_crime",
+        "travail_licenciement",
+        "violence_economique",
+        "violence_physique",
+        "vol",
+        "vol_famille"
+      ],
+      "qualification": "Ce que vous décrivez peut constituer une infraction. Vous avez quand même des droits, comme tout justiciable : présomption d'innocence jusqu'au jugement, droit à un avocat et à un procès équitable. Ce qui compte maintenant : ne pas aggraver la situation et réparer ce qui peut l'être.",
+      "qualification_ar": "ما تصفه قد يشكل جريمة. ومع ذلك لك حقوق ككل متقاض: قرينة البراءة إلى حين الحكم، والحق في محام وفي محاكمة عادلة. المهم الآن: عدم تعكير الوضع وإصلاح ما يمكن إصلاحه.",
+      "qualification_dz": "Elli t7ki 3lih ynajjem ykoun jarima. Ama 3andek 7o9ou9 kima kol wa7ed : enti bari 7atta el 7okm, w 3andek 7a9 fi avocat w mo7akma 3adla. El mohem tawa : ma tzidech t3a99ed el wadh3iya w tsalla7 elli tnajjem tsalla7ou.",
+      "textes": [
+        [
+          "tn-off-constitution-2022",
+          "33"
+        ],
+        [
+          "tn-off-constitution-2022",
+          "35"
+        ],
+        [
+          "tn-off-constitution-2022",
+          "124"
+        ]
+      ],
+      "demarches": [
+        "Si quelqu'un est blessé ou en danger, appelez immédiatement le 190 (SAMU) ou le 197 (police) : c'est la priorité absolue",
+        "Consultez un avocat avant toute déclaration ; sans moyens, demandez l'aide juridictionnelle",
+        "Ne détruisez et ne modifiez aucune preuve, ne faites pas pression sur la victime ou les témoins : ce seraient des infractions en plus",
+        "Avec votre avocat, envisagez de vous présenter vous-même à la justice et de réparer le dommage (restituer, indemniser, présenter des excuses) : le juge peut en tenir compte",
+        "Rassemblez ce qui explique les circonstances : contexte, menaces ou violences que vous auriez subies, état de santé, témoins"
+      ],
+      "demarches_ar": [
+        "إذا كان هناك شخص مصاب أو في خطر، اتصل فورا بالرقم 190 (الإسعاف) أو 197 (الشرطة): هذه هي الأولوية المطلقة",
+        "استشر محاميا قبل أي تصريح؛ وإن لم تكن لديك الإمكانيات فاطلب الإعانة العدلية",
+        "لا تُتلف ولا تغيّر أي دليل، ولا تضغط على الضحية أو الشهود: ستكون جرائم إضافية",
+        "فكّر مع محاميك في تقديم نفسك للعدالة وإصلاح الضرر (إرجاع، تعويض، اعتذار): قد يأخذ القاضي ذلك بعين الاعتبار",
+        "اجمع ما يوضح الظروف: السياق، تهديدات أو عنف تعرضت له، حالتك الصحية، الشهود"
+      ],
+      "demarches_dz": [
+        "Ken famma 7ad mjarra7 walla fi khatar, kallem tawa el 190 (SAMU) walla el 197 (police) : hédhi el awlawiya",
+        "Chouf avocat 9bal ma t9oul ay klem ; ken ma 3andekch, otlob el i3ana el 3adliya",
+        "Ma tfasakh w ma tbaddel 7atta preuve, w ma tdhghatech 3al dhe7iya walla el chouhoud : twalli jarayem okhrin",
+        "M3a el avocat, faker t9addem rou7ek lel 3adala w tsalla7 el dhoror (traja3, t3awedh, tetsamma7) : el 9adhi ynajjem y7sebha",
+        "Jamma3 elli yfasser el dhorouf : el siya9, tahdid walla 3onf t3arradht lih, s7tek, el chouhoud"
+      ],
+      "preuves": [
+        "Éléments sur le contexte (messages, menaces reçues, provocation)",
+        "Certificats médicaux si vous avez vous aussi été blessé",
+        "Preuves de restitution ou d'indemnisation de la victime",
+        "Témoins des circonstances"
+      ],
+      "preuves_ar": [
+        "عناصر حول السياق (رسائل، تهديدات تلقيتها، استفزاز)",
+        "شهادات طبية إذا أصبت أنت أيضا",
+        "ما يثبت الإرجاع أو تعويض الضحية",
+        "شهود على الظروف"
+      ],
+      "preuves_dz": [
+        "Ay 7aja 3al siya9 (messageat, tahdidat, istifzaz)",
+        "Chhadat tbiya ken t3awwart zeda",
+        "Elli y2akked elli raja3t walla 3awadht el dhe7iya",
+        "Chouhoud 3al dhorouf"
+      ],
+      "delais": [
+        "Ne tardez pas à consulter un avocat : les premières déclarations comptent beaucoup"
+      ],
+      "delais_ar": [
+        "لا تتأخر في استشارة محام: التصريحات الأولى مهمة جدا"
+      ],
+      "delais_dz": [
+        "Ma tetakhkharch bech tchouf avocat : el klem el lowel mohem barcha"
+      ],
+      "vigilance": [
+        "Ce que vous déclarez à la police peut être retenu contre vous : demandez à être assisté d'un avocat (art. 35 de la Constitution)",
+        "Ne publiez rien sur les réseaux sociaux à propos des faits",
+        "AMENA ne peut pas vous aider à cacher, effacer ou fabriquer des preuves : ce serait une nouvelle infraction"
+      ],
+      "vigilance_ar": [
+        "ما تصرح به للشرطة قد يُعتمد ضدك: اطلب حضور محام (الفصل 35 من الدستور)",
+        "لا تنشر شيئا عن الوقائع على شبكات التواصل",
+        "لا يمكن لأمانة مساعدتك على إخفاء أو محو أو صنع أدلة: سيكون ذلك جريمة جديدة"
+      ],
+      "vigilance_dz": [
+        "El klem elli t9oulou lel police ynajjem yetst3mel dhaddek : otlob avocat m3ak (el fasl 35)",
+        "Ma tanchor 7atta chay 3al facebook 3al wa9a2e3",
+        "AMENA ma tnajjemch t3awnek t5abbi walla tfasakh walla tsana3 preuves : hédhi jarima okhra"
+      ],
+      "conseil": {
+        "fr": "Faire une erreur n'empêche pas d'être défendu. La meilleure chose à faire maintenant : appeler les secours si quelqu'un est en danger, puis un avocat, et ne rien faire qui aggrave la situation. Réparer et assumer, avec l'aide d'un avocat, est presque toujours la voie la plus favorable.",
+        "ar": "ارتكاب خطأ لا يمنعك من حق الدفاع. أفضل ما تفعله الآن: الاتصال بالإسعاف إذا كان أحد في خطر، ثم بمحام، وعدم القيام بما يعكّر الوضع. إصلاح الضرر وتحمل المسؤولية بمساعدة محام هو غالبا الطريق الأفضل.",
+        "dz": "El ghalta ma tmna3ekch men el difa3. A7sen 7aja tawa : kallem el is3af ken famma 7ad fi khatar, ba3d avocat, w ma ta3mel 7atta chay yzid y3a99ed. Tsalla7 w tet7ammel el mas2ouliya m3a avocat, hédha dima a7sen tri9."
+      },
+      "questions": {
+        "fr": [
+          "Quelqu'un est-il blessé ou en danger en ce moment ?",
+          "Avez-vous été convoqué ou arrêté par la police ?",
+          "Avez-vous déjà un avocat ?",
+          "Pouvez-vous réparer le dommage (rendre, indemniser) ?"
+        ],
+        "ar": [
+          "هل هناك شخص مصاب أو في خطر الآن؟",
+          "هل تم استدعاؤك أو إيقافك من الشرطة؟",
+          "هل لديك محام؟",
+          "هل يمكنك إصلاح الضرر (إرجاع، تعويض)؟"
+        ],
+        "dz": [
+          "Famma 7ad mjarra7 walla fi khatar tawa ?",
+          "Stad3awek walla 7absouk el police ?",
+          "3andek avocat ?",
+          "Tnajjem tsalla7 el dhoror (traja3, t3awedh) ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "Personne n'est blessé",
+          "La police m'a convoqué",
+          "Je n'ai pas d'avocat",
+          "Je veux rendre ce que j'ai pris"
+        ],
+        "ar": [
+          "لا أحد مصاب",
+          "استدعتني الشرطة",
+          "ليس لدي محام",
+          "أريد إرجاع ما أخذت"
+        ],
+        "dz": [
+          "7atta 7ad mouch mjarra7",
+          "El police stad3atni",
+          "Ma 3andich avocat",
+          "N7eb nraja3 elli 5dhit"
+        ]
+      },
+      "explications": {
+        "tn-off-constitution-2022#33": {
+          "fr": "Toute personne poursuivie est présumée innocente tant que sa culpabilité n'est pas établie par un procès équitable, avec toutes les garanties de sa défense.",
+          "ar": "كل متهم بريء إلى أن تثبت إدانته في محاكمة عادلة تكفل له جميع ضمانات الدفاع.",
+          "dz": "Ay wa7ed mtahem howa bari 7atta tetsabbet el idana fi mo7akma 3adla fiha kol dhamanat el difa3."
+        },
+        "tn-off-constitution-2022#35": {
+          "fr": "Personne ne peut être arrêté sans flagrant délit ou décision judiciaire ; la personne arrêtée est informée de ses droits et de l'accusation, et a le droit d'être représentée par un avocat.",
+          "ar": "لا يمكن إيقاف أي شخص إلا في حالة التلبس أو بقرار قضائي؛ ويُعلم فورا بحقوقه وبالتهمة، وله الحق في أن ينوبه محام.",
+          "dz": "7atta 7ad ma yet7bes ken ma fammech talabbos walla 9arar 9adha2i ; y9oulou 7o9ou9ou w el tohma, w 3andou el 7a9 fi avocat."
+        },
+        "tn-off-constitution-2022#124": {
+          "fr": "Chacun a droit à un procès équitable et à la défense ; la loi assure l'aide juridictionnelle à ceux qui n'ont pas les moyens.",
+          "ar": "لكل شخص الحق في محاكمة عادلة وفي الدفاع، ويضمن القانون الإعانة العدلية لغير القادرين.",
+          "dz": "Kol wa7ed 3andou 7a9 fi mo7akma 3adla w fi el difa3 ; w el 9anoun y3ti i3ana 3adliya lelli ma 3andouch."
+        }
+      },
+      "garde_textes_de": [
+        "vol",
+        "escroquerie",
+        "abus_confiance",
+        "violence_physique",
+        "cyber_violence"
+      ]
+    },
+    {
+      "id": "mis_en_cause",
+      "libelle": "Vous êtes accusé ou poursuivi",
+      "libelle_ar": "أنت متهم أو محل تتبع",
+      "libelle_dz": "Enti mtahem",
+      "indices": [
+        "on m'accuse",
+        "m'accuse",
+        "accuse de",
+        "accusé de",
+        "plainte contre moi",
+        "porte plainte contre moi",
+        "garde a vue",
+        "je suis innocent",
+        "je n'ai rien fait",
+        "convoque par la police",
+        "convoqué",
+        "convocation",
+        "arrete par",
+        "متهم",
+        "اتهموني",
+        "يتهمني",
+        "شكايه ضدي",
+        "استدعاء",
+        "ana bari",
+        "tahmouni",
+        "chekaya dhoddi",
+        "9aydouli chekaya"
+      ],
+      "remplace": [
+        "abus_confiance",
+        "dette_impayee",
+        "escroquerie",
+        "temoin_crime",
+        "vol",
+        "vol_famille"
+      ],
+      "qualification": "Être accusé ne veut pas dire être coupable : vous êtes présumé innocent tant qu'un procès équitable n'a pas établi le contraire (art. 33 de la Constitution). Pour vous défendre, il faut des éléments réels qui montrent ce qui s'est vraiment passé.",
+      "qualification_ar": "الاتهام لا يعني الإدانة: أنت بريء إلى أن تثبت محاكمة عادلة العكس (الفصل 33 من الدستور). وللدفاع عن نفسك تحتاج إلى عناصر حقيقية تبين ما حدث فعلا.",
+      "qualification_dz": "Ken t7ammt ma3neha mouch enti mdhnib : enti bari 7atta mo7akma 3adla tsabbet el 3aks (el fasl 33). Bech tdafa3 3la rou7ek, lazmek preuves 7a9i9iya twarri chnowa sar bel 7a9.",
+      "textes": [
+        [
+          "tn-off-constitution-2022",
+          "33"
+        ],
+        [
+          "tn-off-constitution-2022",
+          "35"
+        ],
+        [
+          "tn-off-code-procedure-penale",
+          "193"
+        ],
+        [
+          "tn-off-constitution-2022",
+          "124"
+        ]
+      ],
+      "demarches": [
+        "Prenez un avocat dès maintenant ; sans moyens, demandez l'aide juridictionnelle",
+        "Si vous êtes convoqué, allez-y, mais demandez à être assisté de votre avocat et ne signez aucun procès-verbal que vous ne comprenez pas",
+        "Rassemblez vite les preuves réelles de votre version : où vous étiez, avec qui, ce que vous faisiez",
+        "Demandez rapidement les images de caméras qui pourraient vous disculper : elles sont souvent effacées en quelques jours",
+        "Laissez votre avocat consulter le dossier pour connaître exactement les accusations (art. 193 du Code de procédure pénale)"
+      ],
+      "demarches_ar": [
+        "عيّن محاميا من الآن؛ وإن لم تكن لديك الإمكانيات فاطلب الإعانة العدلية",
+        "إذا تم استدعاؤك فاحضر، لكن اطلب حضور محاميك ولا تمض أي محضر لا تفهمه",
+        "اجمع بسرعة الأدلة الحقيقية على روايتك: أين كنت، مع من، وماذا كنت تفعل",
+        "اطلب بسرعة تسجيلات الكاميرات التي قد تبرئك: كثيرا ما تُمحى في أيام",
+        "اترك محاميك يطلع على الملف لمعرفة التهم بدقة (الفصل 193 من مجلة الإجراءات الجزائية)"
+      ],
+      "demarches_dz": [
+        "Chouf avocat men tawa ; ken ma 3andekch, otlob el i3ana el 3adliya",
+        "Ken stad3awek, emchi, ama otlob el avocat m3ak w ma tsahhi 3la 7atta ma7dhar ma fhemtouch",
+        "Jamma3 fisa3 el preuves el 7a9i9iya : wein kont, m3a chkoun, chnowa kont ta3mel",
+        "Otlob fisa3 tasjilat el caméras elli ynajmou ybarr2ouk : ytfasskhou fi ayamet",
+        "Khalli el avocat ychouf el dossier bech ta3ref el tohma bel dhabt (el fasl 193)"
+      ],
+      "preuves": [
+        "Témoins qui étaient avec vous au moment des faits",
+        "Tickets, factures, relevés bancaires ou de téléphone datés",
+        "Images de caméras de surveillance",
+        "Messages et échanges qui montrent votre version"
+      ],
+      "preuves_ar": [
+        "شهود كانوا معك وقت الوقائع",
+        "تذاكر، فواتير، كشوفات بنكية أو هاتفية مؤرخة",
+        "تسجيلات كاميرات المراقبة",
+        "رسائل ومراسلات تبين روايتك"
+      ],
+      "preuves_dz": [
+        "Chouhoud kenou m3ak fi wa9t el wa9a2e3",
+        "Tickets, factourat, relevés banka walla tilifoun bel tarikh",
+        "Tasjilat el caméras",
+        "Messageat elli ywarriw roweytek"
+      ],
+      "delais": [
+        "Agir dans les premiers jours : les images de caméras et les souvenirs des témoins disparaissent vite"
+      ],
+      "delais_ar": [
+        "تحرك في الأيام الأولى: تسجيلات الكاميرات وذاكرة الشهود تزول بسرعة"
+      ],
+      "delais_dz": [
+        "T7arrek fel ayamet el lowla : el caméras w dhakret el chouhoud yemchiw fisa3"
+      ],
+      "vigilance": [
+        "N'apportez que des preuves vraies : un faux document ou un faux témoignage est lui-même une infraction et détruirait votre défense",
+        "Ne contactez pas la personne qui vous accuse pour la faire changer d'avis : cela peut être retenu contre vous",
+        "Un aveu est apprécié librement par les juges (art. 152 du Code de procédure pénale) : ne reconnaissez rien sous la pression"
+      ],
+      "vigilance_ar": [
+        "لا تقدم إلا أدلة صحيحة: الوثيقة المزورة أو شهادة الزور جريمة في حد ذاتها وتهدم دفاعك",
+        "لا تتصل بمن يتهمك لتغيير رأيه: قد يُحتسب ذلك ضدك",
+        "الاعتراف يخضع لاجتهاد القضاة (الفصل 152): لا تعترف بشيء تحت الضغط"
+      ],
+      "vigilance_dz": [
+        "Ma t9addem ken preuves s7i7a : wra9a mzawra walla chahed zour hiya jarima w theddem difa3ek",
+        "Ma tkallemch elli tahmek bech tbaddel ra2you : tnajjem tet7seb dhaddek",
+        "El i3tiraf el 9odha ya9idrouh (el fasl 152) : ma ta3tref b 7atta chay ta7t el dhghat"
+      ],
+      "conseil": {
+        "fr": "Votre meilleure défense, ce sont des preuves vraies et un avocat tôt. Notez dès aujourd'hui, heure par heure, où vous étiez au moment des faits et qui peut le confirmer, puis donnez cette liste à votre avocat.",
+        "ar": "أفضل دفاع لك: أدلة صحيحة ومحام في وقت مبكر. دوّن من اليوم، ساعة بساعة، أين كنت وقت الوقائع ومن يمكنه تأكيد ذلك، ثم سلّم القائمة لمحاميك.",
+        "dz": "A7sen difa3 : preuves s7i7a w avocat badri. Ekteb men el youm, sa3a b sa3a, wein kont fi wa9t el wa9a2e3 w chkoun ynajjem y2akked, w a3ti el lista lel avocat."
+      },
+      "questions": {
+        "fr": [
+          "De quoi vous accuse-t-on exactement, et qui ?",
+          "Avez-vous été convoqué ou entendu par la police ?",
+          "Où étiez-vous au moment des faits, et qui peut en témoigner ?",
+          "Avez-vous un avocat ?"
+        ],
+        "ar": [
+          "بماذا تُتهم بالضبط ومن يتهمك؟",
+          "هل تم استدعاؤك أو سماعك من الشرطة؟",
+          "أين كنت وقت الوقائع ومن يمكنه الشهادة؟",
+          "هل لديك محام؟"
+        ],
+        "dz": [
+          "Chnowa el tohma bel dhabt w chkoun tahmek ?",
+          "Stad3awek walla sma3ouk el police ?",
+          "Wein kont fi wa9t el wa9a2e3 w chkoun ynajjem yechhed ?",
+          "3andek avocat ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "J'ai des témoins de où j'étais",
+          "La police m'a convoqué",
+          "Je n'ai pas d'avocat",
+          "Il y a des caméras sur place"
+        ],
+        "ar": [
+          "عندي شهود على مكان وجودي",
+          "استدعتني الشرطة",
+          "ليس لدي محام",
+          "توجد كاميرات في المكان"
+        ],
+        "dz": [
+          "3andi chouhoud wein kont",
+          "El police stad3atni",
+          "Ma 3andich avocat",
+          "Famma caméras"
+        ]
+      },
+      "explications": {
+        "tn-off-constitution-2022#33": {
+          "fr": "Toute personne poursuivie est présumée innocente tant que sa culpabilité n'est pas établie par un procès équitable, avec toutes les garanties de sa défense.",
+          "ar": "كل متهم بريء إلى أن تثبت إدانته في محاكمة عادلة تكفل له جميع ضمانات الدفاع.",
+          "dz": "Ay wa7ed mtahem howa bari 7atta tetsabbet el idana fi mo7akma 3adla fiha kol dhamanat el difa3."
+        },
+        "tn-off-constitution-2022#35": {
+          "fr": "Personne ne peut être arrêté sans flagrant délit ou décision judiciaire ; la personne arrêtée est informée de ses droits et de l'accusation, et a le droit d'être représentée par un avocat.",
+          "ar": "لا يمكن إيقاف أي شخص إلا في حالة التلبس أو بقرار قضائي؛ ويُعلم فورا بحقوقه وبالتهمة، وله الحق في أن ينوبه محام.",
+          "dz": "7atta 7ad ma yet7bes ken ma fammech talabbos walla 9arar 9adha2i ; y9oulou 7o9ou9ou w el tohma, w 3andou el 7a9 fi avocat."
+        },
+        "tn-off-code-procedure-penale#193": {
+          "fr": "L'avocat a le droit de consulter et d'obtenir communication des pièces du dossier avant l'audience : c'est ainsi qu'on prépare sa défense.",
+          "ar": "للمحامي الحق في الاطلاع على أوراق الملف قبل الجلسة: بذلك يُحضّر الدفاع.",
+          "dz": "El avocat ynajjem ychouf wra9 el dossier 9bal el jalsa : hakka ty7adher el difa3."
+        },
+        "tn-off-constitution-2022#124": {
+          "fr": "Chacun a droit à un procès équitable et à la défense ; la loi assure l'aide juridictionnelle à ceux qui n'ont pas les moyens.",
+          "ar": "لكل شخص الحق في محاكمة عادلة وفي الدفاع، ويضمن القانون الإعانة العدلية لغير القادرين.",
+          "dz": "Kol wa7ed 3andou 7a9 fi mo7akma 3adla w fi el difa3 ; w el 9anoun y3ti i3ana 3adliya lelli ma 3andouch."
+        }
+      },
+      "garde_textes_de": [
+        "vol",
+        "escroquerie",
+        "abus_confiance",
+        "violence_physique",
+        "cyber_violence"
+      ]
+    },
+    {
+      "id": "temoin_crime",
+      "libelle": "Vous êtes témoin d'une infraction commise par un autre",
+      "libelle_ar": "أنت شاهد على جريمة ارتكبها غيرك",
+      "libelle_dz": "Chhedt 3la jarima 3amalha 7ad e5er",
+      "indices": [
+        " a tue",
+        "il a tue",
+        "elle a tue",
+        "a ete tue",
+        "meurtre",
+        "assassin",
+        "j'ai vu quelqu",
+        "j'ai ete temoin",
+        "temoin d",
+        "je connais le coupable",
+        "قتل",
+        "جريمه قتل",
+        "شاهدت",
+        "كنت شاهدا",
+        "9tal",
+        "qtal",
+        "chhedt"
+      ],
+      "qualification": "Si vous avez vu ou appris une infraction grave commise par quelqu'un d'autre, vous pouvez la signaler à la police ou au procureur de la République, qui reçoit les dénonciations (art. 26 du Code de procédure pénale). Votre témoignage peut être décisif.",
+      "qualification_ar": "إذا شاهدت أو علمت بجريمة خطيرة ارتكبها شخص آخر، يمكنك إعلام الشرطة أو وكيل الجمهورية الذي يتلقى الإعلامات (الفصل 26 من مجلة الإجراءات الجزائية). قد تكون شهادتك حاسمة.",
+      "qualification_dz": "Ken chhedt walla 3reft b jarima kbira 3amalha 7ad e5er, tnajjem t9oul lel police walla l wakil el jomhouriya (el fasl 26). Chhadtek ynajjem tkoun mohemma barcha.",
+      "textes": [
+        [
+          "tn-off-code-procedure-penale",
+          "26"
+        ],
+        [
+          "tn-off-code-procedure-penale",
+          "2"
+        ]
+      ],
+      "demarches": [
+        "Si quelqu'un est blessé ou en danger, appelez immédiatement le 190 (SAMU) ou le 197 (police)",
+        "Ne touchez à rien sur les lieux : les indices doivent être préservés",
+        "Notez tout de suite ce que vous avez vu : heure, lieu, personnes, véhicules, paroles",
+        "Signalez les faits à la police ou au procureur de la République ; vous pouvez demander à être entendu comme témoin",
+        "Si vous êtes menacé pour votre témoignage, dites-le immédiatement aux enquêteurs"
+      ],
+      "demarches_ar": [
+        "إذا كان هناك شخص مصاب أو في خطر اتصل فورا بالرقم 190 أو 197",
+        "لا تلمس شيئا في المكان: يجب الحفاظ على الآثار",
+        "دوّن فورا ما شاهدته: الساعة، المكان، الأشخاص، السيارات، الكلام",
+        "أعلم الشرطة أو وكيل الجمهورية؛ يمكنك طلب سماعك كشاهد",
+        "إذا تعرضت لتهديد بسبب شهادتك فأعلم المحققين فورا"
+      ],
+      "demarches_dz": [
+        "Ken famma 7ad mjarra7 walla fi khatar, kallem tawa el 190 walla el 197",
+        "Ma tmess 7atta chay fel blasa : lazem el athar yob9aw",
+        "Ekteb tawa chnowa chefet : el sa3a, el blasa, el 3baad, el karhabet, el klem",
+        "9oul lel police walla wakil el jomhouriya ; tnajjem totlob y sm3ouk ka chahed",
+        "Ken hadadouk 3la khater chhadtek, 9oul lel mo7a99i9in tawa"
+      ],
+      "preuves": [
+        "Vos notes écrites juste après les faits",
+        "Photos ou vidéos prises sans vous mettre en danger",
+        "Noms d'autres témoins"
+      ],
+      "preuves_ar": [
+        "ملاحظاتك المكتوبة مباشرة بعد الوقائع",
+        "صور أو فيديوهات التقطتها دون تعريض نفسك للخطر",
+        "أسماء شهود آخرين"
+      ],
+      "preuves_dz": [
+        "El notes elli ktebthom ba3d el wa9a2e3 toul",
+        "Tsawer walla vidéos bla ma t5attar b rou7ek",
+        "Asami chouhoud okhrin"
+      ],
+      "delais": [
+        "Signaler le plus vite possible : les preuves et les souvenirs s'effacent"
+      ],
+      "delais_ar": [
+        "أعلم في أقرب وقت: الأدلة والذكريات تزول"
+      ],
+      "delais_dz": [
+        "9oul fisa3 : el preuves w el dhikrayet yemchiw"
+      ],
+      "vigilance": [
+        "Ne vous mettez pas en danger pour obtenir des preuves",
+        "Dites seulement ce que vous avez vu, sans supposer"
+      ],
+      "vigilance_ar": [
+        "لا تعرّض نفسك للخطر للحصول على أدلة",
+        "قل فقط ما شاهدته دون افتراض"
+      ],
+      "vigilance_dz": [
+        "Ma t5attarch b rou7ek bech tjib preuves",
+        "9oul ken elli chefetou, bla ma tetkahhen"
+      ],
+      "conseil": {
+        "fr": "Si une vie est en jeu, appelez le 190 ou le 197 maintenant. Ensuite, écrivez ce que vous avez vu tant que c'est frais, et signalez-le à la police ou au procureur.",
+        "ar": "إذا كانت حياة في خطر فاتصل بالرقم 190 أو 197 الآن. ثم اكتب ما شاهدته ما دامت الذكرى حاضرة، وأعلم الشرطة أو وكيل الجمهورية.",
+        "dz": "Ken famma 7ayet fi khatar, kallem el 190 walla el 197 tawa. Ba3d ekteb chnowa chefet w hiya mezelet fi bélek, w 9oul lel police walla wakil el jomhouriya."
+      },
+      "questions": {
+        "fr": [
+          "Quelqu'un est-il blessé ou en danger maintenant ?",
+          "Quand et où cela s'est-il passé ?",
+          "Avez-vous été menacé ?"
+        ],
+        "ar": [
+          "هل هناك شخص مصاب أو في خطر الآن؟",
+          "متى وأين حدث ذلك؟",
+          "هل تعرضت لتهديد؟"
+        ],
+        "dz": [
+          "Famma 7ad mjarra7 walla fi khatar tawa ?",
+          "Waqtech w wein sar hédha ?",
+          "Hadadouk ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "Quelqu'un est blessé",
+          "Cela s'est passé hier",
+          "On m'a menacé",
+          "Je veux témoigner"
+        ],
+        "ar": [
+          "هناك شخص مصاب",
+          "حدث ذلك أمس",
+          "تعرضت لتهديد",
+          "أريد أن أشهد"
+        ],
+        "dz": [
+          "Famma 7ad mjarra7",
+          "Sar el bere7",
+          "Hadadouni",
+          "N7eb nechhed"
+        ]
+      },
+      "explications": {
+        "tn-off-code-procedure-penale#26": {
+          "fr": "Le procureur de la République reçoit les plaintes et les dénonciations des particuliers.",
+          "ar": "يتلقى وكيل الجمهورية الشكايات والإعلامات من الأفراد.",
+          "dz": "Wakil el jomhouriya y9abel el chekayet w el i3lamat men el nes."
+        },
+        "tn-off-code-procedure-penale#2": {
+          "fr": "La victime (la « partie lésée ») peut elle-même déclencher les poursuites.",
+          "ar": "يمكن للمتضرر أن يثير الدعوى العمومية بنفسه.",
+          "dz": "El mitdharrer ynajjem yebda el tatabbo3 wa7dou."
+        }
+      }
+    },
+    {
+      "id": "generale",
+      "libelle": "Question de droit",
+      "libelle_ar": "مسألة قانونية",
+      "libelle_dz": "Mas2ala 9anouniya",
+      "indices": [],
+      "qualification": "Votre situation ne correspond pas encore à un cas que je connais en détail. Voici la méthode qu'un avocat suivrait, et les questions qui me permettront de vous répondre précisément.",
+      "qualification_ar": "وضعيتك لا تطابق بعد حالة أعرفها بالتفصيل. إليك الطريقة التي يتبعها المحامي، والأسئلة التي ستمكنني من إجابتك بدقة.",
+      "qualification_dz": "El wadh3iya mte3ek mezelt ma t9abelch 7ala na3refha bel détail. Hédhi el tari9a elli yetba3ha avocat, w el asila elli t5allini njewbek bel dhabt.",
+      "textes": [],
+      "demarches": [
+        "Écrire la chronologie des faits : dates, personnes, montants, lieux",
+        "Rassembler tous les documents (contrats, reçus, messages, décisions)",
+        "Demander d'abord une solution amiable par écrit",
+        "Consulter une maison du droit, une association ou un avocat (aide judiciaire si vos revenus sont faibles)"
+      ],
+      "demarches_ar": [
+        "اكتب تسلسل الوقائع: التواريخ، الأشخاص، المبالغ، الأماكن",
+        "اجمع كل الوثائق (عقود، وصولات، رسائل، أحكام)",
+        "اطلب أولا حلا وديا كتابيا",
+        "استشر دار الحقوق أو جمعية أو محاميا (الإعانة العدلية إذا كانت مداخيلك ضعيفة)"
+      ],
+      "demarches_dz": [
+        "Ekteb el wa9a2e3 bel tartib : el tawarikh, el 3baad, el flous, el bleyes",
+        "Jamma3 kol el wra9 (3o9oud, wsolet, messageat, a7kem)",
+        "Otlob 7all wedi b ktiba lowel",
+        "Chouf dar el 7o9ou9 walla jam3iya walla avocat (i3ana 3adliya ken mad5oulek d3ifa)"
+      ],
+      "preuves": [
+        "Tout document écrit lié à la situation",
+        "Messages et échanges",
+        "Témoins"
+      ],
+      "preuves_ar": [
+        "كل وثيقة مكتوبة لها علاقة بالوضعية",
+        "الرسائل والمراسلات",
+        "الشهود"
+      ],
+      "preuves_dz": [
+        "Ay wra9a 3andha 3ala9a",
+        "El messageat",
+        "El chouhoud"
+      ],
+      "delais": [
+        "Ne tardez pas : beaucoup de recours ont des délais"
+      ],
+      "delais_ar": [
+        "لا تتأخر: لكثير من الطعون آجال"
+      ],
+      "delais_dz": [
+        "Ma tetakhkharch : barcha ijra2at 3andhom ajal"
+      ],
+      "vigilance": [
+        "Ne signez aucun document que vous ne comprenez pas"
+      ],
+      "vigilance_ar": [
+        "لا تمض أي وثيقة لا تفهمها"
+      ],
+      "vigilance_dz": [
+        "Ma tsahhi 3la 7atta wra9a ma fhemtehech"
+      ],
+      "conseil": {
+        "fr": "Répondez aux questions ci-dessous : avec ces précisions, je pourrai vous citer les articles exacts et les démarches adaptées.",
+        "ar": "أجب عن الأسئلة أسفله: بهذه التفاصيل سأتمكن من ذكر الفصول الدقيقة والإجراءات المناسبة.",
+        "dz": "Jewebni 3al asila elli ta7t : b hédhom nnajjem n9ollek el fsoul bel dhabt w el ijra2at elli yelz2ou."
+      },
+      "questions": {
+        "fr": [
+          "Que s'est-il passé exactement, et quand ?",
+          "Qui est l'autre personne (famille, employeur, voisin, vendeur, administration) ?",
+          "Avez-vous des documents ou des messages ?",
+          "Qu'aimeriez-vous obtenir : récupérer quelque chose, être indemnisé, faire cesser une situation ?"
+        ],
+        "ar": [
+          "ماذا حدث بالضبط ومتى؟",
+          "من هو الطرف الآخر (العائلة، المؤجر، الجار، البائع، الإدارة)؟",
+          "هل لديك وثائق أو رسائل؟",
+          "ماذا تريد أن تحصل عليه: استرجاع شيء، تعويض، إيقاف وضعية؟"
+        ],
+        "dz": [
+          "Chnowa sar bel dhabt w waqtech ?",
+          "Chkoun el taraf el e5er (3a2la, patron, jar, bayya3, idara) ?",
+          "3andek wra9 walla messageat ?",
+          "Chnowa t7eb : traja3 7aja, te5ou ta3widh, walla to9ef wadh3iya ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "C'est un problème avec ma famille",
+          "C'est un problème avec mon employeur",
+          "C'est un problème avec un voisin",
+          "C'est un problème avec une administration"
+        ],
+        "ar": [
+          "هي مشكلة مع عائلتي",
+          "هي مشكلة مع مؤجري",
+          "هي مشكلة مع جار",
+          "هي مشكلة مع إدارة"
+        ],
+        "dz": [
+          "Machkla m3a 3a2elti",
+          "Machkla m3a el patron",
+          "Machkla m3a jari",
+          "Machkla m3a idara"
+        ]
+      }
+    }
+  ]
+}

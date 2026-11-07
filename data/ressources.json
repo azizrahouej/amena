@@ -1,0 +1,23 @@
+{
+  "_avertissement": "Coordonnées nationales à vérifier par l'équipe avant toute mise en production. Les associations sont listées sans téléphone : ajoutez leurs coordonnées officielles après vérification.",
+  "urgences": [
+    {"numero": "197", "fr": "Police secours", "ar": "الشرطة", "detail_fr": "Danger immédiat, en ville", "detail_ar": "خطر فوري في المدينة"},
+    {"numero": "193", "fr": "Garde nationale", "ar": "الحرس الوطني", "detail_fr": "Danger immédiat, zones rurales", "detail_ar": "خطر فوري في المناطق الريفية"},
+    {"numero": "190", "fr": "SAMU", "ar": "الإسعاف الطبي", "detail_fr": "Blessure, urgence médicale, pensées suicidaires", "detail_ar": "إصابة، حالة طبية مستعجلة، أفكار انتحارية"},
+    {"numero": "198", "fr": "Protection civile", "ar": "الحماية المدنية", "detail_fr": "Incendie, accident", "detail_ar": "حريق، حادث"}
+  ],
+  "ecoute": [
+    {"numero": "1899", "fr": "Numéro vert femmes victimes de violence", "ar": "الرقم الأخضر للنساء ضحايا العنف", "detail_fr": "Gratuit · écoute, information et orientation", "detail_ar": "مجاني · إصغاء وإرشاد وتوجيه"}
+  ],
+  "associations": [
+    {"nom_fr": "Association tunisienne des femmes démocrates (ATFD)", "nom_ar": "الجمعية التونسية للنساء الديمقراطيات", "services_fr": "Centres d'écoute, aide juridique et psychologique", "services_ar": "مراكز إصغاء، مساعدة قانونية ونفسية"},
+    {"nom_fr": "AFTURD", "nom_ar": "جمعية النساء التونسيات للبحث حول التنمية", "services_fr": "Accompagnement et sensibilisation", "services_ar": "مرافقة وتحسيس"},
+    {"nom_fr": "Association Beity", "nom_ar": "جمعية بيتي", "services_fr": "Accueil et hébergement de femmes en situation de vulnérabilité", "services_ar": "استقبال وإيواء النساء في وضعية هشاشة"}
+  ],
+  "publics": [
+    {"fr": "Unités spécialisées police et garde nationale", "ar": "الوحدات المختصة بالشرطة والحرس الوطني", "detail_fr": "Une unité par gouvernorat pour recevoir les plaintes pour violence faite aux femmes", "detail_ar": "وحدة في كل ولاية لقبول شكايات العنف ضد المرأة"},
+    {"fr": "Juge de la famille", "ar": "قاضي الأسرة", "detail_fr": "Ordonnance de protection, garde des enfants, pension", "detail_ar": "قرار الحماية، حضانة الأطفال، النفقة"},
+    {"fr": "Délégué à la protection de l'enfance", "ar": "مندوب حماية الطفولة", "detail_fr": "Quand des enfants sont exposés à la violence", "detail_ar": "عندما يتعرض الأطفال للعنف"},
+    {"fr": "Centres de prise en charge du ministère de la Femme", "ar": "مراكز التعهد التابعة لوزارة المرأة", "detail_fr": "Hébergement et accompagnement · le 1899 indique le plus proche", "detail_ar": "إيواء ومرافقة · الرقم 1899 يدلك على الأقرب"}
+  ]
+}

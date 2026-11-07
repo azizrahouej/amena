@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+  <!-- Palais de justice : fronton, entablement, colonnes cannelées, marches. Illustration originale AMENA. -->
+  <defs>
+    <linearGradient id="or" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4dc9c"/>
+      <stop offset=".55" stop-color="#c69c45"/>
+      <stop offset="1" stop-color="#7a5a1c"/>
+    </linearGradient>
+    <linearGradient id="colonne" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a5a1c"/>
+      <stop offset=".45" stop-color="#f4dc9c"/>
+      <stop offset="1" stop-color="#9c7629"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#or)" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M320 18 40 120h560Z" fill="rgba(198,156,69,.06)"/>
+    <path d="M320 44 104 112h432Z"/>
+    <circle cx="320" cy="86" r="16"/>
+    <path d="M312 86h16M320 78v16"/>
+    <rect x="40" y="120" width="560" height="18"/>
+    <rect x="58" y="138" width="524" height="22" fill="rgba(198,156,69,.05)"/>
+    <path d="M70 149h500" stroke-dasharray="2 10"/>
+  </g>
+  <g fill="url(#colonne)" opacity=".92">
+    <rect x="82" y="168" width="34" height="176" rx="2"/>
+    <rect x="166" y="168" width="34" height="176" rx="2"/>
+    <rect x="250" y="168" width="34" height="176" rx="2"/>
+    <rect x="356" y="168" width="34" height="176" rx="2"/>
+    <rect x="440" y="168" width="34" height="176" rx="2"/>
+    <rect x="524" y="168" width="34" height="176" rx="2"/>
+  </g>
+  <g stroke="#5e4413" stroke-width="1.2" opacity=".55">
+    <path d="M93 172v168M105 172v168M177 172v168M189 172v168M261 172v168M273 172v168M367 172v168M379 172v168M451 172v168M463 172v168M535 172v168M547 172v168"/>
+  </g>
+  <g fill="url(#or)">
+    <rect x="76" y="160" width="46" height="9" rx="2"/><rect x="160" y="160" width="46" height="9" rx="2"/>
+    <rect x="244" y="160" width="46" height="9" rx="2"/><rect x="350" y="160" width="46" height="9" rx="2"/>
+    <rect x="434" y="160" width="46" height="9" rx="2"/><rect x="518" y="160" width="46" height="9" rx="2"/>
+    <rect x="76" y="343" width="46" height="9" rx="2"/><rect x="160" y="343" width="46" height="9" rx="2"/>
+    <rect x="244" y="343" width="46" height="9" rx="2"/><rect x="350" y="343" width="46" height="9" rx="2"/>
+    <rect x="434" y="343" width="46" height="9" rx="2"/><rect x="518" y="343" width="46" height="9" rx="2"/>
+  </g>
+  <!-- Porte centrale en arc -->
+  <path d="M300 352V236a20 20 0 0 1 40 0v116" stroke="url(#or)" stroke-width="2" fill="rgba(198,156,69,.08)"/>
+  <g stroke="url(#or)" stroke-width="2.2">
+    <rect x="30" y="352" width="580" height="14" fill="rgba(198,156,69,.08)"/>
+    <rect x="16" y="366" width="608" height="14" fill="rgba(198,156,69,.06)"/>
+    <rect x="2" y="380" width="636" height="16" fill="rgba(198,156,69,.04)"/>
+  </g>
+</svg>

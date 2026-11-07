@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" fill="none">
+  <!-- Porte tunisienne en arc, cloutée, inspirée des portes de la médina. Illustration originale AMENA. -->
+  <defs>
+    <linearGradient id="or" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4dc9c"/><stop offset=".55" stop-color="#c69c45"/><stop offset="1" stop-color="#7a5a1c"/>
+    </linearGradient>
+    <linearGradient id="bleu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f4e79"/><stop offset="1" stop-color="#0e2a44"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 410V150a130 130 0 0 1 260 0v260Z" fill="rgba(246,241,231,.08)" stroke="url(#or)" stroke-width="3"/>
+  <path d="M44 410V156a106 106 0 0 1 212 0v254Z" fill="url(#bleu)" stroke="url(#or)" stroke-width="2.5"/>
+  <path d="M150 52v358" stroke="url(#or)" stroke-width="2"/>
+  <!-- Clous : arcs concentriques et motifs en losange -->
+  <g fill="url(#or)">
+    <circle cx="150" cy="80" r="4"/><circle cx="118" cy="88" r="4"/><circle cx="182" cy="88" r="4"/>
+    <circle cx="92" cy="106" r="4"/><circle cx="208" cy="106" r="4"/><circle cx="74" cy="132" r="4"/><circle cx="226" cy="132" r="4"/>
+    <circle cx="100" cy="190" r="4"/><circle cx="86" cy="214" r="4"/><circle cx="114" cy="214" r="4"/><circle cx="100" cy="238" r="4"/>
+    <circle cx="200" cy="190" r="4"/><circle cx="186" cy="214" r="4"/><circle cx="214" cy="214" r="4"/><circle cx="200" cy="238" r="4"/>
+    <circle cx="100" cy="300" r="4"/><circle cx="86" cy="324" r="4"/><circle cx="114" cy="324" r="4"/><circle cx="100" cy="348" r="4"/>
+    <circle cx="200" cy="300" r="4"/><circle cx="186" cy="324" r="4"/><circle cx="214" cy="324" r="4"/><circle cx="200" cy="348" r="4"/>
+    <circle cx="100" cy="214" r="6"/><circle cx="200" cy="214" r="6"/><circle cx="100" cy="324" r="6"/><circle cx="200" cy="324" r="6"/>
+  </g>
+  <g stroke="url(#or)" stroke-width="1.5" opacity=".7">
+    <path d="M62 170h76M162 170h76M62 266h76M162 266h76M62 376h76M162 376h76"/>
+  </g>
+  <!-- Heurtoir en main de Fatma, stylisé -->
+  <g transform="translate(168 262)" fill="url(#or)">
+    <circle cx="0" cy="0" r="3"/>
+    <path d="M-7 4c0 9 3 16 7 16s7-7 7-16Z"/>
+  </g>
+</svg>

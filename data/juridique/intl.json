@@ -1,0 +1,114 @@
+{
+  "pays": {"code": "INT", "nom_fr": "International", "nom_ar": "دولي", "region": "Monde"},
+  "textes": [
+    {
+      "id": "int-dudh",
+      "type": "déclaration",
+      "titre": "Déclaration universelle des droits de l'homme",
+      "reference": "Assemblée générale des Nations unies, résolution 217 A (III), 10 décembre 1948",
+      "date": "1948-12-10",
+      "domaines": ["droits fondamentaux", "égalité", "dignité"],
+      "source": "Nations unies",
+      "url": "https://www.un.org/fr/universal-declaration-human-rights/",
+      "resume": "Texte fondateur des droits humains : égalité en dignité et en droits, droit à la vie et à la sûreté, interdiction des traitements cruels, libre consentement au mariage.",
+      "articles": [
+        {"numero": "1", "titre": "Égalité et dignité", "contenu": "Tous les êtres humains naissent libres et égaux en dignité et en droits."},
+        {"numero": "3", "titre": "Vie, liberté, sûreté", "contenu": "Toute personne a droit à la vie, à la liberté et à la sûreté de sa personne."},
+        {"numero": "5", "titre": "Interdiction de la torture", "contenu": "Nul ne peut être soumis à la torture, ni à des peines ou traitements cruels, inhumains ou dégradants."},
+        {"numero": "16", "titre": "Mariage", "contenu": "Le mariage ne peut être conclu qu'avec le libre et plein consentement des futurs époux, qui ont des droits égaux pendant le mariage et lors de sa dissolution."}
+      ],
+      "analyses": [
+        {"type": "lacune", "contenu": "Déclaration de principes sans force juridique contraignante en elle-même : sa portée dépend des traités et des lois nationales qui la mettent en œuvre."}
+      ]
+    },
+    {
+      "id": "int-cedaw",
+      "type": "convention",
+      "titre": "Convention sur l'élimination de toutes les formes de discrimination à l'égard des femmes (CEDAW)",
+      "reference": "Adoptée par l'Assemblée générale des Nations unies le 18 décembre 1979",
+      "date": "1979-12-18",
+      "domaines": ["égalité", "discrimination", "famille", "travail"],
+      "source": "Nations unies, Haut-Commissariat aux droits de l'homme",
+      "resume": "Traité international qui oblige les États parties à éliminer la discrimination à l'égard des femmes dans la vie politique, l'éducation, l'emploi, la santé et la famille. Son application est suivie par le Comité CEDAW. La Tunisie l'a ratifiée et a levé ses réserves spécifiques en 2014.",
+      "articles": [
+        {"numero": "2", "titre": "Obligations des États", "contenu": "Les États s'engagent à inscrire l'égalité dans leur législation, à interdire toute discrimination et à abroger les dispositions discriminatoires."},
+        {"numero": "11", "titre": "Emploi", "contenu": "Droit au travail, à l'égalité de rémunération et à la protection contre le licenciement pour cause de mariage ou de maternité."},
+        {"numero": "16", "titre": "Mariage et famille", "contenu": "Mêmes droits pour contracter mariage, choisir librement son conjoint, et mêmes droits et responsabilités pendant le mariage et lors de sa dissolution."},
+        {"numero": "Recommandation 35", "titre": "Violence fondée sur le genre", "contenu": "Le Comité CEDAW considère la violence fondée sur le genre comme une forme de discrimination et précise les obligations de prévention, de protection et de réparation des États."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Traité contraignant pour les États parties, avec un mécanisme de rapports périodiques et, via le Protocole facultatif, de plaintes individuelles."},
+        {"type": "lacune", "contenu": "De nombreux États maintiennent des réserves ou des déclarations générales qui limitent sa portée."}
+      ]
+    },
+    {
+      "id": "int-devaw",
+      "type": "déclaration",
+      "titre": "Déclaration sur l'élimination de la violence à l'égard des femmes",
+      "reference": "Assemblée générale des Nations unies, résolution 48/104, 20 décembre 1993",
+      "date": "1993-12-20",
+      "domaines": ["violence conjugale", "violence sexuelle", "définition"],
+      "source": "Nations unies",
+      "resume": "Première définition internationale de la violence à l'égard des femmes : tout acte de violence fondé sur le genre causant un préjudice physique, sexuel ou psychologique, y compris les menaces, la contrainte et la privation de liberté, dans la vie publique comme privée.",
+      "articles": [
+        {"numero": "1", "titre": "Définition", "contenu": "Vise tout acte de violence fondé sur l'appartenance au sexe féminin causant ou pouvant causer un préjudice physique, sexuel ou psychologique, y compris la menace de tels actes, la contrainte ou la privation arbitraire de liberté."},
+        {"numero": "4", "titre": "Devoirs des États", "contenu": "Les États doivent condamner la violence et ne pas invoquer la coutume, la tradition ou la religion pour se soustraire à leur obligation de l'éliminer."}
+      ],
+      "analyses": [
+        {"type": "lacune", "contenu": "Texte non contraignant : il guide les États mais ne crée pas d'obligation juridique directe."}
+      ]
+    },
+    {
+      "id": "int-istanbul",
+      "type": "convention",
+      "titre": "Convention d'Istanbul sur la prévention et la lutte contre la violence à l'égard des femmes et la violence domestique",
+      "reference": "Conseil de l'Europe, STCE n° 210, ouverte à la signature le 11 mai 2011",
+      "date": "2011-05-11",
+      "domaines": ["violence conjugale", "violence sexuelle", "protection", "prévention"],
+      "source": "Conseil de l'Europe",
+      "resume": "Traité régional le plus complet sur la violence faite aux femmes. Il repose sur quatre piliers : prévention, protection, poursuites et politiques intégrées. Il est ouvert aux États non membres du Conseil de l'Europe.",
+      "articles": [
+        {"numero": "36", "titre": "Violence sexuelle", "contenu": "Le viol est défini par l'absence de consentement, qui doit être donné volontairement ; la règle s'applique aussi entre conjoints ou ex-conjoints."},
+        {"numero": "52-53", "titre": "Mesures de protection", "contenu": "Prévoit des ordonnances d'urgence d'interdiction (éloignement immédiat de l'auteur du domicile) et des ordonnances de protection."},
+        {"numero": "48", "titre": "Modes alternatifs interdits", "contenu": "Interdit la médiation et la conciliation obligatoires dans les affaires de violence."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Référence internationale : consentement au cœur de la définition du viol, interdiction de la médiation forcée, suivi par un groupe d'experts (GREVIO)."},
+        {"type": "lacune", "contenu": "Certains États ne l'ont pas ratifiée ou s'en sont retirés, ce qui limite son effet."}
+      ]
+    },
+    {
+      "id": "int-maputo",
+      "type": "protocole",
+      "titre": "Protocole à la Charte africaine des droits de l'homme et des peuples relatif aux droits des femmes en Afrique (Protocole de Maputo)",
+      "reference": "Union africaine, adopté à Maputo le 11 juillet 2003",
+      "date": "2003-07-11",
+      "domaines": ["violence", "égalité", "santé", "famille"],
+      "source": "Union africaine",
+      "resume": "Instrument africain de protection des droits des femmes : interdiction de toutes les formes de violence, des mutilations génitales, droit à la santé et à l'égalité dans le mariage.",
+      "articles": [
+        {"numero": "4", "titre": "Droit à la vie et à la sécurité", "contenu": "Les États doivent adopter des lois interdisant toute forme de violence à l'égard des femmes, y compris les rapports sexuels non désirés ou forcés, qu'ils aient lieu en privé ou en public."}
+      ],
+      "analyses": [
+        {"type": "lacune", "contenu": "Ratification et mise en œuvre très inégales selon les États africains."}
+      ]
+    },
+    {
+      "id": "int-cde",
+      "type": "convention",
+      "titre": "Convention relative aux droits de l'enfant",
+      "reference": "Assemblée générale des Nations unies, 20 novembre 1989",
+      "date": "1989-11-20",
+      "domaines": ["enfants", "protection", "garde des enfants"],
+      "source": "Nations unies, UNICEF",
+      "resume": "Garantit les droits de l'enfant et place son intérêt supérieur au centre de toute décision qui le concerne, y compris en matière de garde et de protection contre la violence.",
+      "articles": [
+        {"numero": "3", "titre": "Intérêt supérieur de l'enfant", "contenu": "Dans toutes les décisions qui concernent les enfants, l'intérêt supérieur de l'enfant doit être une considération primordiale."},
+        {"numero": "19", "titre": "Protection contre la violence", "contenu": "Les États protègent l'enfant contre toute forme de violence, d'atteinte ou de brutalités physiques ou mentales, y compris au sein de la famille."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "L'exposition d'un enfant à la violence conjugale est reconnue comme une forme de violence à son égard : un argument important dans les décisions de garde."}
+      ]
+    }
+  ]
+}

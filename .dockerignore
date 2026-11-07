@@ -1,0 +1,19 @@
+# Rien de personnel ni de lourd dans l'image : seules src, web, data et scripts sont copiés.
+.env
+.env.*
+!.env.example
+**/__pycache__
+**/*.pyc
+.claude
+.mcp.json
+docs
+journal_stage
+notebooks
+reports
+tests
+models
+amena_projet.zip
+data/amena.db
+data/amena.db-*
+data/stats*.json
+data/apprentissage*

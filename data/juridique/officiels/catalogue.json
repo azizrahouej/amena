@@ -1,0 +1,150 @@
+{
+  "tn_constitution_2022_fr.pdf": {
+    "id": "tn-off-constitution-2022",
+    "type": "constitution",
+    "titre": "Constitution de la République tunisienne (texte intégral)",
+    "reference": "Constitution promulguée le 17 août 2022 (JORT, numéro spécial du 18 août 2022)",
+    "date": "2022-08-17",
+    "domaines": [
+      "droits fondamentaux",
+      "égalité",
+      "institutions"
+    ],
+    "source": "Traduction française « pour information », Bibliothèque du Sejm (Pologne)",
+    "url": "https://biblioteka.sejm.gov.pl/wp-content/uploads/2023/02/Tunezja_francuski_pdf_2022.pdf",
+    "resume": "Texte intégral de la Constitution de 2022 : droits et libertés, égalité entre citoyennes et citoyens, organisation des pouvoirs.",
+    "avertissement": "Traduction non officielle : seul le texte arabe publié au JORT fait foi."
+  },
+  "tn_loi_2017_58_fr.pdf": {
+    "id": "tn-off-loi-2017-58",
+    "type": "loi organique",
+    "titre": "Loi organique n° 2017-58 relative à l'élimination de la violence à l'égard des femmes (texte intégral)",
+    "reference": "Loi organique n° 2017-58 du 11 août 2017, JORT n° 65 du 15 août 2017",
+    "date": "2017-08-11",
+    "domaines": [
+      "violence conjugale",
+      "violence sexuelle",
+      "violence économique",
+      "harcèlement",
+      "protection",
+      "procédure"
+    ],
+    "source": "Copie du Journal officiel de la République tunisienne (inkyfada)",
+    "url": "https://inkyfada.com/wp-content/uploads/2020/10/Loi-organique-n%C2%B0-2017-58-du-11-ao%C3%BBt-2017.pdf",
+    "resume": "Texte intégral de la loi-cadre sur les violences faites aux femmes : définitions, prévention, protection, ordonnance de protection, peines aggravées."
+  },
+  "tn_code_penal_2005_fr.pdf": {
+    "id": "tn-off-code-penal",
+    "type": "code",
+    "titre": "Code pénal (texte intégral, édition 2005)",
+    "reference": "Décret du 9 juillet 1913, édition mise à jour par la loi n° 2005-46 du 6 juin 2005",
+    "date": "2005-06-06",
+    "domaines": [
+      "pénal",
+      "violence",
+      "harcèlement"
+    ],
+    "source": "Édition révisée par le Conseil national de réorganisation des dispositions législatives (Police Human Rights Resources)",
+    "url": "https://policehumanrightsresources.org/content/uploads/2016/07/Penal-Code-Tunisia-2005.pdf",
+    "resume": "Texte intégral du Code pénal dans son édition de 2005 : infractions, peines, violences, atteintes aux personnes.",
+    "avertissement": "Édition de 2005 : les modifications postérieures (notamment par la loi organique 2017-58) n'y figurent pas."
+  },
+  "tn_code_procedure_penale_1968_fr.pdf": {
+    "id": "tn-off-code-procedure-penale",
+    "type": "code",
+    "titre": "Code de procédure pénale (texte intégral, version de 1968)",
+    "reference": "Loi n° 68-23 du 24 juillet 1968, portant refonte du code de procédure pénale",
+    "date": "1968-07-24",
+    "domaines": [
+      "procédure",
+      "plainte",
+      "enquête"
+    ],
+    "source": "Texte de la loi de 1968 (Police Human Rights Resources)",
+    "url": "https://policehumanrightsresources.org/content/uploads/2016/07/Penal-Procedure-Code-Tunisia-1968.pdf",
+    "resume": "Texte intégral du Code de procédure pénale : action publique, plainte, enquête, instruction, jugement.",
+    "avertissement": "Version de 1968 : le code a été modifié depuis ; vérifier le texte en vigueur."
+  },
+  "tn_decret_loi_2022_54_fr.pdf": {
+    "id": "tn-off-dl-2022-54",
+    "type": "décret-loi",
+    "titre": "Décret-loi n° 2022-54 relatif aux infractions liées aux systèmes d'information (texte intégral)",
+    "reference": "Décret-loi n° 2022-54 du 13 septembre 2022",
+    "date": "2022-09-13",
+    "domaines": [
+      "cyber-violence",
+      "numérique",
+      "harcèlement en ligne"
+    ],
+    "source": "Portail legislation-securite.tn",
+    "url": "https://legislation-securite.tn/wp-content/uploads/sites/5/2023/11/Decret-loi-n%C2%B0-2022-54-du-13-septembre-2022.pdf",
+    "resume": "Texte intégral du décret-loi sur la cybercriminalité : accès frauduleux, données, contenus diffusés, preuve numérique."
+  },
+  "tn_code_travail_1966_fr.pdf": {
+    "id": "tn-off-code-travail",
+    "type": "code",
+    "titre": "Code du travail (texte intégral)",
+    "reference": "Loi n° 66-27 du 30 avril 1966, portant promulgation du code du travail",
+    "date": "1966-04-30",
+    "domaines": [
+      "travail",
+      "licenciement",
+      "harcèlement",
+      "égalité salariale"
+    ],
+    "source": "African Mining Legislation Atlas (a-mla.org)",
+    "url": "https://a-mla.org/sites/default/files/amla-import/Microsoft%20Word%20-%20Ctrav.doc_0.pdf",
+    "resume": "Texte intégral du Code du travail : contrat de travail, licenciement, durée du travail, protection des salariées, inspection du travail.",
+    "avertissement": "Édition non datée de la source : le code a été modifié à plusieurs reprises (notamment en 1996, 2011 et 2025) ; vérifier le texte en vigueur."
+  },
+  "tn_code_obligations_contrats_fr.html": {
+    "id": "tn-off-coc",
+    "type": "code",
+    "titre": "Code des obligations et des contrats (texte intégral)",
+    "reference": "Décret du 15 décembre 1906, réorganisé par la loi n° 2005-87 du 15 août 2005",
+    "date": "2005-08-15",
+    "domaines": [
+      "obligations",
+      "contrats",
+      "responsabilité",
+      "dommages et intérêts"
+    ],
+    "source": "WIPO Lex (Organisation mondiale de la propriété intellectuelle)",
+    "url": "https://www.wipo.int/wipolex/fr/legislation/details/8186",
+    "resume": "Texte intégral du Code des obligations et des contrats : contrats, responsabilité civile, réparation du préjudice, preuve des obligations.",
+    "avertissement": "Texte extrait d'une page web (WIPO Lex) : la mise en page a pu être perdue ; vérifier le texte officiel."
+  },
+  "tn_code_protection_enfant_ar.pdf": {
+    "id": "tn-off-code-protection-enfant",
+    "type": "code",
+    "titre": "مجلة حماية الطفل — Code de la protection de l'enfant (texte intégral en arabe)",
+    "reference": "Loi n° 95-92 du 9 novembre 1995",
+    "date": "1995-11-09",
+    "domaines": [
+      "enfants",
+      "protection"
+    ],
+    "source": "Texte arabe (CAWTAR)",
+    "url": "https://wrcati.cawtar.org/assets/documents/pdf/CodeProtectionEnfant9Nov1995.pdf",
+    "resume": "النص الكامل لمجلة حماية الطفل : حقوق الطفل، حالات التهديد، مندوب حماية الطفولة. Texte intégral du Code de la protection de l'enfant.",
+    "avertissement": "Texte extrait automatiquement d'un PDF arabe : quelques mots peuvent être mal restitués."
+  },
+  "tn_code_droits_reels_ar.pdf": {
+    "id": "tn-off-code-droits-reels",
+    "type": "code",
+    "titre": "مجلة الحقوق العينية — Code des droits réels (texte intégral en arabe)",
+    "reference": "Loi n° 65-5 du 12 février 1965 portant promulgation du Code des droits réels",
+    "date": "1965-02-12",
+    "domaines": [
+      "propriété",
+      "terres",
+      "immatriculation foncière",
+      "possession",
+      "biens"
+    ],
+    "source": "Édition de l'Imprimerie officielle de la République tunisienne, 2004 (copie CAWTAR)",
+    "url": "https://wrcati.cawtar.org/assets/documents/pdf/CDR.pdf",
+    "resume": "النص الكامل لمجلة الحقوق العينية: الملكية، الحوز، التسجيل العقاري، الرسوم العقارية. Texte intégral du Code des droits réels : propriété, possession, immatriculation foncière, titres fonciers.",
+    "avertissement": "Édition 2004 : les modifications postérieures (notamment lois 2005-78 et 2010-34) n'y figurent pas ; vérifier le texte en vigueur."
+  }
+}

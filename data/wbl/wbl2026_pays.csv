@@ -1,0 +1,191 @@
+﻿iso3,pays_en,region_en,revenu,annee,pays_fr,region_fr,score_cadre_legal,score_dispositifs,score_application,sous_mariage_enfants,sous_harcelement,sous_violence_domestique,sous_feminicide
+AFG,Afghanistan,South Asia,Revenu faible,2026,Afghanistan,Asie du Sud,0.0,0.0,0.0,0,0.0,0.0,0
+ZAF,South Africa,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Afrique du Sud,Afrique subsaharienne,37.5,62.5,18.75,0,50.0,100.0,0
+ALB,Albania,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Albanie,Europe et Asie centrale,62.5,91.75,37.5,0,50.0,100.0,100
+DZA,Algeria,Middle East & North Africa,Revenu intermédiaire (tranche supérieure),2026,Algérie,Moyen-Orient et Afrique du Nord,31.25,0.0,23.44,0,50.0,75.0,0
+DEU,Germany,High income: OECD,Revenu élevé,2026,Allemagne,Revenu élevé : OCDE,12.5,79.25,9.38,0,50.0,0.0,0
+AGO,Angola,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Angola,Afrique subsaharienne,31.25,50.0,14.88,0,25.0,100.0,0
+ATG,Antigua and Barbuda,Latin America & Caribbean,Revenu élevé,2026,Antigua-et-Barbuda,Amérique latine et Caraïbes,6.25,37.5,0.81,0,25.0,0.0,0
+SAU,Saudi Arabia,Middle East & North Africa,Revenu élevé,2026,Arabie saoudite,Moyen-Orient et Afrique du Nord,31.25,52.0,31.25,0,75.0,50.0,0
+ARG,Argentina,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Argentine,Amérique latine et Caraïbes,68.75,60.5,46.88,0,75.0,100.0,100
+ARM,Armenia,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Arménie,Europe et Asie centrale,25.0,83.25,12.5,0,0.0,100.0,0
+AUS,Australia,High income: OECD,Revenu élevé,2026,Australie,Revenu élevé : OCDE,68.75,91.75,55.5,100,75.0,100.0,0
+AUT,Austria,High income: OECD,Revenu élevé,2026,Autriche,Revenu élevé : OCDE,31.25,35.25,23.44,0,75.0,50.0,0
+AZE,Azerbaijan,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Azerbaïdjan,Europe et Asie centrale,31.25,58.25,21.13,100,25.0,0.0,0
+BHS,"Bahamas, The",Latin America & Caribbean,Revenu élevé,2026,Bahamas,Amérique latine et Caraïbes,6.25,27.0,1.56,0,25.0,0.0,0
+BHR,Bahrain,Middle East & North Africa,Revenu élevé,2026,Bahreïn,Moyen-Orient et Afrique du Nord,6.25,60.5,4.69,0,25.0,0.0,0
+BGD,Bangladesh,South Asia,Revenu intermédiaire (tranche inférieure),2026,Bangladesh,Asie du Sud,6.25,52.25,0.0,0,25.0,0.0,0
+BRB,Barbados,Latin America & Caribbean,Revenu élevé,2026,Barbade,Amérique latine et Caraïbes,12.5,29.25,3.13,0,50.0,0.0,0
+BEL,Belgium,High income: OECD,Revenu élevé,2026,Belgique,Revenu élevé : OCDE,31.25,68.75,23.44,0,25.0,100.0,0
+BLZ,Belize,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Belize,Amérique latine et Caraïbes,62.5,93.75,,100,75.0,75.0,0
+BTN,Bhutan,South Asia,Revenu intermédiaire (tranche inférieure),2026,Bhoutan,Asie du Sud,37.5,75.0,15.63,0,50.0,100.0,0
+BLR,Belarus,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Biélorussie,Europe et Asie centrale,0.0,62.5,0.0,0,0.0,0.0,0
+BOL,Bolivia,Latin America & Caribbean,Revenu intermédiaire (tranche inférieure),2026,Bolivie,Amérique latine et Caraïbes,81.25,62.5,35.42,100,25.0,100.0,100
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Bosnie-Herzégovine,Europe et Asie centrale,87.5,60.5,50.0,100,50.0,100.0,100
+BWA,Botswana,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Botswana,Afrique subsaharienne,6.25,16.75,1.56,0,25.0,0.0,0
+BRN,Brunei Darussalam,East Asia & Pacific,Revenu élevé,2026,Brunei,Asie de l'Est et Pacifique,0.0,27.0,0.0,0,0.0,0.0,0
+BRA,Brazil,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Brésil,Amérique latine et Caraïbes,62.5,91.75,29.69,0,50.0,100.0,100
+BGR,Bulgaria,Europe & Central Asia,Revenu élevé,2026,Bulgarie,Europe et Asie centrale,68.75,79.25,22.92,100,75.0,100.0,0
+BFA,Burkina Faso,Sub-Saharan Africa,Revenu faible,2026,Burkina Faso,Afrique subsaharienne,37.5,27.0,18.75,0,50.0,100.0,0
+BDI,Burundi,Sub-Saharan Africa,Revenu faible,2026,Burundi,Afrique subsaharienne,31.25,50.0,15.63,100,25.0,0.0,0
+BEN,Benin,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Bénin,Afrique subsaharienne,18.75,52.0,9.38,0,75.0,0.0,0
+KHM,Cambodia,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Cambodge,Asie de l'Est et Pacifique,25.0,25.0,6.25,0,25.0,75.0,0
+CMR,Cameroon,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Cameroun,Afrique subsaharienne,12.5,8.25,6.25,0,50.0,0.0,0
+CAN,Canada,High income: OECD,Revenu élevé,2026,Canada,Revenu élevé : OCDE,37.5,91.75,26.56,0,50.0,100.0,0
+CPV,Cabo Verde,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Cap-Vert,Afrique subsaharienne,31.25,56.25,17.19,0,25.0,100.0,0
+CHL,Chile,High income: OECD,Revenu élevé,2026,Chili,Revenu élevé : OCDE,56.25,79.25,46.88,100,25.0,0.0,100
+CHN,China,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Chine,Asie de l'Est et Pacifique,31.25,48.0,19.56,0,75.0,50.0,0
+CYP,Cyprus,Europe & Central Asia,Revenu élevé,2026,Chypre,Europe et Asie centrale,81.25,85.5,46.88,100,25.0,100.0,100
+PSE,West Bank and Gaza,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Cisjordanie et Gaza,Moyen-Orient et Afrique du Nord,0.0,66.75,,0,0.0,0.0,0
+COL,Colombia,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Colombie,Amérique latine et Caraïbes,62.5,75.0,28.13,0,50.0,100.0,100
+COM,Comoros,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Comores,Afrique subsaharienne,6.25,29.25,3.13,0,25.0,0.0,0
+KOR,"Korea, Rep.",High income: OECD,Revenu élevé,2026,Corée du Sud,Revenu élevé : OCDE,50.0,70.75,,0,100.0,100.0,0
+CRI,Costa Rica,Latin America & Caribbean,Revenu élevé,2026,Costa Rica,Amérique latine et Caraïbes,100.0,93.75,62.5,100,100.0,100.0,100
+HRV,Croatia,Europe & Central Asia,Revenu élevé,2026,Croatie,Europe et Asie centrale,87.5,70.75,57.81,100,50.0,100.0,100
+CIV,Côte d'Ivoire,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Côte d'Ivoire,Afrique subsaharienne,50.0,0.0,31.25,100,50.0,50.0,0
+DNK,Denmark,High income: OECD,Revenu élevé,2026,Danemark,Revenu élevé : OCDE,50.0,62.5,,100,25.0,75.0,0
+DJI,Djibouti,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Djibouti,Moyen-Orient et Afrique du Nord,31.25,20.75,21.88,0,25.0,100.0,0
+DMA,Dominica,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Dominique,Amérique latine et Caraïbes,25.0,8.25,12.5,0,0.0,100.0,0
+ESP,Spain,High income: OECD,Revenu élevé,2026,Espagne,Revenu élevé : OCDE,87.5,100.0,74.25,100,75.0,75.0,100
+EST,Estonia,High income: OECD,Revenu élevé,2026,Estonie,Revenu élevé : OCDE,12.5,60.5,6.25,0,50.0,0.0,0
+SWZ,Eswatini,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Eswatini,Afrique subsaharienne,31.25,58.25,21.88,0,25.0,100.0,0
+FJI,Fiji,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Fidji,Asie de l'Est et Pacifique,43.75,66.75,21.88,100,75.0,0.0,0
+FIN,Finland,High income: OECD,Revenu élevé,2026,Finlande,Revenu élevé : OCDE,12.5,68.75,7.81,0,50.0,0.0,0
+FRA,France,High income: OECD,Revenu élevé,2026,France,Revenu élevé : OCDE,62.5,91.75,46.88,0,75.0,75.0,100
+GAB,Gabon,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Gabon,Afrique subsaharienne,56.25,52.0,34.38,0,25.0,100.0,100
+GMB,"Gambia, The",Sub-Saharan Africa,Revenu faible,2026,Gambie,Afrique subsaharienne,50.0,52.25,11.75,100,25.0,75.0,0
+GHA,Ghana,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Ghana,Afrique subsaharienne,31.25,66.75,14.88,0,25.0,100.0,0
+GRD,Grenada,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Grenade,Amérique latine et Caraïbes,25.0,29.25,12.5,0,0.0,100.0,0
+GRC,Greece,High income: OECD,Revenu élevé,2026,Grèce,Revenu élevé : OCDE,25.0,77.25,17.19,0,25.0,75.0,0
+GTM,Guatemala,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Guatemala,Amérique latine et Caraïbes,50.0,93.75,31.25,0,0.0,100.0,100
+GIN,Guinea,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Guinée,Afrique subsaharienne,31.25,41.5,15.63,100,25.0,0.0,0
+GNQ,Equatorial Guinea,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Guinée équatoriale,Afrique subsaharienne,12.5,25.0,6.25,0,50.0,0.0,0
+GNB,Guinea-Bissau,Sub-Saharan Africa,Revenu faible,2026,Guinée-Bissau,Afrique subsaharienne,31.25,33.5,9.38,0,25.0,100.0,0
+GUY,Guyana,Latin America & Caribbean,Revenu élevé,2026,Guyana,Amérique latine et Caraïbes,12.5,54.25,6.25,0,50.0,0.0,0
+GEO,Georgia,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Géorgie,Europe et Asie centrale,62.5,85.5,28.13,0,50.0,100.0,100
+HTI,Haiti,Latin America & Caribbean,Revenu intermédiaire (tranche inférieure),2026,Haïti,Amérique latine et Caraïbes,0.0,58.25,0.0,0,0.0,0.0,0
+HND,Honduras,Latin America & Caribbean,Revenu intermédiaire (tranche inférieure),2026,Honduras,Amérique latine et Caraïbes,87.5,54.25,56.25,100,50.0,100.0,100
+HKG,"Hong Kong SAR, China",East Asia & Pacific,Revenu élevé,2026,Hong Kong (Chine),Asie de l'Est et Pacifique,18.75,60.5,10.94,0,50.0,25.0,0
+HUN,Hungary,High income: OECD,Revenu élevé,2026,Hongrie,Revenu élevé : OCDE,25.0,33.25,18.75,0,0.0,100.0,0
+IND,India,South Asia,Revenu intermédiaire (tranche inférieure),2026,Inde,Asie du Sud,56.25,75.0,25.0,100,50.0,75.0,0
+IDN,Indonesia,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Indonésie,Asie de l'Est et Pacifique,43.75,66.75,21.88,0,75.0,100.0,0
+IRQ,Iraq,Middle East & North Africa,Revenu intermédiaire (tranche supérieure),2026,Irak,Moyen-Orient et Afrique du Nord,12.5,33.25,3.13,0,50.0,0.0,0
+IRN,"Iran, Islamic Rep.",Middle East & North Africa,Revenu intermédiaire (tranche supérieure),2026,Iran,Moyen-Orient et Afrique du Nord,6.25,0.0,1.56,0,25.0,0.0,0
+IRL,Ireland,High income: OECD,Revenu élevé,2026,Irlande,Revenu élevé : OCDE,62.5,91.75,46.88,100,100.0,50.0,0
+ISL,Iceland,High income: OECD,Revenu élevé,2026,Islande,Revenu élevé : OCDE,31.25,52.0,16.44,0,50.0,75.0,0
+ISR,Israel,High income: OECD,Revenu élevé,2026,Israël,Revenu élevé : OCDE,68.75,25.0,40.63,100,75.0,100.0,0
+ITA,Italy,High income: OECD,Revenu élevé,2026,Italie,Revenu élevé : OCDE,62.5,91.75,40.63,100,50.0,100.0,0
+JAM,Jamaica,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Jamaïque,Amérique latine et Caraïbes,18.75,37.5,9.38,0,75.0,0.0,0
+JPN,Japan,High income: OECD,Revenu élevé,2026,Japon,Revenu élevé : OCDE,12.5,83.25,6.25,0,50.0,0.0,0
+JOR,Jordan,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Jordanie,Moyen-Orient et Afrique du Nord,6.25,85.5,1.56,0,25.0,0.0,0
+KAZ,Kazakhstan,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Kazakhstan,Europe et Asie centrale,0.0,54.25,,0,0.0,0.0,0
+KEN,Kenya,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Kenya,Afrique subsaharienne,43.75,16.75,20.31,100,75.0,0.0,0
+KGZ,Kyrgyz Republic,Europe & Central Asia,Revenu intermédiaire (tranche inférieure),2026,Kirghizistan,Europe et Asie centrale,50.0,41.5,21.88,100,25.0,75.0,0
+KIR,Kiribati,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Kiribati,Asie de l'Est et Pacifique,37.5,41.5,17.19,0,50.0,100.0,0
+KSV,Kosovo,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Kosovo,Europe et Asie centrale,87.5,79.25,37.5,100,50.0,100.0,100
+KWT,Kuwait,Middle East & North Africa,Revenu élevé,2026,Koweït,Moyen-Orient et Afrique du Nord,6.25,25.0,,0,25.0,0.0,0
+LAO,Lao PDR,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Laos,Asie de l'Est et Pacifique,50.0,83.25,18.75,100,0.0,100.0,0
+LSO,Lesotho,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Lesotho,Afrique subsaharienne,25.0,56.25,14.13,0,25.0,75.0,0
+LVA,Latvia,High income: OECD,Revenu élevé,2026,Lettonie,Revenu élevé : OCDE,31.25,79.25,18.75,0,25.0,100.0,0
+LBN,Lebanon,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Liban,Moyen-Orient et Afrique du Nord,43.75,56.25,21.88,0,100.0,75.0,0
+LBR,Liberia,Sub-Saharan Africa,Revenu faible,2026,Liberia,Afrique subsaharienne,6.25,41.75,1.56,0,25.0,0.0,0
+LBY,Libya,Middle East & North Africa,Revenu intermédiaire (tranche supérieure),2026,Libye,Moyen-Orient et Afrique du Nord,12.5,0.0,3.13,0,50.0,0.0,0
+LTU,Lithuania,High income: OECD,Revenu élevé,2026,Lituanie,Revenu élevé : OCDE,37.5,48.0,18.75,0,50.0,100.0,0
+LUX,Luxembourg,High income: OECD,Revenu élevé,2026,Luxembourg,Revenu élevé : OCDE,50.0,77.0,18.0,0,25.0,75.0,100
+MKD,North Macedonia,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Macédoine du Nord,Europe et Asie centrale,100.0,91.75,37.5,100,100.0,100.0,100
+MDG,Madagascar,Sub-Saharan Africa,Revenu faible,2026,Madagascar,Afrique subsaharienne,31.25,85.5,21.88,0,25.0,100.0,0
+MYS,Malaysia,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Malaisie,Asie de l'Est et Pacifique,12.5,85.5,6.25,0,0.0,50.0,0
+MWI,Malawi,Sub-Saharan Africa,Revenu faible,2026,Malawi,Afrique subsaharienne,31.25,29.25,15.63,0,50.0,75.0,0
+MDV,Maldives,South Asia,Revenu intermédiaire (tranche supérieure),2026,Maldives,Asie du Sud,37.5,25.0,15.63,0,50.0,100.0,0
+MLI,Mali,Sub-Saharan Africa,Revenu faible,2026,Mali,Afrique subsaharienne,37.5,16.75,0.0,0,50.0,0.0,100
+MLT,Malta,Middle East & North Africa,Revenu élevé,2026,Malte,Moyen-Orient et Afrique du Nord,68.75,85.5,,0,75.0,100.0,100
+MAR,Morocco,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Maroc,Moyen-Orient et Afrique du Nord,68.75,56.25,34.38,0,75.0,100.0,100
+MUS,Mauritius,Sub-Saharan Africa,Revenu intermédiaire (tranche supérieure),2026,Maurice,Afrique subsaharienne,43.75,29.25,27.38,0,75.0,100.0,0
+MRT,Mauritania,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Mauritanie,Afrique subsaharienne,0.0,27.0,0.0,0,0.0,0.0,0
+MEX,Mexico,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Mexique,Amérique latine et Caraïbes,87.5,91.75,34.38,100,50.0,100.0,100
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Micronésie,Asie de l'Est et Pacifique,25.0,16.75,11.75,0,25.0,75.0,0
+MDA,Moldova,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Moldavie,Europe et Asie centrale,56.25,93.75,20.31,0,25.0,100.0,100
+MNG,Mongolia,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Mongolie,Asie de l'Est et Pacifique,31.25,91.75,14.06,0,25.0,100.0,0
+MNE,Montenegro,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Monténégro,Europe et Asie centrale,68.75,62.5,,100,75.0,100.0,0
+MOZ,Mozambique,Sub-Saharan Africa,Revenu faible,2026,Mozambique,Afrique subsaharienne,31.25,54.25,14.06,0,25.0,100.0,0
+MMR,Myanmar,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Myanmar,Asie de l'Est et Pacifique,0.0,33.25,0.0,0,0.0,0.0,0
+NAM,Namibia,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Namibie,Afrique subsaharienne,31.25,20.75,14.06,0,25.0,100.0,0
+NIC,Nicaragua,Latin America & Caribbean,Revenu intermédiaire (tranche inférieure),2026,Nicaragua,Amérique latine et Caraïbes,68.75,16.75,40.63,0,75.0,100.0,100
+NER,Niger,Sub-Saharan Africa,Revenu faible,2026,Niger,Afrique subsaharienne,6.25,16.75,3.13,0,25.0,0.0,0
+NGA,Nigeria,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Nigeria,Afrique subsaharienne,43.75,100.0,15.63,100,75.0,0.0,0
+NOR,Norway,High income: OECD,Revenu élevé,2026,Norvège,Revenu élevé : OCDE,31.25,54.0,18.75,0,75.0,50.0,0
+NZL,New Zealand,High income: OECD,Revenu élevé,2026,Nouvelle-Zélande,Revenu élevé : OCDE,75.0,91.75,,100,100.0,100.0,0
+NPL,Nepal,South Asia,Revenu intermédiaire (tranche inférieure),2026,Népal,Asie du Sud,62.5,66.75,28.13,100,50.0,100.0,0
+OMN,Oman,Middle East & North Africa,Revenu élevé,2026,Oman,Moyen-Orient et Afrique du Nord,0.0,27.0,,0,0.0,0.0,0
+UGA,Uganda,Sub-Saharan Africa,Revenu faible,2026,Ouganda,Afrique subsaharienne,37.5,16.75,14.06,0,50.0,100.0,0
+UZB,Uzbekistan,Europe & Central Asia,Revenu intermédiaire (tranche inférieure),2026,Ouzbékistan,Europe et Asie centrale,25.0,58.25,9.38,100,0.0,0.0,0
+PAK,Pakistan,South Asia,Revenu intermédiaire (tranche inférieure),2026,Pakistan,Asie du Sud,43.75,54.25,10.94,0,75.0,100.0,0
+PLW,Palau,East Asia & Pacific,Revenu élevé,2026,Palaos,Asie de l'Est et Pacifique,12.5,0.0,9.38,0,0.0,50.0,0
+PAN,Panama,Latin America & Caribbean,Revenu élevé,2026,Panama,Amérique latine et Caraïbes,62.5,60.5,39.06,0,50.0,100.0,100
+PNG,Papua New Guinea,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Papouasie-Nouvelle-Guinée,Asie de l'Est et Pacifique,31.25,91.75,17.19,0,25.0,100.0,0
+PRY,Paraguay,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Paraguay,Amérique latine et Caraïbes,56.25,60.5,34.38,0,25.0,100.0,100
+NLD,Netherlands,High income: OECD,Revenu élevé,2026,Pays-Bas,Revenu élevé : OCDE,31.25,27.0,12.5,0,50.0,75.0,0
+PHL,Philippines,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Philippines,Asie de l'Est et Pacifique,75.0,91.75,37.5,100,100.0,100.0,0
+POL,Poland,High income: OECD,Revenu élevé,2026,Pologne,Revenu élevé : OCDE,37.5,62.5,18.75,0,50.0,100.0,0
+PRI,Puerto Rico (US),Latin America & Caribbean,Revenu élevé,2026,Porto Rico,Amérique latine et Caraïbes,68.75,75.0,51.56,0,75.0,100.0,100
+PRT,Portugal,High income: OECD,Revenu élevé,2026,Portugal,Revenu élevé : OCDE,31.25,100.0,14.06,0,25.0,100.0,0
+PER,Peru,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Pérou,Amérique latine et Caraïbes,93.75,91.75,42.19,100,75.0,100.0,100
+QAT,Qatar,Middle East & North Africa,Revenu élevé,2026,Qatar,Moyen-Orient et Afrique du Nord,12.5,20.75,9.38,0,50.0,0.0,0
+ROU,Romania,Europe & Central Asia,Revenu élevé,2026,Roumanie,Europe et Asie centrale,68.75,75.0,40.63,0,75.0,100.0,100
+GBR,United Kingdom,High income: OECD,Revenu élevé,2026,Royaume-Uni,Revenu élevé : OCDE,68.75,91.75,50.0,100,75.0,100.0,0
+RUS,Russian Federation,Europe & Central Asia,Revenu élevé,2026,Russie,Europe et Asie centrale,0.0,33.25,0.0,0,0.0,0.0,0
+RWA,Rwanda,Sub-Saharan Africa,Revenu faible,2026,Rwanda,Afrique subsaharienne,31.25,85.5,21.88,100,25.0,0.0,0
+CAF,Central African Republic,Sub-Saharan Africa,Revenu faible,2026,République centrafricaine,Afrique subsaharienne,25.0,16.75,12.5,0,25.0,75.0,0
+DOM,Dominican Republic,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,République dominicaine,Amérique latine et Caraïbes,56.25,91.75,25.81,100,50.0,75.0,0
+COG,"Congo, Rep.",Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,République du Congo,Afrique subsaharienne,50.0,16.75,25.0,0,100.0,100.0,0
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa,Revenu faible,2026,République démocratique du Congo,Afrique subsaharienne,12.5,41.75,3.13,0,50.0,0.0,0
+KNA,St. Kitts and Nevis,Latin America & Caribbean,Revenu élevé,2026,Saint-Christophe-et-Niévès,Amérique latine et Caraïbes,25.0,25.0,12.5,0,0.0,100.0,0
+SMR,San Marino,Europe & Central Asia,Revenu élevé,2026,Saint-Marin,Europe et Asie centrale,43.75,83.5,29.17,0,75.0,100.0,0
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Saint-Vincent-et-les-Grenadines,Amérique latine et Caraïbes,31.25,41.75,7.81,0,25.0,100.0,0
+LCA,St. Lucia,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Sainte-Lucie,Amérique latine et Caraïbes,25.0,20.75,10.94,0,25.0,75.0,0
+SLV,El Salvador,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Salvador,Amérique latine et Caraïbes,62.5,93.75,43.75,0,50.0,100.0,100
+WSM,Samoa,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Samoa,Asie de l'Est et Pacifique,6.25,50.0,,0,25.0,0.0,0
+STP,São Tomé and Príncipe,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Sao Tomé-et-Principe,Afrique subsaharienne,31.25,6.25,14.06,0,25.0,100.0,0
+SRB,Serbia,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Serbie,Europe et Asie centrale,31.25,83.5,14.06,0,25.0,100.0,0
+SYC,Seychelles,Sub-Saharan Africa,Revenu élevé,2026,Seychelles,Afrique subsaharienne,37.5,6.25,28.13,0,50.0,100.0,0
+SLE,Sierra Leone,Sub-Saharan Africa,Revenu faible,2026,Sierra Leone,Afrique subsaharienne,68.75,81.25,23.44,100,75.0,100.0,0
+SGP,Singapore,East Asia & Pacific,Revenu élevé,2026,Singapour,Asie de l'Est et Pacifique,50.0,91.75,45.83,100,50.0,50.0,0
+SVK,Slovak Republic,High income: OECD,Revenu élevé,2026,Slovaquie,Revenu élevé : OCDE,43.75,54.25,,0,75.0,100.0,0
+SVN,Slovenia,High income: OECD,Revenu élevé,2026,Slovénie,Revenu élevé : OCDE,68.75,71.0,28.94,0,75.0,100.0,100
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa,Revenu faible,2026,Somalie,Afrique subsaharienne,0.0,0.0,0.0,0,0.0,0.0,0
+SDN,Sudan,Sub-Saharan Africa,Revenu faible,2026,Soudan,Afrique subsaharienne,6.25,0.0,3.13,0,25.0,0.0,0
+SSD,South Sudan,Sub-Saharan Africa,Revenu faible,2026,Soudan du Sud,Afrique subsaharienne,18.75,35.5,7.06,0,75.0,0.0,0
+LKA,Sri Lanka,South Asia,Revenu intermédiaire (tranche inférieure),2026,Sri Lanka,Asie du Sud,25.0,39.5,9.38,0,50.0,50.0,0
+CHE,Switzerland,High income: OECD,Revenu élevé,2026,Suisse,Revenu élevé : OCDE,31.25,85.5,14.06,0,50.0,75.0,0
+SUR,Suriname,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Suriname,Amérique latine et Caraïbes,31.25,16.5,25.0,0,25.0,100.0,0
+SWE,Sweden,High income: OECD,Revenu élevé,2026,Suède,Revenu élevé : OCDE,56.25,75.0,42.19,100,50.0,75.0,0
+SYR,Syrian Arab Republic,Middle East & North Africa,Revenu faible,2026,Syrie,Moyen-Orient et Afrique du Nord,0.0,20.75,0.0,0,0.0,0.0,0
+SEN,Senegal,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Sénégal,Afrique subsaharienne,6.25,85.5,4.69,0,25.0,0.0,0
+TJK,Tajikistan,Europe & Central Asia,Revenu intermédiaire (tranche inférieure),2026,Tadjikistan,Europe et Asie centrale,25.0,85.5,18.75,100,0.0,0.0,0
+TZA,Tanzania,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Tanzanie,Afrique subsaharienne,12.5,79.25,4.69,0,50.0,0.0,0
+TWN,"Taiwan, China",East Asia & Pacific,Revenu élevé,2026,Taïwan (Chine),Asie de l'Est et Pacifique,18.75,91.75,14.06,0,75.0,0.0,0
+TCD,Chad,Sub-Saharan Africa,Revenu faible,2026,Tchad,Afrique subsaharienne,12.5,50.0,0.0,0,50.0,0.0,0
+CZE,Czechia,High income: OECD,Revenu élevé,2026,Tchéquie,Revenu élevé : OCDE,31.25,50.0,4.17,0,50.0,75.0,0
+THA,Thailand,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Thaïlande,Asie de l'Est et Pacifique,25.0,91.75,6.25,0,50.0,50.0,0
+TLS,Timor-Leste,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Timor oriental,Asie de l'Est et Pacifique,31.25,100.0,21.13,0,25.0,100.0,0
+TGO,Togo,Sub-Saharan Africa,Revenu faible,2026,Togo,Afrique subsaharienne,43.75,27.0,21.88,0,75.0,100.0,0
+TON,Tonga,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Tonga,Asie de l'Est et Pacifique,31.25,50.0,14.06,0,25.0,100.0,0
+TTO,Trinidad and Tobago,Latin America & Caribbean,Revenu élevé,2026,Trinité-et-Tobago,Amérique latine et Caraïbes,31.25,83.25,14.06,0,25.0,100.0,0
+TUN,Tunisia,Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Tunisie,Moyen-Orient et Afrique du Nord,31.25,91.75,23.44,0,25.0,100.0,0
+TUR,Türkiye,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Turquie,Europe et Asie centrale,68.75,100.0,20.31,0,75.0,100.0,100
+UKR,Ukraine,Europe & Central Asia,Revenu intermédiaire (tranche supérieure),2026,Ukraine,Europe et Asie centrale,31.25,85.5,18.0,0,25.0,100.0,0
+URY,Uruguay,Latin America & Caribbean,Revenu élevé,2026,Uruguay,Amérique latine et Caraïbes,68.75,77.0,51.56,0,75.0,100.0,100
+VUT,Vanuatu,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Vanuatu,Asie de l'Est et Pacifique,25.0,25.0,15.63,0,25.0,75.0,0
+VEN,"Venezuela, RB",Latin America & Caribbean,,2026,Venezuela,Amérique latine et Caraïbes,93.75,16.5,42.19,100,75.0,100.0,100
+VNM,Viet Nam,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Viêt Nam,Asie de l'Est et Pacifique,62.5,70.75,37.5,100,50.0,100.0,0
+YEM,"Yemen, Rep.",Middle East & North Africa,Revenu faible,2026,Yémen,Moyen-Orient et Afrique du Nord,0.0,0.0,0.0,0,0.0,0.0,0
+ZMB,Zambia,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Zambie,Afrique subsaharienne,75.0,77.0,43.75,100,100.0,100.0,0
+ZWE,Zimbabwe,Sub-Saharan Africa,Revenu intermédiaire (tranche inférieure),2026,Zimbabwe,Afrique subsaharienne,31.25,54.25,20.31,0,50.0,75.0,0
+EGY,"Egypt, Arab Rep.",Middle East & North Africa,Revenu intermédiaire (tranche inférieure),2026,Égypte,Moyen-Orient et Afrique du Nord,43.75,39.5,30.5,0,100.0,75.0,0
+ARE,United Arab Emirates,Middle East & North Africa,Revenu élevé,2026,Émirats arabes unis,Moyen-Orient et Afrique du Nord,43.75,41.5,,0,75.0,100.0,0
+ECU,Ecuador,Latin America & Caribbean,Revenu intermédiaire (tranche supérieure),2026,Équateur,Amérique latine et Caraïbes,68.75,93.75,38.31,0,75.0,100.0,100
+ERI,Eritrea,Sub-Saharan Africa,Revenu faible,2026,Érythrée,Afrique subsaharienne,12.5,0.0,0.0,0,50.0,0.0,0
+USA,United States,High income: OECD,Revenu élevé,2026,États-Unis,Revenu élevé : OCDE,62.5,91.75,43.75,100,50.0,100.0,0
+ETH,Ethiopia,Sub-Saharan Africa,,2026,Éthiopie,Afrique subsaharienne,25.0,37.5,12.5,0,100.0,0.0,0
+MHL,Marshall Islands,East Asia & Pacific,Revenu intermédiaire (tranche supérieure),2026,Îles Marshall,Asie de l'Est et Pacifique,31.25,27.0,18.0,0,25.0,100.0,0
+SLB,Solomon Islands,East Asia & Pacific,Revenu intermédiaire (tranche inférieure),2026,Îles Salomon,Asie de l'Est et Pacifique,25.0,68.75,18.75,0,0.0,100.0,0

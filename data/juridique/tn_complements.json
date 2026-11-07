@@ -1,0 +1,150 @@
+{
+  "pays": {"code": "TN", "nom_fr": "Tunisie", "nom_ar": "تونس", "region": "Afrique du Nord"},
+  "textes": [
+    {
+      "id": "tn-code-travail",
+      "type": "code",
+      "titre": "Code du travail",
+      "reference": "Loi n° 66-27 du 30 avril 1966 portant promulgation du Code du travail, telle que modifiée",
+      "date": "1966-04-30",
+      "domaines": ["travail", "harcèlement", "égalité", "licenciement"],
+      "source": "Journal officiel de la République tunisienne (JORT) — version consolidée à vérifier",
+      "resume": "Régit les relations de travail dans le secteur privé : contrat, durée du travail, congés, protection de la maternité, non-discrimination entre femmes et hommes, licenciement et recours devant le conseil de prud'hommes.",
+      "articles": [
+        {"numero": "Non-discrimination", "titre": "Égalité entre femmes et hommes", "contenu": "Le Code pose le principe de non-discrimination entre l'homme et la femme dans l'application de ses dispositions, notamment pour l'embauche, la rémunération et la promotion."},
+        {"numero": "Maternité", "titre": "Protection de la maternité", "contenu": "La salariée enceinte bénéficie d'un congé de maternité et d'une protection contre le licenciement pendant cette période ; la durée exacte dépend du secteur et des textes applicables."},
+        {"numero": "Licenciement", "titre": "Licenciement abusif", "contenu": "Le licenciement doit reposer sur une cause réelle et sérieuse et respecter la procédure. Un licenciement abusif ouvre droit à des dommages-intérêts fixés par le conseil de prud'hommes."},
+        {"numero": "Prud'hommes", "titre": "Conseil de prud'hommes", "contenu": "Les litiges individuels de travail sont portés devant le conseil de prud'hommes, après une tentative de conciliation, souvent avec l'appui de l'inspection du travail."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Conserver contrat, fiches de paie, attestations et échanges écrits : ce sont les preuves principales devant le conseil de prud'hommes."},
+        {"type": "vigilance", "contenu": "Les délais pour contester un licenciement sont courts : consulter rapidement l'inspection du travail ou un avocat."},
+        {"type": "lacune", "contenu": "Une grande partie des femmes travaillent dans l'économie informelle (agriculture, services), où ces protections sont difficiles à faire valoir."}
+      ]
+    },
+    {
+      "id": "tn-code-enfant",
+      "type": "code",
+      "titre": "Code de la protection de l'enfant",
+      "reference": "Loi n° 95-92 du 9 novembre 1995 relative à la publication du Code de la protection de l'enfant",
+      "date": "1995-11-09",
+      "domaines": ["enfants", "protection", "garde des enfants"],
+      "source": "JORT, novembre 1995",
+      "resume": "Garantit les droits de l'enfant et organise sa protection : délégués à la protection de l'enfance dans chaque gouvernorat, devoir de signalement, mesures de protection en cas de danger, justice des mineurs.",
+      "articles": [
+        {"numero": "Intérêt supérieur", "titre": "Intérêt supérieur de l'enfant", "contenu": "L'intérêt supérieur de l'enfant est une considération primordiale dans toutes les décisions qui le concernent."},
+        {"numero": "Danger", "titre": "Situations de danger", "contenu": "Le Code énumère des situations menaçant la santé ou l'intégrité physique ou morale de l'enfant, dont l'exposition habituelle à la violence et la maltraitance."},
+        {"numero": "Signalement", "titre": "Devoir de signalement", "contenu": "Toute personne, y compris tenue au secret professionnel, doit signaler au délégué à la protection de l'enfance une situation de danger menaçant un enfant."},
+        {"numero": "Délégué", "titre": "Délégué à la protection de l'enfance", "contenu": "Le délégué peut intervenir, proposer des mesures de protection ou saisir le juge de la famille."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Le devoir de signalement vise toute personne : une voisine, une enseignante ou un médecin peuvent agir."},
+        {"type": "vigilance", "contenu": "Dans une procédure de garde, documenter l'exposition des enfants à la violence (attestations scolaires, médicales, témoins)."}
+      ]
+    },
+    {
+      "id": "tn-aide-juridictionnelle",
+      "type": "loi",
+      "titre": "Loi relative à l'octroi de l'aide judiciaire",
+      "reference": "Loi n° 2002-52 du 3 juin 2002, telle que modifiée — référence à vérifier",
+      "date": "2002-06-03",
+      "domaines": ["procédure", "avocat", "accès à la justice"],
+      "source": "JORT, juin 2002",
+      "resume": "Permet aux personnes dont les ressources sont insuffisantes d'obtenir la prise en charge par l'État des frais de justice, notamment des honoraires d'avocat. La loi 2017-58 en fait un droit pour les femmes victimes de violence.",
+      "articles": [
+        {"numero": "Bénéficiaires", "titre": "Qui peut en bénéficier", "contenu": "Les personnes physiques dont les revenus sont insuffisants pour faire valoir leurs droits en justice, en demande comme en défense."},
+        {"numero": "Demande", "titre": "Comment la demander", "contenu": "La demande est déposée au bureau d'aide judiciaire du tribunal, avec une pièce d'identité et des justificatifs de ressources ; un avocat est alors désigné."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Déposer la demande d'aide avant d'engager les frais : elle ne couvre généralement pas les dépenses déjà faites."}
+      ]
+    },
+    {
+      "id": "tn-coc",
+      "type": "code",
+      "titre": "Code des obligations et des contrats",
+      "reference": "Décret du 15 décembre 1906, tel que modifié",
+      "date": "1906-12-15",
+      "domaines": ["contrats", "logement", "responsabilité", "dettes"],
+      "source": "Code des obligations et des contrats, version consolidée (JORT)",
+      "resume": "Droit commun des contrats et de la responsabilité civile : formation et validité des contrats, vices du consentement, location, prêt, réparation des dommages causés à autrui.",
+      "articles": [
+        {"numero": "Consentement", "titre": "Vices du consentement", "contenu": "Un contrat signé sous la contrainte, par erreur ou à la suite d'une tromperie (dol) peut être annulé."},
+        {"numero": "Responsabilité", "titre": "Réparation du dommage", "contenu": "Tout fait de l'homme qui cause un dommage à autrui oblige celui par la faute duquel il est arrivé à le réparer : c'est la base des demandes de dommages-intérêts."},
+        {"numero": "Bail", "titre": "Location", "contenu": "Le bail oblige le bailleur à délivrer et entretenir le logement, et le locataire à payer le loyer et à user du bien raisonnablement."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Une dette contractée sous la pression d'un conjoint violent peut relever de la contrainte : en garder les preuves et consulter un avocat avant de payer."}
+      ]
+    },
+    {
+      "id": "tn-loi-98-91",
+      "type": "loi",
+      "titre": "Loi relative au régime de la communauté des biens entre époux",
+      "reference": "Loi n° 98-91 du 9 novembre 1998",
+      "date": "1998-11-09",
+      "domaines": ["mariage", "biens", "divorce"],
+      "source": "JORT, novembre 1998",
+      "resume": "Régime facultatif que les époux peuvent choisir au mariage ou ensuite : les biens immobiliers acquis pendant le mariage pour l'usage de la famille deviennent communs. À défaut de choix, le régime est la séparation des biens.",
+      "articles": [
+        {"numero": "Choix", "titre": "Un régime facultatif", "contenu": "Les époux peuvent adopter la communauté des biens dans l'acte de mariage ou par un acte ultérieur ; sinon, chacun reste propriétaire de ses biens."},
+        {"numero": "Biens communs", "titre": "Biens concernés", "contenu": "La communauté porte principalement sur les immeubles acquis après le mariage et destinés à l'usage de la famille."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "En séparation des biens, une maison achetée au seul nom du mari reste à lui : garder les preuves de sa propre contribution financière."},
+        {"type": "lacune", "contenu": "Le régime reste peu choisi en pratique, ce qui laisse de nombreuses femmes sans droit sur le logement familial après un divorce."}
+      ]
+    },
+    {
+      "id": "tn-loi-2018-50",
+      "type": "loi organique",
+      "titre": "Loi organique relative à l'élimination de toutes les formes de discrimination raciale",
+      "reference": "Loi organique n° 2018-50 du 23 octobre 2018",
+      "date": "2018-10-23",
+      "domaines": ["discrimination", "égalité", "droits fondamentaux"],
+      "source": "JORT, octobre 2018",
+      "resume": "Définit et sanctionne la discrimination raciale (fondée sur la couleur, l'ascendance, l'origine nationale ou ethnique), les propos racistes et l'incitation à la haine ; elle prévoit une prise en charge des victimes.",
+      "articles": [
+        {"numero": "Définition", "titre": "Discrimination raciale", "contenu": "Toute distinction, exclusion ou restriction fondée sur la race, la couleur, l'ascendance ou l'origine qui porte atteinte à l'égalité des droits."},
+        {"numero": "Sanctions", "titre": "Infractions", "contenu": "Les propos racistes, l'incitation à la haine et les actes discriminatoires sont punis d'amendes et, dans les cas graves, d'emprisonnement."}
+      ],
+      "analyses": [
+        {"type": "force", "contenu": "Première loi de ce type dans la région ; utile notamment pour les femmes migrantes victimes de violence et de discrimination."}
+      ]
+    },
+    {
+      "id": "tn-loi-2021-37",
+      "type": "loi",
+      "titre": "Loi relative à l'organisation du travail domestique",
+      "reference": "Loi n° 2021-37 du 16 juillet 2021 — référence à vérifier",
+      "date": "2021-07-16",
+      "domaines": ["travail", "travail domestique", "exploitation"],
+      "source": "JORT, juillet 2021",
+      "resume": "Encadre le travail des employées de maison : contrat écrit, âge minimum, durée du travail, repos, rémunération et couverture sociale ; l'emploi de mineurs comme domestiques est interdit.",
+      "articles": [
+        {"numero": "Contrat", "titre": "Contrat écrit", "contenu": "Le travail domestique doit faire l'objet d'un contrat écrit précisant les tâches, la rémunération, la durée du travail et le repos."},
+        {"numero": "Mineurs", "titre": "Interdiction du travail des enfants", "contenu": "L'emploi d'enfants comme travailleurs domestiques est interdit et sanctionné."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Confiscation du passeport, salaire non versé, interdiction de sortir : ce sont des signaux de traite à signaler (loi 2016-61)."}
+      ]
+    },
+    {
+      "id": "tn-loi-2016-22",
+      "type": "loi organique",
+      "titre": "Loi organique relative au droit d'accès à l'information",
+      "reference": "Loi organique n° 2016-22 du 24 mars 2016",
+      "date": "2016-03-24",
+      "domaines": ["procédure", "administration", "accès à l'information"],
+      "source": "JORT, mars 2016",
+      "resume": "Toute personne peut demander à une administration ou un organisme public la communication d'informations ou de documents ; un refus peut être contesté devant l'Instance d'accès à l'information.",
+      "articles": [
+        {"numero": "Demande", "titre": "Demande d'accès", "contenu": "La demande est écrite et adressée à l'organisme concerné, qui doit répondre dans un délai fixé par la loi."},
+        {"numero": "Recours", "titre": "Instance d'accès à l'information", "contenu": "En cas de refus ou de silence, un recours peut être formé devant l'Instance d'accès à l'information."}
+      ],
+      "analyses": [
+        {"type": "vigilance", "contenu": "Utile pour obtenir une copie d'un procès-verbal ou d'un document administratif nécessaire à une procédure."}
+      ]
+    }
+  ]
+}
