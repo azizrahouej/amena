@@ -98,17 +98,45 @@ def fournisseur():
 # Par défaut Groq (llama-3.3-70b, offre gratuite sans carte bancaire). Pour Gemini :
 #   AMENA_LLM_URL=https://generativelanguage.googleapis.com/v1beta/openai  AMENA_LLM_MODELE=gemini-2.5-flash
 CLOUD_URL = os.getenv("AMENA_LLM_URL", "https://api.groq.com/openai/v1").rstrip("/")
-CLOUD_MODELE = os.getenv("AMENA_LLM_MODELE", "llama-3.3-70b-versatile")
+CLOUD_MODELE = os.getenv("AMENA_LLM_MODELE", "openai/gpt-oss-120b")
+# Les hébergeurs retirent régulièrement des modèles : si le modèle demandé n'existe plus (404),
+# on passe automatiquement au suivant, et on retient celui qui fonctionne.
+CLOUD_REPLIS = [CLOUD_MODELE] + [m for m in ("openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b",
+                                              "llama-3.1-8b-instant") if m != CLOUD_MODELE]
+_modele_actif = [CLOUD_MODELE]
 
 
 def _flux_cloud(systeme, messages, max_tokens=1600, temperature=0.3):
     """Diffuse la réponse d'une API compatible OpenAI (événements SSE « data: … »)."""
+    candidats = [_modele_actif[0]] + [m for m in CLOUD_REPLIS if m != _modele_actif[0]]
+    for i, modele in enumerate(candidats):
+        try:
+            yield from _flux_cloud_modele(modele, systeme, messages, max_tokens, temperature)
+            _modele_actif[0] = modele
+            return
+        except httpx.HTTPStatusError as erreur:
+            introuvable = erreur.response.status_code in (400, 404) and "model" in erreur.response.text.lower()
+            if not introuvable or i == len(candidats) - 1:
+                raise
+            print(f"[AMENA] modèle {modele} indisponible chez l'hébergeur, essai du suivant.")
+
+
+def _flux_cloud_modele(modele, systeme, messages, max_tokens, temperature):
     import json as _json
-    corps = {"model": CLOUD_MODELE, "stream": True, "temperature": temperature, "max_tokens": max_tokens,
+    corps = {"model": modele, "stream": True, "temperature": temperature,
              "messages": [{"role": "system", "content": systeme}] + messages}
+    if "gpt-oss" in modele:
+        # Modèle « qui réfléchit » : réflexion courte, et la limite inclut ces jetons de réflexion.
+        corps.update(reasoning_effort="low", max_tokens=max_tokens + 2000)
+    elif "qwen3" in modele:
+        corps["max_tokens"] = max_tokens + 2000
+    else:
+        corps["max_tokens"] = max_tokens
     with httpx.stream("POST", f"{CLOUD_URL}/chat/completions", json=corps,
                       headers={"Authorization": f"Bearer {_cle_cloud()}"},
                       timeout=httpx.Timeout(90, connect=10)) as reponse:
+        if reponse.status_code >= 400:
+            reponse.read()  # pour que le message d'erreur (modèle introuvable…) soit lisible
         reponse.raise_for_status()
         for ligne in reponse.iter_lines():
             if not ligne.startswith("data:"):
