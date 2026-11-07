@@ -831,7 +831,10 @@
           "ar": "ترفع مدة التقادم إلى ثلاثين عاما فيما بين الورثة والشركاء: الأرض العائلية غير المقسمة يصعب اكتسابها بالتقادم.",
           "dz": "Bin el wartha w el chouraka lazem 30 sna : ardh el 3a2la elli mouch m9assma s3ib tetmalekha b el ta9adom."
         }
-      }
+      },
+      "remplace": [
+        "logement"
+      ]
     },
     {
       "id": "dette_impayee",
