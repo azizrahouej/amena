@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6e0a1e">
+  <title>Installer AMENA</title>
+  <link rel="icon" href="icones/icone-192.png">
+  <style>
+    :root { --vin: #6e0a1e; --rouge: #c8102e; --rose: #ff9fb2; --fond: #fcfafb; --carte: #fff; --texte: #1c0509; --texte-2: #6d4b53; --trait: #eadde0; }
+    @media (prefers-color-scheme: dark) { :root { --fond: #140306; --carte: #22070d; --texte: #fcfafb; --texte-2: #cfaab2; --trait: #3a1019; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--fond); color: var(--texte); }
+    header { background: var(--vin); color: #fff; padding: 34px 20px 28px; text-align: center; }
+    header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 12px 30px -12px rgba(0,0,0,.6); }
+    header h1 { margin: 14px 0 4px; font-size: 1.8rem; }
+    header p { margin: 0; color: var(--rose); font-weight: 600; }
+    main { max-width: 620px; margin: 0 auto; padding: 18px 16px 50px; }
+    .carte { background: var(--carte); border: 1px solid var(--trait); border-radius: 18px; padding: 18px; margin-bottom: 14px; }
+    .carte h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    .bouton { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 14px; border: 0;
+      background: var(--rouge); color: #fff; font-weight: 700; font-size: 1.02rem; text-decoration: none; width: 100%; cursor: pointer; }
+    .bouton.contour { background: none; color: var(--texte); border: 1.5px solid var(--trait); margin-top: 8px; }
+    ol { padding-inline-start: 22px; margin: 10px 0 0; }
+    li { margin-bottom: 6px; }
+    small, .note { color: var(--texte-2); }
+    .note { font-size: .88rem; margin-top: 10px; }
+    #installer { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icones/icone-192.png" alt="">
+    <h1>AMENA</h1>
+    <p>Votre avocate de poche · محاميتك في جيبك</p>
+  </header>
+  <main>
+    <section class="carte" id="carte-installer">
+      <h2>Installer en un toucher</h2>
+      <p>Sur Android (Chrome) et sur ordinateur (Chrome, Edge), l'application s'installe directement depuis le navigateur.</p>
+      <button class="bouton" id="installer">📲 Installer AMENA</button>
+      <a class="bouton contour" href="./">Ouvrir l'application</a>
+    </section>
+
+    <section class="carte">
+      <h2>🤖 Android : fichier APK</h2>
+      <p>La version Android complète, à installer sans passer par le Play Store.</p>
+      <a class="bouton" href="AMENA.apk" download>Télécharger AMENA.apk (1,1 Mo)</a>
+      <ol class="note">
+        <li>Ouvrez le fichier téléchargé.</li>
+        <li>Si Android le demande, autorisez « Installer des applications inconnues » pour votre navigateur.</li>
+        <li>Touchez « Installer », puis ouvrez AMENA depuis l'écran d'accueil.</li>
+      </ol>
+      <p class="note">Application signée, identifiant <code>com.azizrahouej.amena</code>. Aucune autorisation demandée (pas de contacts, pas de localisation, pas de micro).</p>
+    </section>
+
+    <section class="carte">
+      <h2>🍎 iPhone et iPad</h2>
+      <ol>
+        <li>Ouvrez <strong>amena.onrender.com/mobile</strong> dans <strong>Safari</strong>.</li>
+        <li>Touchez le bouton <strong>Partager</strong> (le carré avec une flèche).</li>
+        <li>Choisissez <strong>« Sur l'écran d'accueil »</strong>, puis « Ajouter ».</li>
+      </ol>
+      <p class="note">AMENA s'ouvre alors en plein écran, comme une application, avec son icône.</p>
+    </section>
+
+    <p class="note">AMENA informe et oriente ; elle ne remplace pas un avocat. Gratuit, sans publicité, aucune conversation enregistrée.
+      <a href="confidentialite.html">Politique de confidentialité</a>.</p>
+  </main>
+  <script>
+    // Bouton d'installation natif quand le navigateur le propose (Chrome, Edge, Samsung Internet).
+    let invite = null;
+    const bouton = document.getElementById("installer");
+    window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); invite = e; bouton.style.display = "flex"; });
+    bouton.addEventListener("click", async () => { if (!invite) return; invite.prompt(); await invite.userChoice; invite = null; bouton.style.display = "none"; });
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+  </script>
+</body>
+</html>

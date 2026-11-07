@@ -23,7 +23,7 @@ const T = {
     "aide.titre": "Aide et urgences", "aide.texte": "Appels gratuits. En danger immédiat, appelez d'abord la police ou la garde nationale.", "aide.urgences": "Urgences", "aide.ecoute": "Écoute", "aide.publics": "Services publics", "aide.assoc": "Associations",
     "dos.titre": "Dossier pour mon avocat(e)", "dos.texte": "Relisez et complétez, puis enregistrez en PDF (Imprimer → Enregistrer en PDF). Rien n'est envoyé ni enregistré.",
     "dos.faits": "Résumé des faits", "dos.analyse": "Analyse juridique", "dos.imprimer": "Enregistrer en PDF", "dos.vide": "Commencez par décrire votre situation dans le chat.",
-    "avert": "AMENA informe et oriente ; elle ne remplace pas un avocat.", "confidentialite": "Confidentialité",
+    "avert": "AMENA informe et oriente ; elle ne remplace pas un avocat.", "confidentialite": "Confidentialité", "installer": "Installer l'application (Android, iPhone)",
   },
   ar: {
     "nav.accueil": "الرئيسية", "nav.chat": "تحدث", "nav.analyse": "تحليل", "nav.lois": "القوانين", "nav.aide": "مساعدة",
@@ -41,7 +41,7 @@ const T = {
     "aide.titre": "المساعدة والطوارئ", "aide.texte": "مكالمات مجانية. في خطر فوري اتصل أولا بالشرطة أو بالحرس الوطني.", "aide.urgences": "الطوارئ", "aide.ecoute": "الإصغاء", "aide.publics": "الخدمات العمومية", "aide.assoc": "الجمعيات",
     "dos.titre": "ملف لمحاميّ", "dos.texte": "راجع وأكمل، ثم احفظ بصيغة PDF (طباعة ← حفظ PDF). لا يتم إرسال أو حفظ أي شيء.",
     "dos.faits": "ملخص الوقائع", "dos.analyse": "التحليل القانوني", "dos.imprimer": "حفظ بصيغة PDF", "dos.vide": "ابدأ بوصف وضعيتك في المحادثة.",
-    "avert": "أمانة تعلم وتوجه ولا تعوض المحامي.", "confidentialite": "سياسة الخصوصية",
+    "avert": "أمانة تعلم وتوجه ولا تعوض المحامي.", "confidentialite": "سياسة الخصوصية", "installer": "تثبيت التطبيق (أندرويد، آيفون)",
   },
 };
 const etat = { langue: "fr", messages: [], enCours: false, brouillon: "", derniereExpertise: null };
@@ -155,6 +155,7 @@ function accueil(racine) {
         h("strong", {}, (d[etat.langue] || d.fr)[0]), h("span", {}, (d[etat.langue] || d.fr)[1])))),
     h("div", { class: "urgence-bandeau" }, h("span", {}, t("ac.urgence")),
       h("a", { class: "gros-bouton", href: "tel:197", style: "width:auto;padding:0 18px;min-height:44px" }, t("ac.appeler"))),
+    h("a", { class: "gros-bouton contour", href: "telecharger.html", style: "margin-top:14px" }, "📲 ", t("installer")),
     h("p", { class: "avert" }, t("avert"), " · ", h("a", { href: "confidentialite.html" }, t("confidentialite"))));
 }
 

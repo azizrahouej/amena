@@ -15,7 +15,7 @@ def police(taille):
     return ImageFont.load_default()
 
 
-for taille in (192, 512):
+for taille in (192, 512, 1024):
     s = taille * 4  # dessin en grand puis réduction : bords lisses
     im = Image.new("RGB", (s, s), (110, 10, 30))
     d = ImageDraw.Draw(im)

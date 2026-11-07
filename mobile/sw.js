@@ -1,7 +1,7 @@
 // Service worker d'AMENA mobile : rend l'application installable et rapide à ouvrir.
 // Seuls les fichiers de l'interface sont mis en cache ; les appels /api/ (questions, réponses,
 // analyses) ne le sont JAMAIS, pour ne laisser aucune trace de la conversation sur le téléphone.
-const CACHE = "amena-mobile-v2";
+const CACHE = "amena-mobile-v3";
 const INTERFACE = ["./", "./index.html", "./app.css", "./app.js", "./manifest.webmanifest", "./icones/icone-192.png", "./icones/icone-512.png"];
 
 self.addEventListener("install", (e) => {
