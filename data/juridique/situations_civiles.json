@@ -1688,6 +1688,157 @@
       }
     },
     {
+      "id": "succession",
+      "libelle": "Héritage et succession",
+      "libelle_ar": "الميراث والتركة",
+      "libelle_dz": "El werth w el tarka",
+      "indices": [
+        "herit",
+        "succession",
+        "testament",
+        "partage des biens",
+        " ارث",
+        "الارث",
+        "ميراث",
+        "ورث",
+        "التركه",
+        " تركه ",
+        "وصيه",
+        "werth",
+        "wirth",
+        "wreth",
+        "mirath",
+        "tarka",
+        "wasiya"
+      ],
+      "qualification": "L'héritage est régi par le Code du statut personnel (livre des successions) : au décès, les biens du défunt appartiennent ensemble à tous les héritiers, jusqu'au partage.",
+      "qualification_ar": "ينظم الميراثَ مجلةُ الأحوال الشخصية (كتاب الميراث): عند الوفاة تصبح أملاك المتوفى مشتركة بين كل الورثة إلى حين القسمة.",
+      "qualification_dz": "El werth ynadhmou majallet el a7wel e chakhsiya : ki ymout el wa7ed, rizkou ywalli msharek bin el werth el kol 7atta l9isma.",
+      "textes": [],
+      "principes": [
+        {
+          "fr": "Personne ne « gère » seul l'héritage : tant que le partage n'est pas fait, les biens sont en indivision et les décisions importantes (vendre, louer un bien) se prennent avec l'accord des héritiers.",
+          "ar": "لا يتصرف أحد وحده في التركة: قبل القسمة تكون الأملاك على الشياع، والقرارات المهمة (البيع، الكراء) تتخذ بموافقة الورثة.",
+          "dz": "7ad ma ynajjem yetsarref wa7dou fel tarka : 9bal el 9isma, el rizk msharek, w el 9rarat el kbar (bi3, kra) lazem bel ittifa9 mta3 el werth."
+        },
+        {
+          "fr": "Avant tout partage, on paie dans l'ordre : les frais funéraires, les dettes du défunt, puis le legs éventuel (testament, limité en principe au tiers des biens) ; le reste est partagé entre les héritiers selon les parts fixées par la loi.",
+          "ar": "قبل القسمة تُخرج بالترتيب: مصاريف الدفن، ثم ديون المتوفى، ثم الوصية إن وجدت (في حدود الثلث مبدئيا)، والباقي يقسم بين الورثة حسب الأنصبة التي حددها القانون.",
+          "dz": "9bal el 9isma : mosarif el dfin, ba3d el dyoun mta3 el mayet, ba3d el wasiya ken famma (ma tfoutech el thoulth), w elli y9a3ed yt9assem bin el werth 7asb el ansiba mta3 el 9anoun."
+        },
+        {
+          "fr": "Si des héritiers sont mineurs, leur part est gérée par leur tuteur (en principe la mère, au décès du père) sous le contrôle du juge des tutelles pour les actes importants.",
+          "ar": "إذا كان من الورثة قاصرون، يتصرف في نصيبهم وليهم (مبدئيا الأم بعد وفاة الأب) تحت رقابة القاضي بالنسبة للتصرفات المهمة.",
+          "dz": "Ken famma werth sghar, nasibhom yetsarref fih el wali mte3hom (3adatan el om ki ymout el bou), w el 7ajet el kbar b ra9abet el 9adhi."
+        }
+      ],
+      "demarches": [
+        "Demander l'extrait d'acte de décès à la municipalité (baladiya)",
+        "Faire établir la « hujjat al-wafat wal-wiratha » (acte de décès et d'hérédité) chez deux notaires (عدول إشهاد) : c'est la liste officielle des héritiers",
+        "Faire l'inventaire des biens et des dettes : comptes bancaires, terrains et maisons (registre foncier), voitures",
+        "Accomplir la déclaration de succession à la recette des finances et payer les droits éventuels",
+        "Partager à l'amiable par un acte chez notaire, ou demander le partage judiciaire au tribunal de première instance en cas de désaccord",
+        "Faire inscrire le partage au registre foncier pour les biens immatriculés"
+      ],
+      "demarches_ar": [
+        "استخرج مضمون وفاة من البلدية",
+        "أعدّ حجة الوفاة والوراثة لدى عدلي إشهاد: هي القائمة الرسمية للورثة",
+        "أحصِ الأملاك والديون: الحسابات البنكية، العقارات (السجل العقاري)، السيارات",
+        "قدّم تصريح التركة بالقباضة المالية وادفع المعاليم إن وجدت",
+        "اقسموا بالتراضي بعقد لدى عدل، أو اطلب القسمة القضائية أمام المحكمة الابتدائية عند الخلاف",
+        "رسّم القسمة بالسجل العقاري بالنسبة للعقارات المسجلة"
+      ],
+      "demarches_dz": [
+        "5arrej madhmoun wafet mel baladiya",
+        "A3mel 7ojjet el wafet w el wiratha 3and zouz 3doul : hiya el lista el rasmiya mta3 el werth",
+        "A7seb el rizk w el dyoun : comptes fel banka, ardh w dyar (sijil 3a9ari), karhbet",
+        "A3mel tasri7 el tarka fel 9ebadha el maliya w a5las el ma3alim ken famma",
+        "9assmou bel tafahom b 3a9d 3and 3dal, walla otlob 9isma 9adha2iya fel ma7kma el ibtida2iya ken ma tfahmtouch",
+        "Rassem el 9isma fel sijil el 3a9ari lel ardh el msajla"
+      ],
+      "preuves": [
+        "Acte de décès",
+        "Hujjat al-wafat wal-wiratha (liste des héritiers)",
+        "Titres fonciers, contrats, relevés bancaires du défunt",
+        "Testament éventuel"
+      ],
+      "preuves_ar": [
+        "مضمون الوفاة",
+        "حجة الوفاة والوراثة",
+        "الرسوم العقارية والعقود والكشوفات البنكية للمتوفى",
+        "الوصية إن وجدت"
+      ],
+      "preuves_dz": [
+        "Madhmoun el wafet",
+        "7ojjet el wafet w el wiratha",
+        "Rsoum el ardh, el 3o9oud, kachf el banka mta3 el mayet",
+        "El wasiya ken famma"
+      ],
+      "delais": [
+        "La déclaration de succession doit être faite dans un délai fixé par l'administration fiscale : renseignez-vous vite à la recette des finances pour éviter des pénalités"
+      ],
+      "delais_ar": [
+        "يجب تقديم تصريح التركة في أجل تحدده إدارة الجباية: استفسر بسرعة لدى القباضة المالية لتجنب الخطايا"
+      ],
+      "delais_dz": [
+        "Tasri7 el tarka 3andou ajal : es2el fisa3 fel 9ebadha el maliya bech ma tkhallasch khatiya"
+      ],
+      "vigilance": [
+        "Un héritier qui vend seul un bien commun, ou qui l'occupe sans l'accord des autres, peut être contraint en justice : ne signez rien avant d'avoir la liste officielle des héritiers"
+      ],
+      "vigilance_ar": [
+        "الوارث الذي يبيع وحده ملكا مشتركا أو يستغله دون موافقة البقية يمكن مقاضاته: لا تمضِ شيئا قبل الحصول على حجة الوراثة"
+      ],
+      "vigilance_dz": [
+        "Elli ybi3 wa7dou 7aja mcharka walla yestaghelha bla ittifa9 el o5rin ynajmou y9ad3ouh : ma temdhi 7atta chay 9bal 7ojjet el wiratha"
+      ],
+      "conseil": {
+        "fr": "Commencez par la hujjat al-wafat wal-wiratha chez deux notaires : sans elle, aucune banque ni aucun registre ne reconnaîtra les héritiers.",
+        "ar": "ابدأ بحجة الوفاة والوراثة لدى عدلي إشهاد: بدونها لا يعترف أي بنك أو سجل بالورثة.",
+        "dz": "Ebda b 7ojjet el wafet w el wiratha 3and zouz 3doul : blech biha 7atta banka walla sijil ma ya3tarfou bel werth."
+      },
+      "questions": {
+        "fr": [
+          "Qui sont les proches du défunt (conjoint, enfants, parents, frères et sœurs) ?",
+          "Y a-t-il des enfants mineurs ?",
+          "Quels biens a-t-il laissés (maison, terrain, comptes) et a-t-il des dettes ?",
+          "Y a-t-il un testament ou un désaccord entre héritiers ?"
+        ],
+        "ar": [
+          "من هم أقارب المتوفى (الزوج أو الزوجة، الأبناء، الوالدان، الإخوة)؟",
+          "هل يوجد أبناء قاصرون؟",
+          "ما هي الأملاك التي تركها (منزل، أرض، حسابات) وهل عليه ديون؟",
+          "هل توجد وصية أو خلاف بين الورثة؟"
+        ],
+        "dz": [
+          "Chkoun el 3a2la mta3 el mayet (marto/rajelha, s8ar, waldin, 5out) ?",
+          "Famma s8ar ?",
+          "Chnowa 5alla (dar, ardh, flous fel banka) w 3andou dyoun ?",
+          "Famma wasiya walla mochkla bin el werth ?"
+        ]
+      },
+      "reponses": {
+        "fr": [
+          "Il a laissé une maison et un terrain",
+          "Il y a des enfants mineurs",
+          "Un héritier refuse le partage",
+          "Il y a un testament"
+        ],
+        "ar": [
+          "ترك منزلا وأرضا",
+          "يوجد أبناء قاصرون",
+          "أحد الورثة يرفض القسمة",
+          "توجد وصية"
+        ],
+        "dz": [
+          "5alla dar w ardh",
+          "Famma s8ar",
+          "Wa7ed mel werth ma y7ebech y9assem",
+          "Famma wasiya"
+        ]
+      }
+    },
+    {
       "id": "generale",
       "libelle": "Question de droit",
       "libelle_ar": "مسألة قانونية",

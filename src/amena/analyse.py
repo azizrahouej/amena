@@ -63,7 +63,7 @@ GRAVITE = ["sequestration", "travail_domestique", "violence_sexuelle", "violence
            "violence_psychologique", "harcelement_sexuel", "cyber_violence", "auteur_infraction", "temoin_crime",
            "mis_en_cause", "logement", "vol_famille", "vol",
            "escroquerie", "abus_confiance", "propriete_fonciere", "violence_economique", "dettes_contrainte",
-           "dette_impayee", "dommage_responsabilite", "travail_licenciement", "discrimination", "divorce", "acces_avocat"]
+           "dette_impayee", "dommage_responsabilite", "travail_licenciement", "discrimination", "divorce", "succession", "acces_avocat"]
 
 
 def _motif(indice):

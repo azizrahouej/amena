@@ -24,7 +24,7 @@ from .securite import regles_danger
 from .config import MODELE_LLM
 from .generation import CLOUD_MODELE, OLLAMA_MODELE, fournisseur, generer, generer_flux
 from .recherche import MoteurRecherche
-from .securite import anonymiser, detecter_langue
+from .securite import anonymiser, detecter_langue, normaliser
 from .triage import Trieur
 
 CONTACTS_URGENCE = [
@@ -36,6 +36,14 @@ CONTACTS_URGENCE = [
 
 _PERSONNEL = re.compile(r"(\bje\b|\bj'|\bj\s|\bmon\b|\bma\b|\bmes\b|\bmoi\b|\bm'|\bena\b|\b3andi\b|\bandi\b|"
                         r"\bn7eb\b|\bnheb\b|\bliya\b|\blia\b|\bna3mel\b|أنا|انا|عندي|ليا|نعمل|بابا|امي|أبي|ابي)")
+
+
+# Vocabulaire des questions de droit civil (texte normalisé : sans accents, ة→ه, أ→ا).
+_QUESTION_CIVILE = re.compile(
+    r"herit|succession|testament|divorc|pension|garde des enfants|contrat|loyer|locat|bail|salaire|licenci|"
+    r"terrain|propriet|achat|vente|vendeur|acheteur|dette|credit|banque|impot|notaire|"
+    r"ارث|ميراث|ورث|التركه|وصيه|طلاق|نفقه|حضانه|عقد|كراء|اجر|ارض|عقار|بيع|شراء|دين|بنك|عدل|"
+    r"werth|wirth|tarka|tla9|kra|chhriya|ardh|bi3|dyoun|flous")
 
 
 def _lien(meta):
@@ -72,6 +80,12 @@ class Assistant:
         # seule, elle serait mal classée et mal recherchée.
         requete = contextualiser(texte, historique)
         triage = self.trieur.predire(requete)
+        if (triage["label"] == "urgence" and not regles_danger(texte)
+                and triage["probabilites"].get("urgence", 0) < 0.5 and _QUESTION_CIVILE.search(normaliser(texte))):
+            # Question de droit civil (héritage, divorce, contrat, loyer…) sans aucun mot de danger : le
+            # classifieur hésitait (moins de 50 %), ce n'est pas une urgence. Les règles de danger restent
+            # prioritaires : « mon frère me menace pour l'héritage » reste une urgence.
+            triage = {**triage, "label": "juridique", "raison": "question_civile"}
         urgence = triage["label"] == "urgence"
         sources = self.moteur.rechercher(requete)
         # Un pays est cité ? On ajoute la fiche Banque mondiale de ce pays (190 pays couverts).
