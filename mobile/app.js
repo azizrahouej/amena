@@ -239,6 +239,11 @@ async function envoyer(texte) {
   try {
     const r = await fetch(`${API}/chat/flux`, { method: "POST", headers: { "Content-Type": "application/json" },
                                                 body: JSON.stringify({ message: texte, historique }) });
+    if (r.status === 429) {  // trop de questions d'affilée : message clair au lieu d'une erreur
+      const j = await r.json().catch(() => ({}));
+      reponse.texte = (etat.langue === "ar" ? j.detail_ar : j.detail) || j.detail || "Patientez une minute.";
+      return;
+    }
     if (!r.ok || !r.body) throw new Error(`HTTP ${r.status}`);
     const lecteur = r.body.getReader(), decodeur = new TextDecoder();
     let tampon = "";

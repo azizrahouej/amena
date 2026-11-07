@@ -75,6 +75,23 @@ services:
         sync: false
 """
 
+# Le service gratuit de Render s'endort après 15 min sans visite (premier chargement ~50 s).
+# Ce petit workflow GitHub le réveille toutes les 10 min ; 744 h/mois restent sous les 750 h gratuites.
+GARDE_EVEILLE = """name: Garder AMENA éveillée
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Réveiller le service
+        run: curl -fsS --retry 3 --retry-delay 20 --max-time 90 https://amena.onrender.com/api/sante -o /dev/null
+"""
+
 GITIGNORE = """__pycache__/
 *.pyc
 .env
@@ -106,6 +123,9 @@ def main():
     if render:
         (SORTIE / "render.yaml").write_text(RENDER_YAML, encoding="utf-8")
         (SORTIE / ".gitignore").write_text(GITIGNORE, encoding="utf-8")
+        flux = SORTIE / ".github" / "workflows"
+        flux.mkdir(parents=True, exist_ok=True)
+        (flux / "garder-eveille.yml").write_text(GARDE_EVEILLE, encoding="utf-8")
         (SORTIE / ".gitattributes").write_text("* text=auto eol=lf\n*.pdf binary\n*.webp binary\n*.png binary\n*.jpg binary\n*.xlsx binary\n", encoding="utf-8")
     # Photos iStock : licence payante non acquise, donc pas de publication en ligne. Elles sont
     # remplacées par les photos libres de Tunisie (Wikimedia Commons), créditées dans le pied de page.

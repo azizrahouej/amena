@@ -347,6 +347,14 @@ export function pageChat(racine) {
         method: "POST", headers: { "Content-Type": "application/json" }, signal: etat.controleur.signal,
         body: JSON.stringify({ message: texte, historique: historiqueEnvoye }),
       });
+      if (reponse.status === 429) {  // trop de questions d'affilée : message clair au lieu d'une erreur
+        const j = await reponse.json().catch(() => ({}));
+        const arabe = document.documentElement.lang === "ar";
+        m.texte = (arabe ? j.detail_ar : j.detail) || j.detail || "Patientez une minute.";
+        tamponFini = true;
+        lancerFrappe();
+        return;
+      }
       if (!reponse.ok) throw new Error(`HTTP ${reponse.status}`);
       lancerFrappe();
       await lireFlux(reponse, (ev) => {

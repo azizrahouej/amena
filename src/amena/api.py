@@ -12,7 +12,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import __version__, analyse, comptes, juridique, risque
+from . import __version__, analyse, comptes, juridique, limites, risque
 from .assistant import Assistant
 from .comptes import ErreurCompte
 from .config import DOSSIER_KB, DOSSIER_WEB, RACINE, RAPPORT_EVALUATION
@@ -67,15 +67,35 @@ app = FastAPI(
 )
 
 
+# Politique de sécurité du contenu : seules les ressources du site lui-même sont chargées (aucun
+# script tiers ni pisteur), la page ne peut pas être intégrée dans un autre site.
+CSP = ("default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; "
+       "font-src 'self' data:; connect-src 'self'; media-src 'self'; manifest-src 'self'; worker-src 'self'; "
+       "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'")
+
+
 @app.middleware("http")
 async def sans_trace(request, suivant):
     """Aucune page ni réponse n'est gardée dans le cache du navigateur : une personne qui
-    consulte l'appareil ensuite ne doit retrouver aucune copie des échanges."""
-    reponse = await suivant(request)
+    consulte l'appareil ensuite ne doit retrouver aucune copie des échanges.
+    Les questions sont aussi limitées par visiteur, pour protéger le serveur contre les abus."""
+    autorise, attente = limites.autoriser(limites.adresse_client(request), request.url.path)
+    if not autorise:
+        from fastapi.responses import JSONResponse
+        reponse = JSONResponse({"detail": limites.MESSAGE["fr"], "detail_ar": limites.MESSAGE["ar"],
+                                "reessayer_dans": attente}, status_code=429,
+                               headers={"Retry-After": str(attente)})
+    else:
+        reponse = await suivant(request)
     reponse.headers["Cache-Control"] = "no-store"
     reponse.headers["Referrer-Policy"] = "no-referrer"
     reponse.headers["X-Content-Type-Options"] = "nosniff"
     reponse.headers["X-Frame-Options"] = "DENY"
+    reponse.headers["Content-Security-Policy"] = CSP
+    reponse.headers["Permissions-Policy"] = "camera=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+    reponse.headers["Cross-Origin-Opener-Policy"] = "same-origin"
+    if request.headers.get("x-forwarded-proto") == "https" or request.url.scheme == "https":
+        reponse.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
     return reponse
 
 

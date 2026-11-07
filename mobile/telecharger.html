@@ -67,13 +67,6 @@
     <p class="note">AMENA informe et oriente ; elle ne remplace pas un avocat. Gratuit, sans publicité, aucune conversation enregistrée.
       <a href="confidentialite.html">Politique de confidentialité</a>.</p>
   </main>
-  <script>
-    // Bouton d'installation natif quand le navigateur le propose (Chrome, Edge, Samsung Internet).
-    let invite = null;
-    const bouton = document.getElementById("installer");
-    window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); invite = e; bouton.style.display = "flex"; });
-    bouton.addEventListener("click", async () => { if (!invite) return; invite.prompt(); await invite.userChoice; invite = null; bouton.style.display = "none"; });
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
-  </script>
+  <script src="telecharger.js" defer></script>
 </body>
 </html>
