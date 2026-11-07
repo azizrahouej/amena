@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.azizrahouej.amena",
+        "sha256_cert_fingerprints": ["7C:6C:14:4E:16:FD:4B:F9:D0:6B:2E:8B:4C:83:AA:05:80:02:C6:45:BB:A6:27:61:F0:E1:5A:CE:0D:1F:AE:4A"]
+      }
+    }]
