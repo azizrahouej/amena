@@ -115,7 +115,13 @@ function afficher() {
   const page = ECRANS[nom] ? nom : "accueil";
   document.querySelectorAll(".onglets button").forEach((b) => { if (b.dataset.aller === page) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
   ecran.replaceChildren();
-  ECRANS[page](ecran, decodeURIComponent(reste.join("/")));
+  const parametre = decodeURIComponent(reste.join("/"));
+  // Lien « question » (#/chat/<question>) : la question est posée à l'ouverture, pour partager un exemple.
+  if (page === "chat" && parametre && !etat.messages.length && !etat.enCours) {
+    history.replaceState(null, "", "#/chat");
+    setTimeout(() => envoyer(parametre.slice(0, 500)), 0);
+  }
+  ECRANS[page](ecran, parametre);
   document.querySelector(".compose")?.remove();
   if (page === "chat") ecran.after(composer());
   window.scrollTo(0, page === "chat" ? document.body.scrollHeight : 0);
