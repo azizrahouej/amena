@@ -453,6 +453,27 @@ def valider_source_externe(identifiant: int, decision: DecisionSource, _partenai
 app.mount("/static", StaticFiles(directory=DOSSIER_WEB), name="static")
 
 
+# Version mobile (application installable, dossier mobile/) : même API, même base juridique.
+@app.get("/mobile", include_in_schema=False)
+def mobile_sans_barre():
+    from fastapi.responses import RedirectResponse
+    return RedirectResponse("/mobile/")
+
+
+@app.get("/.well-known/assetlinks.json", include_in_schema=False)
+def liens_android():
+    """Lien entre le site et l'application Android (TWA) : sans ce fichier, Android afficherait une
+    barre d'adresse. Rempli avec l'empreinte SHA-256 de la clé de signature du paquet Play Store."""
+    fichier = RACINE / "mobile" / "assetlinks.json"
+    if not fichier.exists():
+        raise HTTPException(404, "Aucune application Android liée.")
+    return json.loads(fichier.read_text(encoding="utf-8"))
+
+
+if (RACINE / "mobile").exists():
+    app.mount("/mobile", StaticFiles(directory=RACINE / "mobile", html=True), name="mobile")
+
+
 @app.get("/")
 def accueil():
     return FileResponse(DOSSIER_WEB / "index.html")

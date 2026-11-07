@@ -14,7 +14,7 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[1]
 SORTIE = RACINE / "dist" / "hf-space"
-A_COPIER = ["src", "web", "data", "scripts", "Dockerfile", "requirements-prod.txt", ".dockerignore", ".env.example"]
+A_COPIER = ["src", "web", "mobile", "data", "scripts", "Dockerfile", "requirements-prod.txt", ".dockerignore", ".env.example"]
 REMPLACEMENTS_ISTOCK = {"justice-livre.webp": "palais-justice-tunis.webp", "justice-bibliotheque.webp": "kasbah-tunis.webp"}
 EXCLUS = {"__pycache__", "amena.db", "amena.db-wal", "amena.db-shm", "dist"}
 

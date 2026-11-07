@@ -1,0 +1,20 @@
+{
+  "id": "/mobile/",
+  "name": "AMENA — assistant juridique",
+  "short_name": "AMENA",
+  "description": "L'assistant avocat qui explique le droit tunisien à tous, en français, en arabe et en derja : travail, terres, argent, famille, police et tribunal.",
+  "start_url": "/mobile/#/accueil",
+  "scope": "/mobile/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c0509",
+  "theme_color": "#6e0a1e",
+  "lang": "fr",
+  "dir": "auto",
+  "categories": ["education", "utilities", "productivity"],
+  "icons": [
+    { "src": "icones/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

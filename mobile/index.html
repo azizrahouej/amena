@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6e0a1e">
+  <meta name="description" content="AMENA mobile : l'assistant avocat qui explique le droit tunisien à tous.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Titre neutre : rien dans l'historique ne révèle une recherche juridique. -->
+  <title>Assistant d'information</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icones/icone-192.png">
+  <link rel="apple-touch-icon" href="icones/icone-192.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="barre-haut">
+    <button class="marque" data-aller="accueil" aria-label="Accueil">
+      <span>AMENA</span><span lang="ar">أمانة</span>
+    </button>
+    <div class="actions-haut">
+      <button id="bouton-langue" class="pastille-haut" aria-label="Langue">ع</button>
+      <button id="bouton-sortie" class="sortie" aria-label="Sortie rapide">✕</button>
+    </div>
+  </header>
+
+  <main id="ecran" tabindex="-1"></main>
+
+  <nav class="onglets" aria-label="Navigation">
+    <button data-aller="accueil"><span class="ico" aria-hidden="true">⌂</span><span data-t="nav.accueil"></span></button>
+    <button data-aller="chat"><span class="ico" aria-hidden="true">✦</span><span data-t="nav.chat"></span></button>
+    <button data-aller="analyse"><span class="ico" aria-hidden="true">⚖</span><span data-t="nav.analyse"></span></button>
+    <button data-aller="lois"><span class="ico" aria-hidden="true">§</span><span data-t="nav.lois"></span></button>
+    <button data-aller="aide"><span class="ico" aria-hidden="true">☎</span><span data-t="nav.aide"></span></button>
+  </nav>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

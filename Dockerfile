@@ -21,6 +21,7 @@ RUN pip install -r requirements-prod.txt
 
 COPY src ./src
 COPY web ./web
+COPY mobile ./mobile
 COPY data ./data
 COPY scripts ./scripts
 
